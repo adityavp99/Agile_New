@@ -1,5 +1,13 @@
+import { Route, Routes } from "react-router-dom";
+
+import HomePage from "./pages/Home";
+
 function App() {
-  return <div> This is the default react template for the Takeouts App</div>;
+  return (
+      <Routes>
+       <Route path="/" element={<HomePage />} />
+      </Routes>
+  );
 }
 
 export default App;
