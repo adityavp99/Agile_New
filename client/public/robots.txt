@@ -1,0 +1,7 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:
+
+GRANT ALL PRIVILEGES ON *.* TO 'db_user_aditya'@'localhost' IDENTIFIED BY 'testuser123';
+
+CREATE USER 'test'@'localhost' IDENTIFIED BY 'newpassword';
