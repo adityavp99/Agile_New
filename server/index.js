@@ -10,7 +10,7 @@ const db = mysql.createPool({
   host: "localhost",
   user: "root",
   password: "password",
-  database: "takeoutdb",
+  database: "database",
 });
 
 // front end to back end connection
