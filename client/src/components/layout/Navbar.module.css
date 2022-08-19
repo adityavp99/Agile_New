@@ -1,13 +1,55 @@
-/* *{
+*{
   box-sizing: border-box;
-}
-
-body{
   margin: 0;
 }
 
 .nav{
-  background-color: #89b0ae;
-  color: white;
+  background-color: #89b0ae; 
+  margin: 0;
+}
+
+ul{
+  background-color: #89b0ae; /*b4dfd6; */
+  text-align: center;
+  min-width: 100%;
+  margin-bottom: 0;
+}
+
+li{
+  margin: 1vh 2vw;
   display: inline;
-} */
+  margin-bottom: 0;
+}
+
+.link{
+  text-decoration: none;
+  color: #faf9f9;
+  font-size: 1.4em;
+  text-decoration: double;
+}
+
+.logosholder{
+  text-align: center;
+}
+
+#logo1{
+  border-radius: 50%; 
+  height: 40px; 
+  width: 40px;
+  margin: 3.5vh 0vw;
+}
+
+#logo2{
+  border-radius: 50%; 
+  height: 100px; 
+  width: 100px;
+  margin: 2vh 1.5vw;
+  margin-bottom: 0.1vh;
+}
+
+#logo3{
+  height: 40px; 
+  width: 40px;
+  margin: 3.5vh 0vw;
+  color: white;
+}
