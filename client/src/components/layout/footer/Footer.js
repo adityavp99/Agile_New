@@ -1,28 +1,26 @@
 import { Link } from "react-router-dom";
 
 import footerStyle from "./Footer.module.css";
+import companylogo from "../images/takeoutlogo.jpg";
 
-// import profileIcon from "./profile.jpg";
-import companylogo from "./takeoutlogo.jpg";
-// import cartIcon from "./cart.png";
 
 function Footer() {
   return (
     <div id={footerStyle.footer}>
         <div id={footerStyle.content}>
-            <p className={footerStyle.p}> Explore TakeOut</p>
+            <p className={footerStyle.p}> Explore Takeout</p>
             <ul className={footerStyle.ul}>
-                <li>
+                <li className={footerStyle.li}>
                     <Link to="/" className={footerStyle.link}>
                         Home
                     </Link>
                 </li>
-                <li>
+                <li className={footerStyle.li}>
                     <Link to="/restaurants" className={footerStyle.link}>
                         Restaurants
                     </Link>
                 </li>
-                <li>
+                <li className={footerStyle.li}>
                     <Link to="/help" className={footerStyle.link}>
                         Help
                     </Link>

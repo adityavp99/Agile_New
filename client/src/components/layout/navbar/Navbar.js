@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 import navStyle from "./Navbar.module.css";
 
-import profileIcon from "./profile.jpg";
-import companylogo from "./takeoutlogo.jpg";
-import cartIcon from "./cart.png";
+import profileIcon from "../images/profile.jpg";
+import companylogo from "../images/takeoutlogo.jpg";
+import cartIcon from "../images/cart.png";
 
 function Navbar() {
   return (
@@ -17,17 +17,17 @@ function Navbar() {
         <img src={cartIcon} id={navStyle.logo3} alt="Cart Icon" />
       </div>
       <ul>
-        <li>
+        <li className={navStyle.li}>
           <Link to="/" className={navStyle.link}>
             Home
           </Link>
         </li>
-        <li>
+        <li className={navStyle.li}>
           <Link to="/restaurants" className={navStyle.link}>
             Restaurants
           </Link>
         </li>
-        <li>
+        <li className={navStyle.li}>
           <Link to="/help" className={navStyle.link}>
             Help
           </Link>

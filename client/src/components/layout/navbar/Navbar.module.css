@@ -5,20 +5,19 @@
 
 .nav{
   background-color: #89b0ae; 
-  margin: 0;
 }
 
 ul{
   background-color: #89b0ae; /*b4dfd6; */
   text-align: center;
   min-width: 100%;
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 
-li{
+.li{
   margin: 1vh 2vw;
+  margin-bottom: 0px;
   display: inline;
-  margin-bottom: 0;
 }
 
 .link{
@@ -26,6 +25,7 @@ li{
   color: #faf9f9;
   font-size: 1.4em;
   text-decoration: double;
+  margin-bottom: 0px;
 }
 
 .logosholder{

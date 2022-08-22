@@ -4,8 +4,8 @@ import HomePage from "./pages/Home";
 import RestaurantsPage from "./pages/Restaurants";
 import HelpPage from "./pages/Help";
 
-import Navbar from "./components/layout/Navbar";
-import Footer from "./components/layout/Footer";
+import Navbar from "./components/layout/navbar/Navbar";
+import Footer from "./components/layout/footer/Footer";
 
 function App() {
   return (

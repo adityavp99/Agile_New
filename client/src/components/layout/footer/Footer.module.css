@@ -4,10 +4,10 @@
 }
 
 #footer{
-  margin: 45vh 0vw;
+  margin: 1vh 0vw;
   display: grid;
   grid-template-areas: 
-  'content content logoholder'
+  'content content content logoholder'
 }
 
 #content{
@@ -23,7 +23,7 @@
 }
 
 .p{
-  margin: 3vh 3vw;
+  margin: 1vh 3vw;
   padding-top: 2vh;
   font-size: 1.5em;
 }
@@ -35,11 +35,9 @@
   margin-bottom: 0;
 }
 
-li{
-  margin: 5vh 3vw;
-  margin-bottom: 10vh;
+.li{
+  margin: 1vh 3vw;
   display: inline-block;
-  
 }
 
 .link{
@@ -52,7 +50,7 @@ li{
 #logo{
   margin: 0vh 0vw;
   float: right;
-  height: 33vh;
-  width: 22vw;
+  height: 22vh;
+  width: 16vw;
 }
 
