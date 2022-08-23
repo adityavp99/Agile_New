@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+
+.holder{
+    background-color: #f7fade;
+    width: 28vw;
+    height: 50vh;
+    margin: 1vh 1vw;
+    border-radius: 19px;
+    padding-top: 2vh;
+}
+
+.image{
+    width: 23vw;
+    height: 25vh;
+
+    border-radius: 15px;
+}
+
+.label1{
+    text-align: left;
+    padding: 0vh 1vw;
+    font-size: 2em;
+}
+
+.label2{
+    position: relative;
+    top: 11%;
+    text-align: right;
+    padding: 0vh 1vw;
+    font-size: 2em;
+}
+
+.label3{
+    text-align: left;
+    padding: 4vh 1vw;
+    font-size: 2em;
+}
