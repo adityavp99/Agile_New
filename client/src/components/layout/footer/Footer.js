@@ -25,6 +25,11 @@ function Footer() {
                         Help
                     </Link>
                 </li>
+                <li className={footerStyle.li}>
+                    <Link to="/categories" className={footerStyle.link}>
+                        Categories
+                    </Link>
+                </li>
             </ul>
         </div>
         <div id={footerStyle.logoholder}>

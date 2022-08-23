@@ -32,6 +32,9 @@ function Navbar() {
             Help
           </Link>
         </li>
+        <li className={navStyle.li}>
+          <Link to="/categories" className={navStyle.link}>Categories</Link>
+        </li>
       </ul>
     </nav>
   );
