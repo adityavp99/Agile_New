@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.categories{
+    background-color: #bee3db;
+}
+
+h3{
+    text-align: center;
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #555b6e;
+    padding-top: 5vh;
+    padding-left: 5vw;
+}
+
+.subholder{
+    position: relative;
+    text-align: center;
+    display: grid;
+    grid-template-areas: 
+    'image1'
+    'image2'
+    'image3'
+    'image4';
+    margin: 0vh 6.5vw;
+}
+
+.image1{
+    grid-area: image1;
+    height: 30vh; 
+    width: 80vw;
+    margin: 3vh 5vw;
+    border-radius: 15px;
+    color: white;
+}
+
+.image2{
+    grid-area: image2;
+    height: 30vh; 
+    width: 80vw;
+    margin: 3vh 5vw;
+    border-radius: 15px;
+    color: white;
+}
+
+.image3{
+    grid-area: image3;
+    height: 30vh; 
+    width: 80vw;
+    margin: 3vh 5vw;
+    border-radius: 15px;
+    color: white;
+}
+
+.image4{
+    grid-area: image4;
+    height: 30vh; 
+    width: 80vw;
+    margin: 3vh 5vw;
+    border-radius: 15px;
+    color: white;
+}
+
+.label1{
+    position: absolute;
+    top: 10%;
+    left: 49%;
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    z-index: 2;
+} 
+
+.label2{
+    position: absolute;
+    top: 35%;
+    left: 48%;
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.label3{
+    position: absolute;
+    top: 61%;
+    left: 44%;
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.label4{
+    position: absolute;
+    top: 86%;
+    left: 45%;
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.image1:hover,.image2:hover,.image3:hover,.image4:hover{
+    opacity: 70%;
+}
