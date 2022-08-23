@@ -6,7 +6,7 @@ import categoriesImg from "./images/categories.jpg";
 
 import bubbleteaImg from "./images/bubbletea.jpg";
 import pastaImg from "./images/pasta.jpg";
-import burgerImg from "./images/pasta.jpg"; //replace with burger image
+import burgerImg from "./images/burger.jpg"; //replace with burger image
 import pizzaImg from "./images/pizza.jpg";
 import saladsImg from "./images/salads.jpg";
 
