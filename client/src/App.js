@@ -1,6 +1,4 @@
 import { Route, Routes } from "react-router-dom";
-// import { useState, useEffect } from "react";
-// import Axios from "axios";
 
 import HomePage from "./pages/Home";
 import RestaurantsPage from "./pages/Restaurants";
