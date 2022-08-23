@@ -1,0 +1,56 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#footer{
+  margin: 1vh 0vw;
+  display: grid;
+  grid-template-areas: 
+  'content content content logoholder'
+}
+
+#content{
+  grid-area: content;
+  background-color: #4b5063;
+  color:#b4dfd6;
+  font-size: 1.4em;
+}
+
+#logoholder{
+  grid-area: logoholder;
+  background-color: #4b5063;
+}
+
+.p{
+  margin: 1vh 3vw;
+  padding-top: 2vh;
+  font-size: 1.5em;
+}
+
+.ul{
+  background-color: #4b5063;  /*b4dfd6; */
+  color:#b4dfd6;
+  min-width: 100%;
+  margin-bottom: 0;
+}
+
+.li{
+  margin: 1vh 3vw;
+  display: inline-block;
+}
+
+.link{
+  text-decoration: none;
+  color:#b4dfd6;
+  font-size: 1.2em;
+  text-decoration: double;
+}
+
+#logo{
+  margin: 0vh 0vw;
+  float: right;
+  height: 22vh;
+  width: 16vw;
+}
+

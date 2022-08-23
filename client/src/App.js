@@ -5,7 +5,8 @@ import RestaurantsPage from "./pages/restaurants/Restaurants";
 import HelpPage from "./pages/Help";
 import CategoriesPage from "./pages/categories/Categories";
 
-import Navbar from "./components/layout/Navbar";
+import Navbar from "./components/layout/navbar/Navbar";
+import Footer from "./components/layout/footer/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path="/help" element={<HelpPage />} />
       <Route path="/categories" element={<CategoriesPage />} />
     </Routes>
+      <Footer />
     </div>
   );
 }
