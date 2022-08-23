@@ -38,19 +38,7 @@ app.post("/api/insert", (req, res) => {
   });
 });
 
-// app.get("/", (req, res) => {
-
-//     const sqlInsert = "INSERT INTO movie_reviews (movieName, movieReview) VALUES ('inception', 'good movie');";
-
-//     db.query(sqlInsert, (err, result) => {
-
-//         res.send("Hello gog");
-
-//     })
-
-// });
-
-// server port
+//server port
 app.listen(3001, () => {
   console.log("running port 3001..");
 });
