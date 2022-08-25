@@ -1,9 +1,12 @@
 //importing dependencies and files
-import { Formik, Form } from "formik";
-import { TextField } from "../components/layout/Form/TextField";
+import { Formik, Form} from "formik"; 
+import { TextField } from "../../components/layout/Form/TextField";
 import * as Yup from "yup";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Axios from "axios";
+
+import signupCSS from "./Signup.module.css";
+import profileIcon from "./profile.jpg";
 
 function SignupPage() {
   //Custom react hooks
@@ -27,6 +30,8 @@ function SignupPage() {
     email: Yup.string().email("Invalid Email").required("Email is required"),
   });
 
+
+  //useEffect not imported
   //To get data from the backend
   //   useEffect(() => {
   //     Axios.get("http://localhost:3001/api/get").then((response) => {
@@ -66,20 +71,27 @@ function SignupPage() {
       }}
     >
       {(formik) => (
-        <div>
-          <h1>Sign Up</h1>
+        <div className={signupCSS.signup}>
           {/* Form Creation */}
-          <Form>
-            <TextField label="Username" name="username" type="text" />
-            <TextField label="Password" name="password" type="password" />
+          <Form className={signupCSS.form}>
+          <div className={signupCSS.openingdiv}>
+            <img src={profileIcon} className={signupCSS.image1} alt="Profile Icon" />
+            <h5>Sign Up</h5> 
+          </div>
+            <TextField placeholder="Username" name="username" type="text" className={signupCSS.field1}/>
+            <TextField placeholder="Password" name="password" type="password" className={signupCSS.field2}/>
             <TextField
-              label="Confirm Password"
+              placeholder="Confirm Password"
               name="confirmPassword"
               type="password"
+              className={signupCSS.field3}
             />
-            <TextField label="Email" name="email" type="email" />
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
+            <TextField placeholder="Email" name="email" type="email" className={signupCSS.field4}/>
+            <button type="submit:" className={signupCSS.button1}>Submit</button>
+            <div className={signupCSS.endingdiv}>
+                  <p className={signupCSS.label1}> Already have an account? </p>
+                  <p className={signupCSS.label2}> Sign In </p> {/* Replace with link later on */}
+            </div>
           </Form>
         </div>
       )}
