@@ -4,6 +4,7 @@ import HomePage from "./pages/Home";
 import RestaurantsPage from "./pages/Restaurants";
 import HelpPage from "./pages/Help";
 import SignupPage from "./pages/Signup";
+import ProfilePage from "./pages/Profile/Profile";
 
 import Navbar from "./components/layout/Navbar";
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/restaurants" element={<RestaurantsPage />} />
         <Route path="/help" element={<HelpPage />} />
         <Route path="/signup" element={<SignupPage />} />
+        <Route path="/profile" element={<ProfilePage />} />
       </Routes>
     </div>
   );
