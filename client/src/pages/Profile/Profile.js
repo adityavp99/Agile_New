@@ -149,6 +149,7 @@ function ProfilePage() {
               <TextField label="Postal Code" name="postalCode" type="number" />
               <button type="submit">Save</button>
             </div>
+            {/* Form to add new card */}
             <div>
               <h2> Add New Card: </h2>
               <TextField label="Card Number" name="cardNumber" type="number" />
@@ -160,6 +161,20 @@ function ProfilePage() {
                 type="text"
               />
               <button type="submit">Add Card</button>
+            </div>
+            <div>
+              <h2> Ewallet </h2>
+              <select id="cards" name="cards">
+                <option value="Visa">Visa</option>
+                <option value="Mastercard">Mastercard</option>
+              </select>
+              <button type="submit">delete card</button>
+              <TextField label="Amount:" name="amount" type="number" />
+              <button type="submit">Top-Up</button>
+              <p>Balance: </p>
+              {/* <input type="checkbox" id="topUp" name="amount_topUp" value="topUpAmount"></input>
+              <label for="topUp">Auto Top-Up</label><br></br> */}
+              <TextField label="Auto Top-Up" name="amount" type="checkbox" />
             </div>
           </Form>
         </div>
