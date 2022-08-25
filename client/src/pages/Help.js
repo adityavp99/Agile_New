@@ -3,6 +3,10 @@
 
 //CSS
 import helpCSS from './Help.module.css';
+//Images
+import phonepic from './helppics/phone.png';
+import emailpic from './helppics/email.png';
+import addresspic from './helppics/address.png';
 
 
 function HelpPage(){
@@ -17,6 +21,19 @@ function HelpPage(){
                     <AccordionFAQ/>
                 </div>
 
+                <div className={helpCSS.contacts}>
+                    <div>
+                        <img src={phonepic} alt="phone"/><p>+65 9754 2258/ +65 6339 4578</p>
+                    </div>
+                    <div>
+                        <img src={emailpic} alt="email"/><p> support.takeout@gmail.com</p>
+                    </div>
+                    <div>
+                        <img src={addresspic} alt="address"/><p>229 Rochor Road, Singapore: 188 452</p>
+                    </div>
+                    
+                </div>
+
             </div>
         </section>
 
@@ -27,33 +44,35 @@ function HelpPage(){
 function AccordionFAQ() {
     return (
         <section>
-            <button className={helpCSS.accordion}>Section 1</button>
+            <button className={helpCSS.accordion}>How do I make payment?</button>
+            <div className={helpCSS.panel}> 
+                <p>You may add the cards you would like to pay with here> ****</p>
+            </div>
+
+            <button className={helpCSS.accordion}>I cannot find the food that I like.</button>
+            <div className={helpCSS.panel}> 
+                <p>Thank you for your patience and continuous support. We will continue to work hard and have more cuisines added to the list.</p>
+            </div>
+
+            <button className={helpCSS.accordion}>My food has not arrived!</button>
+            <div className={helpCSS.panel}> 
+                <p>Do go to our track order page to check if your food is arriving. *Link* </p>
+            </div>
+
+            <button className={helpCSS.accordion}>Add more FAQ 1</button>
             <div className={helpCSS.panel}> 
                 <p>Lorem ipsum... </p>
             </div>
 
-            <button className={helpCSS.accordion}>Section 2</button>
+            <button className={helpCSS.accordion}>Add more FAQ 2</button>
             <div className={helpCSS.panel}> 
                 <p>Lorem ipsum... </p>
             </div>
 
-            <button className={helpCSS.accordion}>Section 3</button>
-            <div className={helpCSS.panel}> 
-                <p>Lorem ipsum... </p>
-            </div>
-
-            <button className={helpCSS.accordion}>Section 4</button>
-            <div className={helpCSS.panel}> 
-                <p>Lorem ipsum... </p>
-            </div>
-
-            <button className={helpCSS.accordion}>Section 5</button>
-            <div className={helpCSS.panel}> 
-                <p>Lorem ipsum... </p>
-            </div>
         </section> 
     );
 }
+
 
 // Accordion Javascript
 var acc = document.getElementsByClassName(helpCSS.accordion);
@@ -61,7 +80,7 @@ var i;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
-    this.classList.toggle(helpCSS.active);
+    this.classList.toggle("active");
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
