@@ -4,7 +4,6 @@ import HomePage from "./pages/home/Home";
 import RestaurantsPage from "./pages/restaurants/Restaurants";
 import HelpPage from "./pages/Help";
 import CategoriesPage from "./pages/categories/Categories";
-
 import SignupPage from "./pages/Signup/Signup";
 
 import Navbar from "./components/layout/navbar/Navbar";
@@ -19,6 +18,7 @@ function App() {
       <Route path="/restaurants" element={<RestaurantsPage />} />
       <Route path="/help" element={<HelpPage />} />
       <Route path="/categories" element={<CategoriesPage />} />
+      <Route path="/signup" element={<SignupPage />} />
     </Routes>
       <Footer />
     </div>

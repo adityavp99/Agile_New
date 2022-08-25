@@ -6,7 +6,7 @@ import { useState } from "react";
 import Axios from "axios";
 
 import signupCSS from "./Signup.module.css";
-import profileIcon from "./profile.jpg";
+import profileIcon from "../../images/peachprofile.jpg";
 
 function SignupPage() {
   //Custom react hooks

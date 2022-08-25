@@ -1,20 +1,20 @@
 
 import homeCSS from "./Home.module.css";
 
-import exploreImg from "./images/explore.jpg";
-import categoriesImg from "./images/categories.jpg";
+import exploreImg from "../../images/explore.jpg";
+import categoriesImg from "../../images/categories.jpg";
 
-import bubbleteaImg from "./images/bubbletea.jpg";
-import pastaImg from "./images/pasta.jpg";
-import burgerImg from "./images/burger.jpg"; //replace with burger image
-import pizzaImg from "./images/pizza.jpg";
-import saladsImg from "./images/salads.jpg";
+import bubbleteaImg from "../../images/bubbletea.jpg";
+import pastaImg from "../../images/pasta.jpg";
+import burgerImg from "../../images/burger.jpg"; //replace with burger image
+import pizzaImg from "../../images/pizza.jpg";
+import saladsImg from "../../images/salads.jpg";
 
-import nasilemakImg from "./images/nasilemak.jpg";
-import idlyImg from "./images/idly.jpg";
-import chillicrabImg from "./images/chillicrab.jpg";
-import chickenriceImg from "./images/chickenrice.jpg";
-import viewmoreImg from "./images/viewmore.jpg";
+import nasilemakImg from "../../images/nasilemak.jpg";
+import idlyImg from "../../images/idly.jpg";
+import chillicrabImg from "../../images/chillicrab.jpg";
+import chickenriceImg from "../../images/chickenrice.jpg";
+import viewmoreImg from "../../images/viewmore.jpg";
 
 function HomePage(){
 return <div className={homeCSS.home}> 

@@ -1,10 +1,10 @@
 *{
   box-sizing: border-box;
   margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 #footer{
-  margin: 1vh 0vw;
   display: grid;
   grid-template-areas: 
   'content content content logoholder'

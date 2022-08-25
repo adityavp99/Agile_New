@@ -2,17 +2,17 @@
 import RestaurantHolder from "../../components/layout/restaurantholder/Restaurantholder";
 import restaurantCSS from "./Restaurants.module.css";
 
-import pizzahutImg from "./images/pizzahut.jpg";
-import macdonaldsImg from "./images/macdonalds.jpg";
-import pastamaniaImg from "./images/pastamania.jpg";
+import pizzahutImg from "../../images/pizzahut.jpg";
+import macdonaldsImg from "../../images/macdonalds.jpg";
+import pastamaniaImg from "../../images/pastamania.jpg";
 
-import balithaiImg from "./images/balithai.jpg";
-import subwayImg from "./images/subway.jpg";
-import sushiexpressImg from "./images/sushiexpress.jpg";
+import balithaiImg from "../../images/balithai.jpg";
+import subwayImg from "../../images/subway.jpg";
+import sushiexpressImg from "../../images/sushiexpress.jpg";
 
-import breadtalkImg from "./images/breadtalk.jpg";
-import lihoImg from "./images/liho.jpg";
-import wokheyImg from "./images/wokhey.jpg";
+import breadtalkImg from "../../images/breadtalk.jpg";
+import lihoImg from "../../images/liho.jpg";
+import wokheyImg from "../../images/wokhey.jpg";
 
 //dummy data (temporary)
 const pizzahut = {name_:"PizzaHut", rating:"4.0", distance: "3km", image: pizzahutImg }; 

@@ -1,9 +1,9 @@
 import categoriesCSS from "./Categories.module.css";
 
-import halalImg from "./images/halal.jpg";
-import indianImg from "./images/indian.jpg";
-import vegetarianImg from "./images/vegetarian.jpg";
-import japaneseImg from "./images/japanese.jpg"; 
+import halalImg from "../../images/halal.jpg";
+import indianImg from "../../images/indian.jpg";
+import vegetarianImg from "../../images/vegetarian.jpg";
+import japaneseImg from "../../images/japanese.jpg"; 
 
 
 function CategoriesPage(){

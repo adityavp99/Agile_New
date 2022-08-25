@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 import footerStyle from "./Footer.module.css";
-import companylogo from "../images/takeoutlogo.jpg";
+import companylogo from "../../../images/takeoutlogo.jpg";
 
 
 function Footer() {
@@ -28,6 +28,11 @@ function Footer() {
                 <li className={footerStyle.li}>
                     <Link to="/categories" className={footerStyle.link}>
                         Categories
+                    </Link>
+                </li>
+                <li className={footerStyle.li}>
+                    <Link to="/signup" className={footerStyle.link}>
+                        Sign Up
                     </Link>
                 </li>
             </ul>

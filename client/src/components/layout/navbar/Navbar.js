@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 import navStyle from "./Navbar.module.css";
 
-import profileIcon from "../images/profile.jpg";
-import companylogo from "../images/takeoutlogo.jpg";
-import cartIcon from "../images/cart.png";
+import profileIcon from "../../../images/profile.jpg";
+import companylogo from "../../../images/takeoutlogo.jpg";
+import cartIcon from "../../../images/cart.jpg";
 
 function Navbar() {
   return (
@@ -34,6 +34,9 @@ function Navbar() {
         </li>
         <li className={navStyle.li}>
           <Link to="/categories" className={navStyle.link}>Categories</Link>
+        </li>
+        <li className={navStyle.li}>
+          <Link to="/signup" className={navStyle.link}>Sign Up</Link>
         </li>
       </ul>
     </nav>
