@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+.signup{
+    background-color: #bee3db;
+    padding: 5vh 5vw;
+    min-height: 90vh;
+    text-align: center;
+}
+
+.form{
+    background-color: #758087;
+    color: #ffd6ba;
+    position: relative;
+    left: 35%;
+    width: 30vw;
+    min-height: 65vh;
+    border-radius: 25px;
+}
+
+.openingdiv{
+    display: flex;
+}
+
+h5{
+    color: #ffd6ba;
+    text-align: center;
+    font-size: 3em;
+    padding: 5vh 1vw;
+}
+
+.image1{
+    width: 4vw;
+    height: 8vh;
+    margin: 5vh 0.5vw 1vh 7vw;
+}
+
+.field1, .field2, .field3, .field4{
+    width: 18vw;
+    height: 6vh;
+    margin: 0.5vh 5vw;
+    border-radius: 50px;
+    padding-left: 2vh;
+    color: black;
+    font-size: 1.2em;
+}
+
+.fields:required{
+    color: #ffd6ba;
+}
+
+.button1, .button2{
+    background-color: #ffd6ba;
+    color: #555b6e;
+    width: 12vw;
+    height: 5vh;
+    margin: 1vh 5vw;
+    border-radius: 51px;
+    font-size: 1.2em;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.button2{
+    margin: 0vh 5vw;
+}
+
+.endingdiv{
+    background-color: #89b0ae;
+    margin-top: 1vh;
+    padding: 1vh 5vw;
+    border-radius: 10px;
+}
+
+.label1, .label2{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.3em;
+    color: #555b63;
+    margin: 1vh 2vw;
+}
+
+

@@ -5,6 +5,8 @@ import RestaurantsPage from "./pages/restaurants/Restaurants";
 import HelpPage from "./pages/Help";
 import CategoriesPage from "./pages/categories/Categories";
 
+import SignupPage from "./pages/Signup/Signup";
+
 import Navbar from "./components/layout/navbar/Navbar";
 import Footer from "./components/layout/footer/Footer";
 
