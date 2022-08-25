@@ -2,7 +2,7 @@
 import { Formik, Form } from "formik";
 import { TextField } from "../components/layout/Form/TextField";
 import * as Yup from "yup";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Axios from "axios";
 
 function SignupPage() {

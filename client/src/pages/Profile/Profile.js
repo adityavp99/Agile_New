@@ -7,10 +7,22 @@ import Axios from "axios";
 
 function ProfilePage() {
   //Custom react hooks
+  const [name] = useState("");
   const [username] = useState("");
   const [password] = useState("");
   const [confirmPassword] = useState("");
   const [email] = useState("");
+  const [phoneNumber] = useState("");
+  const [streetName] = useState("");
+  const [blkNumber] = useState("");
+  const [buildingName] = useState("");
+  const [lvlNumber] = useState("");
+  const [unitNumber] = useState("");
+  const [postalCode] = useState("");
+  const [cardNumber] = useState("");
+  const [expiryDate] = useState("");
+  const [cvv] = useState("");
+  const [cHolderName] = useState("");
   const [userList, setUserList] = useState("");
 
   //Form Validation
@@ -48,6 +60,16 @@ function ProfilePage() {
         confirmPassword: "",
         email: "",
         phoneNumber: "",
+        streetName: "",
+        blkNumber: "",
+        buildingName: "",
+        lvlNumber: "",
+        unitNumber: "",
+        postalCode: "",
+        cardNumber: "",
+        expiryDate: "",
+        cvv: "",
+        cHolderName: "",
       }}
       validationSchema={validate}
       onSubmit={(values) => {
@@ -59,16 +81,36 @@ function ProfilePage() {
           confirmPassword: values.ConfirmPassword,
           email: values.email,
           phoneNumber: values.phoneNumber,
+          streetName: values.streetName,
+          blkNumber: values.blkNumber,
+          buildingName: values.buildingName,
+          lvlNumber: values.lvlNumber,
+          unitNumber: values.unitNumber,
+          postalCode: values.postalCode,
+          cardNumber: values.cardNumber,
+          expiryDate: values.expiryDate,
+          cvv: values.cvv,
+          cHolderName: values.cHolderName,
         }).then(() => {
           setUserList([
             ...userList,
             {
-            //   name: window.name,
+              name: name,
               username: username,
               password: password,
               confirmPassword: confirmPassword,
               email: email,
-            //   phoneNumber: phoneNumber,
+              phoneNumber: phoneNumber,
+              streetName: streetName,
+              blkNumber: blkNumber,
+              buildingName: buildingName,
+              lvlNumber: lvlNumber,
+              unitNumber: unitNumber,
+              postalCode: postalCode,
+              cardNumber: cardNumber,
+              expiryDate: expiryDate,
+              cvv: cvv,
+              cHolderName: cHolderName,
             },
           ]);
         });
@@ -92,6 +134,33 @@ function ProfilePage() {
             <TextField label="Phone Number" name="phoneNumber" type="number" />
             <button type="submit">Update Profile</button>
             <button type="submit">Log Out</button>
+            {/* Address form */}
+            <div>
+              <h2> Address: </h2>
+              <TextField label="Street Name" name="streetName" type="text" />
+              <TextField label="Block Number" name="blkNumber" type="text" />
+              <TextField
+                label="Building Name"
+                name="buildingName"
+                type="text"
+              />
+              <TextField label="Level Number" name="lvlNumber" type="number" />
+              <TextField label="Unit Number" name="unitNumber" type="number" />
+              <TextField label="Postal Code" name="postalCode" type="number" />
+              <button type="submit">Save</button>
+            </div>
+            <div>
+              <h2> Add New Card: </h2>
+              <TextField label="Card Number" name="cardNumber" type="number" />
+              <TextField label="Expiry Date" name="expiryDate" type="date" />
+              <TextField label="CVC/CVV" name="cvv" type="number" />
+              <TextField
+                label="Card Holder Name"
+                name="cHolderName"
+                type="text"
+              />
+              <button type="submit">Add Card</button>
+            </div>
           </Form>
         </div>
       )}
