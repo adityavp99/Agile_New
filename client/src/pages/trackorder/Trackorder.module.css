@@ -12,30 +12,41 @@
 }
 
 .SmallLine {
-    width: 10%;
+    width: 5vw;
     height: 5px;
     background-color: darkslategrey;
     border-radius: 1rem;
+    display: inline-flex;
+    align-self: center;
 }
 
 .LongLine {
-    width: 50%;
+    width: 55vw;
     height: 5px;
     background-color: darkslategrey;
     border-radius: 1rem;
+    display: inline-flex;
 }
 
-.Header {
-    display: inline;
+.Header h1 {
+    display: inline-flex;
 }
 
-.Circle {
-    width: 50px;
-    height: 50px;
+
+.Circle1 {
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
+    background-color: darkslategrey;
+    vertical-align: auto;
+    margin: auto;
 }
 
-.processImages {
-    width: 50px;
-    height: 50px;
+.progress {
+    display: inline-flex;
+    padding: 30px;
+}
+
+.progress img {
+    vertical-align: auto;
 }

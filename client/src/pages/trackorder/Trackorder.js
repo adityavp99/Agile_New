@@ -24,14 +24,38 @@ function TrackOrderPage(){
                 </div>
 
                 {/* Progress*/}
-                <div>
-                    <div className={trackOrderCSS.Circle1}></div>
-                    <div className={trackOrderCSS.Line1}></div>
-                </div>
+                <div className={trackOrderCSS.progress}>
+                    <div>
+                        <div className={trackOrderCSS.Circle1}></div>
+                        <img src={p1} alt="take order" width="150px" height="150px" />
+                    </div>
 
-                {/* Icons*/}
-                <div classname={trackOrderCSS.processImages}>
-                    <img classname={trackOrderCSS.processImages}src={p1}/>
+                    <div>
+                        <div className={trackOrderCSS.Circle1}></div>
+                        <img src={p2} alt="order confirmed" width="150px" height="150px" />
+                    </div>
+
+                    <div>
+                        <div className={trackOrderCSS.Circle1}></div>
+                        <img src={p3} alt="order in process" width="150px" height="150px" />
+                    </div>
+
+                    <div>
+                        <div className={trackOrderCSS.Circle1}></div>
+                        <img src={p4} alt="order waiting collected" width="150px" height="150px" />
+                    </div>
+
+                    <div>
+                        <div className={trackOrderCSS.Circle1}></div>
+                        <img src={p5} alt="order on the way" width="150px" height="150px" />
+                    </div>
+
+                    <div>
+                        <div className={trackOrderCSS.Circle1}></div>
+                        <img src={p6} alt="order delivered" width="150px" height="150px" />
+                    </div>
+                    
+                    <div className={trackOrderCSS.Line1}></div>
                 </div>
             </div>
         </section>
