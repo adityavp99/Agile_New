@@ -38,6 +38,9 @@ function Navbar() {
         <li className={navStyle.li}>
           <Link to="/signup" className={navStyle.link}>Sign Up</Link>
         </li>
+        <li className={navStyle.li}>
+          <Link to="/signin" className={navStyle.link}>Sign In</Link>
+        </li>
       </ul>
     </nav>
   );

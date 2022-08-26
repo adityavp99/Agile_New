@@ -5,6 +5,7 @@ import RestaurantsPage from "./pages/restaurants/Restaurants";
 import HelpPage from "./pages/Help";
 import CategoriesPage from "./pages/categories/Categories";
 import SignupPage from "./pages/Signup/Signup";
+import SigninPage from "./pages/Signin/Signin";
 
 import Navbar from "./components/layout/navbar/Navbar";
 import Footer from "./components/layout/footer/Footer";
@@ -19,6 +20,7 @@ function App() {
       <Route path="/help" element={<HelpPage />} />
       <Route path="/categories" element={<CategoriesPage />} />
       <Route path="/signup" element={<SignupPage />} />
+      <Route path="/signin" element={<SigninPage />} />
     </Routes>
       <Footer />
     </div>
