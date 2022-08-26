@@ -41,7 +41,6 @@ function HelpPage(){
                     <div>
                         <img src={addresspic} alt="address"/><p>229 Rochor Road, Singapore: 188 452</p>
                     </div>
-                    
                 </div>
 
             </div>
@@ -113,7 +112,7 @@ function AskQuestion() {
         <div className={helpCSS.formFilling2}>
             <label className={helpCSS.formNameText}>
                 <div><h3>Type a Question</h3></div>
-            <input className={helpCSS.formComment} type="text" />
+            <input className={helpCSS.formComment} type="text" TextAlign={'top'}/>
             </label>
         </div>
         
