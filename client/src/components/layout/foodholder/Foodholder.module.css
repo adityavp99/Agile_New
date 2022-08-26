@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+}
+
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding-top: 3vh;
+}
+
+.group{
+    background-color: #f7fade;
+    color: black;
+    min-width: 36vw;
+    max-width: 36vw;
+    margin: 1vh 1vw;
+    text-align: left;
+    display: inline-flex;
+    grid-template-areas: 
+    'image text';
+    border-radius: 35px;
+}
+
+.foodpic{
+    grid-area: image;
+    text-align: left;
+}
+
+.foodpic img{
+    width: 15vw;
+    height: 35vh;
+    border-radius: 65%;
+    margin: 1vh 1vw;
+}
+
+.content{
+    grid-area: text;
+    padding-top: 2vh;
+    padding: 2vh 0.6vw;
+}
+
+.topline{
+    display: flex;
+    margin: 1.5vh 0vw;
+}
+
+.label1{
+    text-align: left;
+    padding: 2vh 0vw;
+    padding-bottom: 4vh;
+    font-size: 1.2em;
+}
+
+.button1,.button2{
+    margin: 1.5vh 0.5vw;
+    width: 2vw;
+    height: 4vh;
+    font-size: 1.3em;
+    color: red;
+    border-color: red;
+    background-color: rgba(255, 0, 0, 0);
+    border-radius: 50px;
+    border-width: 3px;
+}
+.counter{
+    display: flex;
+    margin: 0vh 1vw;
+}
+
+.counter p{
+    font-size: 1.5em;
+    margin: 1.5vh 0.5vw;
+    border-color: black;
+}
+
+.label2{
+    text-align: left;
+    padding-top: 4vh;
+    font-size: 1.3em;
+}
+
+.button3{
+    position: relative;
+    top: 12%;
+    background-color: #89b0ae;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.3em;
+    width: 15vw;
+    height: 6vh;
+    border-radius: 37px;
+}

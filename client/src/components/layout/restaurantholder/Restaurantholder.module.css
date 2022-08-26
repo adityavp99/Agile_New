@@ -11,10 +11,14 @@
     padding-top: 2vh;
 }
 
+.atag{
+    text-decoration: none;
+    color: black;
+}
+
 .image{
     width: 23vw;
     height: 25vh;
-
     border-radius: 15px;
 }
 

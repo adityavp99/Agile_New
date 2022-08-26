@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+
+.holder{
+    background-color: #f7fade;
+    color: black;
+    width: 74vw;
+    height: 100vh;
+    margin: 1vh 12vw;
+    padding-top: 0vh;
+}
+
+.image{
+    width: 74vw;
+    height: 60vh;
+}
+
+h4{
+    text-align: center;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding-top: 3vh;
+}
+
+.label1,.label3, .label5{
+    text-align: left;
+    padding: 1vh 5vw;
+    font-size: 2em;
+}
+
+.label2, .label4, .label6{
+    position: relative;
+    top: 6%;
+    text-align: right;
+    padding: 0vh 5vw;
+    font-size: 2em;
+}
+
+.label3, .label4, .label5{color: #555b6e;}
+ .label6{color: #89b0ae;}

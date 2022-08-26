@@ -32,7 +32,7 @@ function RestaurantsPage(){
     return <div className={restaurantCSS.restaurants}> 
                 <h3> Restaurants </h3>
                 <div className={restaurantCSS.sub1}>
-                    <RestaurantHolder restaurant={pizzahut} className={restaurantCSS.individuals} /> 
+                    <RestaurantHolder restaurant={pizzahut} className={restaurantCSS.individuals}/>
                     <RestaurantHolder restaurant={macdonalds} className={restaurantCSS.individuals} /> 
                     <RestaurantHolder restaurant={pastamania} className={restaurantCSS.individuals} /> 
                 </div>

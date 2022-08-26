@@ -22,7 +22,10 @@ return <div className={homeCSS.home}>
                 <p className={homeCSS.label1}>Explore More</p>
                 <img src={exploreImg} className={homeCSS.image1} alt="Explore" />
                 <p className={homeCSS.label2}>Categories</p>
-                <img src={categoriesImg} className={homeCSS.image2} alt="Categories" />
+                <a href="categories">
+                    <img src={categoriesImg} className={homeCSS.image2} alt="Categories" />
+                </a>
+                
             </div>
 
             <div className={homeCSS.segment2}>
@@ -39,7 +42,7 @@ return <div className={homeCSS.home}>
                     
                     <p className={homeCSS.label6}>Pizza</p>
                     <img src={pizzaImg} className={homeCSS.image6} alt="Pizza" />
-                    
+
                     <p className={homeCSS.label7}>Salads</p> 
                     <img src={saladsImg} className={homeCSS.image7} alt="Salads" />
                 </div>
