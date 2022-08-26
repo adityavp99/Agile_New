@@ -1,6 +1,9 @@
 //import React, { Component } from 'react';
 //import Navbar from "./components/layout/Navbar";
 
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
 //CSS
 import helpCSS from './Help.module.css';
 //Images
@@ -17,9 +20,15 @@ function HelpPage(){
                 <h2>FAQ: </h2>
 
                 {/* Accordion FAQ  */}
-                <div>
+                <div className={helpCSS.AccordContainer}>
                     <AccordionFAQ/>
                 </div>
+
+                {/* Comment form  */}
+                <div>
+                    <askQuestion/>
+                </div>
+
 
                 <div className={helpCSS.contacts}>
                     <div>
@@ -89,5 +98,21 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+function askQuestion() {
+    return (
+      <form>
+        <label>Enter your name:
+          <input type="text" />
+        </label>
+        <label>Enter your comment:
+          <input type="text" />
+        </label>
+      </form>
+    )
+  }
+  
+  const root = ReactDOM.createRoot(document.getElementById('root'));
+  root.render(<askQuestion />);
 
 export default HelpPage;
