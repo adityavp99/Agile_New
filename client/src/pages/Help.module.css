@@ -56,6 +56,45 @@
     transition: max-height 0.2s ease-out;
   }
 
+  .askQuestion{
+    padding:20px;
+  }
+
+  .formFilling {
+    
+  }
+
+  .formFilling1 {
+    
+  }
+
+  .formFilling2 {
+    
+  }
+
+  .formName {
+    width:100%;
+    padding:10px;
+    height: 2rem;
+    margin: auto;
+    border-radius: 1rem;
+
+  }
+
+  .formNameText{
+    color:#fdd1b2;
+    font-size-adjust: ;
+  }
+
+  .formComment {
+    width: 100%;
+    height: 200px;
+    padding:10px;
+    margin: auto;
+    border-radius: 1rem;
+  }
+
+
   .contacts {
     background-color: #f6f9d9;
     border-radius: 1rem;

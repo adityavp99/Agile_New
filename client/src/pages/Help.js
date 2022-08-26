@@ -1,8 +1,9 @@
 //import React, { Component } from 'react';
 //import Navbar from "./components/layout/Navbar";
 
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+// import React from 'react';
+// import ReactDOM from 'react-dom/client';
+// import { useState } from "react";
 
 //CSS
 import helpCSS from './Help.module.css';
@@ -21,12 +22,12 @@ function HelpPage(){
 
                 {/* Accordion FAQ  */}
                 <div className={helpCSS.AccordContainer}>
-                    <AccordionFAQ/>
+                    <AccordionFAQ />
                 </div>
 
                 {/* Comment form  */}
-                <div>
-                    <askQuestion/>
+                <div className={helpCSS.askQuestion}>
+                    <AskQuestion />
                 </div>
 
 
@@ -99,20 +100,28 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-function askQuestion() {
+function AskQuestion() {
     return (
-      <form>
-        <label>Enter your name:
-          <input type="text" />
-        </label>
-        <label>Enter your comment:
-          <input type="text" />
-        </label>
+      <form className={helpCSS.formFilling}>
+        <div className={helpCSS.formFilling1}>
+            <label className={helpCSS.formNameText}>
+                <div><h3>Enter your name:</h3></div>
+            <input className={helpCSS.formName} type="text" />
+            </label>
+        </div>
+        
+        <div className={helpCSS.formFilling2}>
+            <label className={helpCSS.formNameText}>
+                <div><h3>Type a Question</h3></div>
+            <input className={helpCSS.formComment} type="text" />
+            </label>
+        </div>
+        
       </form>
     )
   }
   
-  const root = ReactDOM.createRoot(document.getElementById('root'));
-  root.render(<askQuestion />);
+//   const root = ReactDOM.createRoot(document.getElementById('root'));
+//   root.render(<askQuestion />);
 
 export default HelpPage;
