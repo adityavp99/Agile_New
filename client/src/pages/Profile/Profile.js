@@ -4,6 +4,11 @@ import { TextField } from "../../components/layout/Form/TextField";
 import * as Yup from "yup";
 import { useState } from "react";
 import Axios from "axios";
+import profileCSS from "./Profile.module.css";
+
+import pinkprofileImg from ".././peachprofile.jpg";
+import walletImg from ".././wallet.jpg";
+import deleteImg from ".././dustbin.jpg";
 
 function ProfilePage() {
   //Custom react hooks
@@ -118,64 +123,112 @@ function ProfilePage() {
       }}
     >
       {(formik) => (
-        <div>
-          <h1>Profile:</h1>
+        <div className={profileCSS.profile}>
+          
           {/* Form Creation */}
-          <Form>
-            <TextField label="Name" name="name" type="text" />
-            <TextField label="Username" name="username" type="text" />
-            <TextField label="Password" name="password" type="password" />
-            <TextField
-              label="Confirm Password"
-              name="confirmPassword"
-              type="password"
-            />
-            <TextField label="Email" name="email" type="email" />
-            <TextField label="Phone Number" name="phoneNumber" type="number" />
-            <button type="submit">Update Profile</button>
-            <button type="submit">Log Out</button>
-            {/* Address form */}
-            <div>
-              <h2> Address: </h2>
-              <TextField label="Street Name" name="streetName" type="text" />
-              <TextField label="Block Number" name="blkNumber" type="text" />
+          <Form className={profileCSS.forms}>
+            <div className={profileCSS.segmentheader}>
+              <section className={profileCSS.inline}>
+              <img src={pinkprofileImg} alt="Profile Icon" className={profileCSS.profilepic}/>
+              <h3> User.name </h3>
+             </section>
+            </div>
+
+            <div className={profileCSS.island1}>
+              <div className={profileCSS.segment1}>
+              <h4>Profile:</h4>
+              <TextField placeholder="Name" name="name" type="text" className={profileCSS.fields1}/>
+              <TextField placeholder="Username" name="username" type="text" className={profileCSS.fields1}/>
+              <TextField placeholder="Password" name="password" type="password" className={profileCSS.fields1}/>
               <TextField
-                label="Building Name"
-                name="buildingName"
-                type="text"
+                placeholder="Confirm Password"
+                name="confirmPassword"
+                type="password"
+                className={profileCSS.fields1}
               />
-              <TextField label="Level Number" name="lvlNumber" type="number" />
-              <TextField label="Unit Number" name="unitNumber" type="number" />
-              <TextField label="Postal Code" name="postalCode" type="number" />
-              <button type="submit">Save</button>
+              <TextField placeholder="Email" name="email" type="email" className={profileCSS.fields1}/>
+              <TextField placeholder="Phone Number" name="phoneNumber" type="number" className={profileCSS.fields1}/>
+              <button type="submit" className={profileCSS.button1}>Update Profile</button>
+              <button type="submit" className={profileCSS.button2}>Log Out</button>
+              </div>
+
+              {/* Address form */}
+              <div className={profileCSS.segment2}>
+                <h5> Address: </h5>
+                <TextField placeholder="Street Name" name="streetName" type="text" className={profileCSS.fields2}/>
+                <TextField placeholder="Block Number" name="blkNumber" type="text" className={profileCSS.fields2}/>
+                <TextField
+                  placeholder="Building Name"
+                  name="buildingName"
+                  type="text"
+                  className={profileCSS.fields2}
+                />
+                <TextField placeholder="Level Number" name="lvlNumber" type="number" className={profileCSS.fields2}/>
+                <TextField placeholder="Unit Number" name="unitNumber" type="number" className={profileCSS.fields2}/>
+                <TextField placeholder="Postal Code" name="postalCode" type="number" className={profileCSS.fields2}/>
+                <button type="submit" className={profileCSS.button3}>Save</button>
+              </div>
             </div>
-            {/* Form to add new card */}
-            <div>
-              <h2> Add New Card: </h2>
-              <TextField label="Card Number" name="cardNumber" type="number" />
-              <TextField label="Expiry Date" name="expiryDate" type="date" />
-              <TextField label="CVC/CVV" name="cvv" type="number" />
-              <TextField
-                label="Card Holder Name"
-                name="cHolderName"
-                type="text"
-              />
-              <button type="submit">Add Card</button>
-            </div>
-            <div>
-              <h2> Ewallet </h2>
-              <select id="cards" name="cards">
-                <option value="Visa">Visa</option>
-                <option value="Mastercard">Mastercard</option>
-              </select>
-              <button type="submit">delete card</button>
-              <TextField label="Amount:" name="amount" type="number" />
-              <button type="submit">Top-Up</button>
-              <p>Balance: </p>
-              {/* <input type="checkbox" id="topUp" name="amount_topUp" value="topUpAmount"></input>
-              <label for="topUp">Auto Top-Up</label><br></br> */}
-              <TextField label="Auto Top-Up" name="amount" type="checkbox" />
-            </div>
+            <div className={profileCSS.island2}>
+              {/* Form to add new card */}
+                <div className={profileCSS.segment3}>
+                  <h5> Add New Card: </h5>
+                  <p>Card Number:</p>
+                  <TextField placeholder="0000 0000 0000 0000" name="cardNumber" type="number" className={profileCSS.fieldspecial}/>
+                  <section className={profileCSS.inline}>
+                    <section className={profileCSS.inline1}>
+                      <p>Expiry Date:</p>
+                      <TextField name="expiryDate" type="date" className={profileCSS.fields31}/>
+                    </section>
+                    <section className={profileCSS.inline2}>  
+                      <p>CVC/CVV:</p>
+                      <TextField placeholder="***" name="cvv" type="number" className={profileCSS.fields32}/>
+                    </section>
+                  </section>
+                  <p>Card Holder Name:</p>
+                  <TextField
+                    placeholder="Enter Card Holder's Name"
+                    name="cHolderName"
+                    type="text"
+                    className={profileCSS.fieldspecial}
+                  />
+                  <button type="submit" className={profileCSS.button4}>Add Card</button>
+                </div>
+
+                <div className={profileCSS.segment4}>
+                  <div className={profileCSS.wallet}>
+
+                    <section className={profileCSS.align}> 
+                      <img src={walletImg} className={profileCSS.walletpic} alt="Wallet Icon"/>
+                      <h6> E-wallet: </h6>
+                      <select className={profileCSS.dropdown} name="cards">
+                        <option value="Visa">Visa</option>
+                        <option value="Mastercard">Mastercard</option>
+                      </select>
+                      <img src={deleteImg} className={profileCSS.deletepic} alt="Delete Icon">
+                      {/* <button type="submit">delete card</button> */}
+                      </img>
+                    </section>
+                    
+                    <section className={profileCSS.align}> 
+                      <p>Amount:</p>
+                      <TextField placeholder="$0.00" name="amount" type="number" className={profileCSS.fields4}/>
+                      <button type="submit" className={profileCSS.button5}>Top-Up</button>
+                    </section>
+                    <section className={profileCSS.shortline}> 
+                      <p>Balance:</p>
+                      <p>$1</p>
+                    </section>
+                    <br/>
+                    <section className={profileCSS.shortline}>
+                      <p>Auto Top-Up:</p>
+                      {/* <input type="checkbox" id="alignUp" name="amount_alignUp" value="topUpAmount"></input>
+                      <label for="topUp">Auto Top-Up</label><br></br> */}
+                      <TextField placeholder="Auto Top-Up" name="amount" type="checkbox" className={profileCSS.checkbox}/>
+                    </section>
+                  </div>
+                </div>
+              </div>
           </Form>
         </div>
       )}
