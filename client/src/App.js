@@ -6,9 +6,6 @@ import HelpPage from "./pages/Help";
 
 import Navbar from "./components/layout/Navbar";
 
-//bootstrap
-import 'bootstrap/dist/css/bootstrap.min.css';
-
 function App() {
   return (
     <div>
