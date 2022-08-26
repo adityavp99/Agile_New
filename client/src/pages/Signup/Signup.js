@@ -1,5 +1,6 @@
 //importing dependencies and files
-import { Formik, Form} from "formik"; 
+import { Link } from "react-router-dom";
+import { Formik, Form } from "formik";
 import { TextField } from "../../components/layout/Form/TextField";
 import * as Yup from "yup";
 import { useState } from "react";
@@ -30,7 +31,6 @@ function SignupPage() {
     email: Yup.string().email("Invalid Email").required("Email is required"),
   });
 
-
   //useEffect not imported
   //To get data from the backend
   //   useEffect(() => {
@@ -41,7 +41,7 @@ function SignupPage() {
 
   return (
     <Formik
-    //Initialising form fields
+      //Initialising form fields
       initialValues={{
         username: "",
         password: "",
@@ -74,23 +74,46 @@ function SignupPage() {
         <div className={signupCSS.signup}>
           {/* Form Creation */}
           <Form className={signupCSS.form}>
-          <div className={signupCSS.openingdiv}>
-            <img src={profileIcon} className={signupCSS.image1} alt="Profile Icon" />
-            <h5>Sign Up</h5> 
-          </div>
-            <TextField placeholder="Username" name="username" type="text" className={signupCSS.field1}/>
-            <TextField placeholder="Password" name="password" type="password" className={signupCSS.field2}/>
+            <div className={signupCSS.openingdiv}>
+              <img
+                src={profileIcon}
+                className={signupCSS.image1}
+                alt="Profile Icon"
+              />
+              <h5>Sign Up</h5>
+            </div>
+            <TextField
+              placeholder="Username"
+              name="username"
+              type="text"
+              className={signupCSS.field1}
+            />
+            <TextField
+              placeholder="Password"
+              name="password"
+              type="password"
+              className={signupCSS.field2}
+            />
             <TextField
               placeholder="Confirm Password"
               name="confirmPassword"
               type="password"
               className={signupCSS.field3}
             />
-            <TextField placeholder="Email" name="email" type="email" className={signupCSS.field4}/>
-            <button type="submit:" className={signupCSS.button1}>Submit</button>
+            <TextField
+              placeholder="Email"
+              name="email"
+              type="email"
+              className={signupCSS.field4}
+            />
+            <button type="submit:" className={signupCSS.button1}>
+              Sign in
+            </button>
             <div className={signupCSS.endingdiv}>
-                  <p className={signupCSS.label1}> Already have an account? </p>
-                  <p className={signupCSS.label2}> Sign In </p> {/* Replace with link later on */}
+              <p className={signupCSS.label1}> Already have an account? </p>
+              <Link to="/signin" className={signupCSS.link}>
+                <p className={signupCSS.label2}> Sign In </p>
+              </Link>
             </div>
           </Form>
         </div>

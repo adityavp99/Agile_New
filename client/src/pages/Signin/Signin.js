@@ -1,4 +1,5 @@
 //importing dependencies and files
+import { Link } from "react-router-dom";
 import { Formik, Form } from "formik";
 import { TextField } from "../../components/layout/Form/TextField";
 import * as Yup from "yup";
@@ -65,7 +66,10 @@ function SigninPage() {
             <div className={signinCSS.endingdiv}>
               <p className={signinCSS.label1}> Forgot Password? </p>
               <p className={signinCSS.label2}> Dont have an account? </p>
-              <p className={signinCSS.label3}> Sign Up </p>{" "}
+              <Link to="/signup" className={signinCSS.link}>
+                <p className={signinCSS.label3}> Sign Up </p>{" "}
+              </Link>
+              
               {/* Replace with link later on */}
             </div>
           </Form>
