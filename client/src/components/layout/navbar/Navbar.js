@@ -10,7 +10,9 @@ function Navbar() {
   return (
     <nav className={navStyle.nav}>
       <div className={navStyle.logosholder}>
-        <img src={profileIcon} id={navStyle.logo1} alt="Profile Icon" />
+        <Link to="/signin" className={navStyle.link}>
+          <img src={profileIcon} id={navStyle.logo1} alt="Profile Icon" />
+        </Link>
         <Link to="/" className={navStyle.link}>
           <img src={companylogo} id={navStyle.logo2} alt="TakeOut Logo" />
         </Link>
@@ -34,9 +36,6 @@ function Navbar() {
         </li>
         <li className={navStyle.li}>
           <Link to="/categories" className={navStyle.link}>Categories</Link>
-        </li>
-        <li className={navStyle.li}>
-          <Link to="/signup" className={navStyle.link}>Sign Up</Link>
         </li>
       </ul>
     </nav>

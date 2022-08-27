@@ -4,10 +4,10 @@
 }
 
 
-.signup{
+.signin{
     background-color: #bee3db;
     padding: 5vh 5vw;
-    min-height: 90vh;
+    min-height: 40vh;
     text-align: center;
 }
 
@@ -17,7 +17,7 @@
     position: relative;
     left: 35%;
     width: 30vw;
-    min-height: 65vh;
+    min-height: 55vh;
     border-radius: 25px;
 }
 
@@ -69,21 +69,29 @@ h5{
 
 .endingdiv{
     background-color: #89b0ae;
-    margin-top: 1vh;
+    margin-top: 1.9vh;
     padding: 1vh 5vw;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-
+    border-bottom-left-radius:25px;
+    border-bottom-right-radius:25px;
+    
 }
 
-.label1{
+.label1 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.3em;
+    font-weight: bolder;
+    color: #555b63;
+    margin: 1vh 2vw;
+}
+.label2 {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 1.3em;
     color: #555b63;
     margin: 1vh 2vw;
+    padding-top: 5px;
 }
 
-.label2{
+.label3{
     font-family: Helvetica, Arial, sans-serif;
     font-size: 1.3em;
     font-weight: bolder;

@@ -35,6 +35,9 @@ function Footer() {
                         Sign Up
                     </Link>
                 </li>
+                <li className={footerStyle.li}>
+                <Link to="/signin" className={footerStyle.link}>Sign In</Link>
+                </li>
             </ul>
         </div>
         <div id={footerStyle.logoholder}>

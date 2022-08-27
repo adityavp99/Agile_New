@@ -5,6 +5,7 @@ import RestaurantsPage from "./pages/restaurants/Restaurants";
 import HelpPage from "./pages/Help";
 import CategoriesPage from "./pages/categories/Categories";
 import SignupPage from "./pages/Signup/Signup";
+import SigninPage from "./pages/Signin/Signin";
 import PizzahutPage from "./pages/pizzahut/Pizzahut";
 import ComparisonPage from "./pages/comparison/Comparison";
 import OrderhistoryPage from "./pages/orderhistory/Orderhistory";
@@ -22,6 +23,7 @@ function App() {
       <Route path="/help" element={<HelpPage />} />
       <Route path="/categories" element={<CategoriesPage />} />
       <Route path="/signup" element={<SignupPage />} />
+      <Route path="/signin" element={<SigninPage />} />
       <Route path="/pizzahut" element={<PizzahutPage />} />
       <Route path="/comparison" element={<ComparisonPage />} />
       <Route path="/orderhistory" element={<OrderhistoryPage />} />
