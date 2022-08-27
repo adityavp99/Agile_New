@@ -23,10 +23,15 @@
     padding-top: 30px;
 }
 
+.ordertop{
+    display: inline-flex;
+}
+
 .orderImg {
     width: 15vw;
     height: 15vh;
     border-radius: 1rem;
+    margin: 20px;
 }
 
 .ordertext {
@@ -34,3 +39,15 @@
     text-align: center;
 }
 
+.pictureImg {
+    display: inline-flex;
+    width: 20vw;
+    text-align: right;
+    border-radius: 1rem;
+    margin:20px;
+}
+
+.form {
+    display: inline-flex;
+    padding:10px;
+}
