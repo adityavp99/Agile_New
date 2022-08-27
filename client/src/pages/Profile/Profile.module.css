@@ -44,6 +44,21 @@ h6{
     'island2';
 }
 
+.securityQues{
+    margin-top: 1vh;
+    margin-left: 6vw;
+}
+
+.securityAns{
+    width: 34vw;
+    height: 4vw;
+    font-size: 1.5em;
+    border-radius: 50px;
+    margin: 2vh 6vw;
+    padding: 1vh 1vw;
+    color: black;
+}
+
 .segmentheader{
     grid-area: segmentheader;
     background-color: #758087;
@@ -83,7 +98,7 @@ h6{
 
 .segment2{
     grid-area: segment2;
-    background-color: #89b0ae;
+    background-color: #758087;
     padding: 10vh 0vw 10vh 0vw;
 }
 
@@ -233,12 +248,14 @@ h6{
     height: 5vh;
     margin: 2.5vh 0vw;
     border-radius: 10px;
+    font-size: 2.5vh;
+    padding-left: .5vw;
 }
 
-.deletepic{
-    width: 4vw;
-    height: 8vh;
-    margin: 1.5vh 2vw 1.5vh 1vw;
+.deleteIcon{
+    width: 1.5vw;
+    height: 7vh;
+    margin: 1.5vh 2vw 1.5vh 2vw;
 }
 
 .button5{
