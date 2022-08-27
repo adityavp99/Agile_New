@@ -1,0 +1,38 @@
+.container {
+    background-color: #fed1b4;
+    width: 100vw;
+    height: 12vh;
+    padding: 30px;
+    margin: auto;
+}
+
+.form {
+    margin: auto;
+}
+
+.inputbar {
+    padding:10px;
+    align-self: center;
+    border-radius: 0.5rem;
+    width: 30vw;
+    border-color: aliceblue;
+}
+
+.visuallyHidden {
+    clip: rect (0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.button {
+    padding: 10px;
+    border-radius: 0.5rem;
+    width: 5vw;
+    background-color: #bee3db;
+    border-color: aliceblue;
+    margin-left: 10px;
+}

@@ -1,5 +1,12 @@
+//import SearchSection from "../components/layout/searchbar/Searchbar";
+
 function HelpPage(){
-    return <div> This is the Help Page</div>;
-}
+    return (
+        <div>
+            {/* <SearchSection /> */}
+        </div>
+
+    );
+};
 
 export default HelpPage;

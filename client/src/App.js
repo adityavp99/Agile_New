@@ -9,6 +9,8 @@ import SignupPage from "./pages/Signup/Signup";
 import Navbar from "./components/layout/navbar/Navbar";
 import Footer from "./components/layout/footer/Footer";
 
+import SearchSection from "./components/layout/searchbar/Searchbar";
+
 function App() {
   return (
     <div>
@@ -20,8 +22,10 @@ function App() {
       <Route path="/categories" element={<CategoriesPage />} />
       <Route path="/signup" element={<SignupPage />} />
     </Routes>
+      <SearchSection />
       <Footer />
     </div>
+    
   );
 }
 
