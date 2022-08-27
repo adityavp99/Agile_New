@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.Green {
+    background-color: #bee3db;
+    padding: 30px;
+}
+
+.Yellow {
+    background-color: #f6f9da;
+    width:90%;
+    padding: 30px;
+    margin: auto;
+    border-radius: 1rem;
+    border-color: antiquewhite;
+}
+
+
+.Order {
+    padding-top: 30px;
+}
+
+.orderImg {
+    width: 15vw;
+    height: 15vh;
+    border-radius: 1rem;
+}
+
+.ordertext {
+    display: inline-flex;
+    text-align: center;
+}
+

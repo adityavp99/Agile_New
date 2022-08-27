@@ -14,7 +14,9 @@ function Navbar() {
         <Link to="/" className={navStyle.link}>
           <img src={companylogo} id={navStyle.logo2} alt="TakeOut Logo" />
         </Link>
-        <img src={cartIcon} id={navStyle.logo3} alt="Cart Icon" />
+        <Link to="/cart">
+          <img src={cartIcon} id={navStyle.logo3} alt="Cart Icon" />
+        </Link>
       </div>
       <ul>
         <li className={navStyle.li}>
