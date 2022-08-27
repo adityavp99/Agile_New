@@ -1,0 +1,10 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.orderhistory{
+    background-color: #bee3db;
+    padding: 2vh 0vw;
+}

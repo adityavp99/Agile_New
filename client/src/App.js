@@ -7,6 +7,7 @@ import CategoriesPage from "./pages/categories/Categories";
 import SignupPage from "./pages/Signup/Signup";
 import PizzahutPage from "./pages/pizzahut/Pizzahut";
 import ComparisonPage from "./pages/comparison/Comparison";
+import OrderhistoryPage from "./pages/orderhistory/Orderhistory";
 
 import Navbar from "./components/layout/navbar/Navbar";
 import Footer from "./components/layout/footer/Footer";
@@ -23,6 +24,7 @@ function App() {
       <Route path="/signup" element={<SignupPage />} />
       <Route path="/pizzahut" element={<PizzahutPage />} />
       <Route path="/comparison" element={<ComparisonPage />} />
+      <Route path="/orderhistory" element={<OrderhistoryPage />} />
     </Routes>
       <Footer />
     </div>
