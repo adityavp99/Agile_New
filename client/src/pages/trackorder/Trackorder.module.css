@@ -21,15 +21,31 @@
 }
 
 .LongLine {
-    width: 55vw;
+    width: 52vw;
     height: 5px;
     background-color: darkslategrey;
     border-radius: 1rem;
     display: inline-flex;
 }
 
+.LongLine2 {
+    width: 48vw;
+    height: 5px;
+    background-color: darkslategrey;
+    border-radius: 1rem;
+    display: inline-flex;
+}
+
+
 .Header h1 {
     display: inline-flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.text {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 
@@ -44,9 +60,31 @@
 
 .progress {
     display: inline-flex;
-    padding: 30px;
+    padding: 50px;
 }
 
 .progress img {
     vertical-align: auto;
+}
+
+.footer {
+    width:100%;
+}
+
+.footer1 {
+    padding-top:30px;
+    padding-left: 30px;
+}
+
+.footer2 {
+    display: inline-flex;
+    padding:30px;
+    width:100%;
+}
+
+.link {
+    margin-right: 0;
+    margin-left: auto;
+    color: darkslategrey;
+    font-weight: 200;
 }

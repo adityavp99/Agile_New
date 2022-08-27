@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 import trackOrderCSS from './Trackorder.module.css';
 
@@ -19,7 +20,7 @@ function TrackOrderPage(){
                 {/* header*/}
                 <div className={trackOrderCSS.Header}>
                     <div className={trackOrderCSS.SmallLine}></div>
-                    <h1>Order No.</h1><h1>#Number</h1>
+                    <h1 className={trackOrderCSS.text}>Order No.</h1><h1 className={trackOrderCSS.text}>#Number</h1>
                     <div className={trackOrderCSS.LongLine}></div>
                 </div>
 
@@ -55,7 +56,26 @@ function TrackOrderPage(){
                         <img src={p6} alt="order delivered" width="150px" height="150px" />
                     </div>
                     
-                    <div className={trackOrderCSS.Line1}></div>
+                </div>
+
+                {/* Estimated Time*/}
+                <div div className={trackOrderCSS.Header}>
+                    <div className={trackOrderCSS.LongLine2}></div>
+                    <h1 className={trackOrderCSS.text}>Estimated Time: </h1><h1 className={trackOrderCSS.text}> 00:00:00</h1>
+                    <div className={trackOrderCSS.SmallLine}></div>
+                </div>
+
+                {/* Footer notes*/}
+                <div className={trackOrderCSS.footer}>
+                    <div className={trackOrderCSS.footer1}>
+                        <p>Thank you for ordering with</p><h4>TakeOut!</h4>
+                    </div>
+                    <div className={trackOrderCSS.footer2}>
+                        <p>Your receipt has been sent to your email.</p>
+                        <Link to="/orderhistory" className={trackOrderCSS.link}>
+                            <h4>Order History</h4>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </section>
