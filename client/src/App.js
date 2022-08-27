@@ -6,6 +6,7 @@ import HelpPage from "./pages/Help";
 import CategoriesPage from "./pages/categories/Categories";
 import SignupPage from "./pages/Signup/Signup";
 import PizzahutPage from "./pages/pizzahut/Pizzahut";
+import ComparisonPage from "./pages/comparison/Comparison";
 
 import Navbar from "./components/layout/navbar/Navbar";
 import Footer from "./components/layout/footer/Footer";
@@ -21,6 +22,7 @@ function App() {
       <Route path="/categories" element={<CategoriesPage />} />
       <Route path="/signup" element={<SignupPage />} />
       <Route path="/pizzahut" element={<PizzahutPage />} />
+      <Route path="/comparison" element={<ComparisonPage />} />
     </Routes>
       <Footer />
     </div>
