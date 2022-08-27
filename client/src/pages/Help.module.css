@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.wrapper {
+  background-color: #7da7a5;
+  padding: 3.5vh 2.1vh;
+}
+
+.mainContainer {
+  background-color: #4b5063;
+  margin: auto;
+  padding: 4vh 4vw;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.title {
+  color: #fdd1b2;
+  text-align: center;
+}
+
+.faqTitle {
+  color: #fdd1b2;
+  padding: 2.5vh 0vw;
+}
+
+/* FAQ Section */
+/* Style the buttons that are used to open and close the accordion panel */
+.faqContainer {
+  background-color: #f7fade;
+  padding: 2.5vh 2.5vw;
+  border-radius: 10px;
+}
+
+.faqSegment {
+  cursor: pointer;
+  padding: 2.5vh 1.5vw;
+  margin-bottom: 2vh;
+  width: 100%;
+  text-align: left;
+  border-bottom: 1px solid black;
+}
+
+.faqQuestion {
+  font-weight: bold;
+  color: #555b6e;
+}
+
+.faqAnswer {
+  padding-top: 2vh;
+  padding-left: 1vw;
+}
+
+/* Feeback section */
+.email, .feedback{
+  margin-top: 3vh;
+}
+.emailHeader, .feedbackHeader{
+  color: #fdd1b2;
+}
+
+.userEmail{
+  margin-top: 1vh;
+  padding-bottom:1vh;
+  padding-top: 1vh;
+  padding-left: 1vh;
+  width: 30%;
+  font-size: 2.5vh;
+  border-radius: 10px;
+}
+
+.feedbackArea{
+  margin-top: 1vh;
+  padding-bottom: 10vh;
+  padding-top: 1vh;
+  padding-left: 1vh;
+  width: 100%;
+  font-size: 2.5vh;
+  border-radius: 10px;
+}
+
+.submit{
+  margin-top: 1.5vh;
+  padding: 1vh 2vh;
+  background-color: white;
+  color: black;
+  border: 2px solid #e7e7e7;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #e7e7e7;
+}
+
+/* Contact Us Section */
+.contactUs{
+  background-color: #f6f9d9;
+  margin-top: 3vh;
+  border-radius: 10px;
+}
+
+.phone,
+.envelope,
+.location {
+  display: flex;
+}
+
+.faIcon {
+  padding: 2vh;
+  padding-left: 3vh;
+}
+
+.phoneText,
+.emailText {
+  padding-left: 15px;
+  padding-top: 2.5vh;
+}
+
+.locationText {
+  padding-left: 22px;
+  padding-top: 2.5vh;
+}
