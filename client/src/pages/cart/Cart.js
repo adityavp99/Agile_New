@@ -58,9 +58,10 @@ function MyForm() {
                 name="age" 
                 value={inputs.age || ""} 
                 onChange={handleChange}
+                className={cartCSS.inputbar}
                 />
             </label>
-            <input type="submit" />
+            <input type="submit" className={cartCSS.button}/>
         </form>
     )
 }
