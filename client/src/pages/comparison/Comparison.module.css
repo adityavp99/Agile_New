@@ -4,17 +4,8 @@
     font-family: Helvetica, Arial, sans-serif;
 }
 
-.pizzahut{
+.comparison{
     background-color: #bee3db;
-    padding: 1vh 0vw;
-}
-
-.head{
-    grid-area: head;
-}
-
-.foods{
-    grid-area: foods;
-    margin: 1vh 11vw;
+    padding: 5vh 0vw;
 }
 

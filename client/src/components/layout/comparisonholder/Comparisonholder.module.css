@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+}
+
+h4{
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin: 12vh 2vw;
+    text-align: left;
+}
+
+.group{
+    background-color: #f7fade;
+    color: black;
+    width: 74vw;
+    height: 205vh;
+    margin: 0vh 12vw;
+    padding: 1vh 1vw;
+    border-radius: 21px;
+}
+
+.pic1{
+    float: right;
+    width: 34vw;
+    height: 40vh;
+    margin: 2vh 1vw;
+    border-radius: 21px;
+}
+
+
+.portion{
+    display: inline-flex;
+    margin: 2vh 0vw;
+}
+
+.pic2, .pic3{
+    width: 24vw;
+    height: 20vh;
+    margin: 1vh 2vw;
+}
+
+
+.label1{
+    text-align: left;
+    margin: 7vh 5vw;
+    font-size: 2em;
+}
+
+.quantity1{
+    text-align: center;
+    width: 15vw;
+    height: 9vh;
+    margin: 4.5vh 7vw;
+    font-size: 2em;
+    border-radius: 20px;
+}
+
+.quantity2{
+    text-align: center;
+    width: 15vw;
+    height: 9vh;
+    margin: 4.5vh 7vw;
+    font-size: 2em;
+    border-radius: 20px;
+}
+
+.dropdown{
+    position: relative;
+    left: 40%;
+    margin: 5vh 2vw;
+    padding: 0vh 1vw;
+    width: 18vw;
+    height: 10vh;
+    font-size: 2em;
+    border-radius: 10px;
+}
+
+.deliverytable{
+    background-color: white;
+    border-radius: 36px;
+    margin: 0vh 1.5vw;
+    position: relative;
+    left: 10%;
+}
+
+.deliverypic{
+    width: 10vw;
+    height: 20vh;
+    margin: 3vh 3vw;
+    border-radius: 21px;
+}
+
+.deliverycontent{
+    padding: 3vh 3vw;
+}
+
+.deliverychoice{
+    padding-left: 7vw;
+    padding-right: 4vw;
+}
+
