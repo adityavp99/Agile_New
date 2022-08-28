@@ -1,6 +1,8 @@
 
 import homeCSS from "./Home.module.css";
 
+import SearchSection from "../../components/layout/searchbar/Searchbar";
+
 import exploreImg from "../../images/explore.jpg";
 import categoriesImg from "../../images/categories.jpg";
 
@@ -17,7 +19,8 @@ import chickenriceImg from "../../images/chickenrice.jpg";
 import viewmoreImg from "../../images/viewmore.jpg";
 
 function HomePage(){
-return <div className={homeCSS.home}> 
+return <div className={homeCSS.home}>
+            <SearchSection />
             <div className={homeCSS.segment1}> 
                 <p className={homeCSS.label1}>Explore More</p>
                 <img src={exploreImg} className={homeCSS.image1} alt="Explore" />

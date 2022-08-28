@@ -2,6 +2,8 @@
 import RestaurantHolder from "../../components/layout/restaurantholder/Restaurantholder";
 import restaurantCSS from "./Restaurants.module.css";
 
+import SearchSection from "../../components/layout/searchbar/Searchbar";
+
 import pizzahutImg from "../../images/pizzahut.jpg";
 import macdonaldsImg from "../../images/macdonalds.jpg";
 import pastamaniaImg from "../../images/pastamania.jpg";
@@ -30,6 +32,7 @@ const wokhey = {name_:"Wok Hey", rating:"4.0", distance: "25km", image: wokheyIm
 
 function RestaurantsPage(){
     return <div className={restaurantCSS.restaurants}> 
+                <SearchSection />
                 <h3> Restaurants </h3>
                 <div className={restaurantCSS.sub1}>
                     <RestaurantHolder restaurant={pizzahut} className={restaurantCSS.individuals} /> 

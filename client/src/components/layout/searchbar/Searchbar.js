@@ -1,5 +1,8 @@
 import SearchbarCSS from "./SearchSection.module.css";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+
 const Searchbar = () => {
     return (
         <div className={SearchbarCSS.container}>
@@ -10,10 +13,12 @@ const Searchbar = () => {
                 <input 
                     type="text"
                     id="header-search"
-                    placeholder="Search for Food"
+                    placeholder="What would you like to order?..."
                     name="s"
                     className={SearchbarCSS.inputbar} />
-                <button type="submit" className={SearchbarCSS.button}>Search</button>
+                <button type="submit" className={SearchbarCSS.button}>
+                    <FontAwesomeIcon icon={faMagnifyingGlass} size="2x" className={SearchbarCSS.searchIcon}/>
+                </button>
             </form>
         </div>
         
