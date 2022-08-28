@@ -28,8 +28,10 @@ function App() {
       <Route path="/comparison" element={<ComparisonPage />} />
       <Route path="/orderhistory" element={<OrderhistoryPage />} />
     </Routes>
+      
       <Footer />
     </div>
+    
   );
 }
 
