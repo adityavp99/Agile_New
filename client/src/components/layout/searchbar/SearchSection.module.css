@@ -1,0 +1,38 @@
+.container {
+    background-color: #fed1b4;
+    padding: 3vh 0vw;
+}
+
+.form {
+    text-align: center;
+}
+
+/* .searchIcon{
+    position: relative;
+    top: 5%; 
+} */
+
+.inputbar {
+    text-align: center;
+    align-self: center;
+    border-radius: 88px;
+    width: 50vw;
+    padding: 3vh 2vw;
+    margin: 0vh 2vw;
+    border-color: aliceblue;
+}
+
+.visuallyHidden {
+    clip: rect (0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.button {
+    background-color: #fed1b4;
+    border: hidden;
+}
