@@ -42,17 +42,17 @@ function TrackOrderPage(){
                     </div>
 
                     <div>
-                        <div className={trackOrderCSS.Circle1}></div>
+                        <div className={trackOrderCSS.Circle2}></div>
                         <img src={p4} alt="order waiting collected" width="150px" height="150px" />
                     </div>
 
                     <div>
-                        <div className={trackOrderCSS.Circle1}></div>
+                        <div className={trackOrderCSS.Circle2}></div>
                         <img src={p5} alt="order on the way" width="150px" height="150px" />
                     </div>
 
                     <div>
-                        <div className={trackOrderCSS.Circle1}></div>
+                        <div className={trackOrderCSS.Circle2}></div>
                         <img src={p6} alt="order delivered" width="150px" height="150px" />
                     </div>
                     

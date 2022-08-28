@@ -58,6 +58,17 @@
     margin: auto;
 }
 
+.Circle2 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    vertical-align: auto;
+    margin: auto;
+    border-style: dashed;
+    border-inline-color: darkslategrey;
+}
+
 .progress {
     display: inline-flex;
     padding: 50px;
