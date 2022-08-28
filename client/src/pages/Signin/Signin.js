@@ -46,7 +46,7 @@ function SigninPage() {
                 className={signinCSS.image1}
                 alt="Profile Icon"
               />
-              <h5>Sign In</h5>
+              <h5 className={signinCSS.title}>Sign In</h5>
             </div>
             <TextField
               placeholder="Username"
@@ -61,7 +61,7 @@ function SigninPage() {
               className={signinCSS.field2}
             />
             <button type="submit:" className={signinCSS.button1}>
-              Submit
+              Sign in
             </button>
             <div className={signinCSS.endingdiv}>
               <Link to="/resetpassword" className={signinCSS.link}>  

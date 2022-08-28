@@ -80,7 +80,7 @@ function SignupPage() {
                 className={signupCSS.image1}
                 alt="Profile Icon"
               />
-              <h5>Sign Up</h5>
+              <h5 className={signupCSS.title}>Sign Up</h5>
             </div>
             <TextField
               placeholder="Username"
@@ -106,8 +106,17 @@ function SignupPage() {
               type="email"
               className={signupCSS.field4}
             />
+            <p className={signupCSS.securityQuestion}>
+              What was the first school that you studied in?
+            </p>
+            <TextField
+              placeholder="Security Answer"
+              name="securityAnswer"
+              type="text"
+              className={signupCSS.securityAnswer}
+            />
             <button type="submit:" className={signupCSS.button1}>
-              Sign in
+              Sign up
             </button>
             <div className={signupCSS.endingdiv}>
               <p className={signupCSS.label1}> Already have an account? </p>

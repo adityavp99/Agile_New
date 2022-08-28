@@ -56,7 +56,7 @@ function ResetpasswordPage() {
                 className={resetCSS.image1}
                 alt="Profile Icon"
               />
-              <h5>Reset Password</h5>
+              <h5 className={resetCSS.title}>Reset Password</h5>
             </div>
             <TextField
               placeholder="Enter your email"

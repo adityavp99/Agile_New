@@ -25,17 +25,17 @@
     display: flex;
 }
 
-h5{
+.title{
     color: #ffd6ba;
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
     padding: 5vh 1vw;
 }
 
 .image1{
     width: 4vw;
     height: 7vh;
-    margin: 3vh 0.5vw 1vh 7vw;
+    margin: 4vh 0.5vw 1vh 7vw;
 }
 
 .field1, .field2, .field3, .field4{
