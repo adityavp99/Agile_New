@@ -1,0 +1,257 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h3{
+    font-size: 3em;
+    padding: 4vh 0vw;
+}
+
+h4{
+    font-size: 2.5em;
+    text-align: left;
+    padding: 2vh 3vw;
+}
+
+h5{
+    font-size: 2em;
+    text-align: left;
+    padding: 3vh 1vw;
+}
+
+h6{
+    color: #555b6e;
+    font-size: 2em;
+    text-align: left;
+    padding: 3vh 2vw 3vh 1vw;
+}
+
+.paymentmethod{
+    background-color: #bee3db;
+    text-align: left;
+}
+
+.formholder{
+    color: #ffd6ba;
+    position: relative;
+    margin: 0vh 4vw 0vh 4vw;
+    display: grid;
+    grid-template-areas:
+    'box';
+}
+
+.box{
+    grid-area: box;
+    display: grid;
+    grid-template-areas: 
+    'part1 part2';
+    margin: 4vh 2vw 4vh 0vw;
+}
+
+
+.part1{
+    grid-area: part1;
+    background-color: #758087;
+    padding: 5vh 1vw 5vh 2vw;
+    
+}
+
+.part1 p{
+    margin: 1vh 2vw;
+    font-size: x-large;
+}
+ 
+.lineholder{
+    display: inline-flex;
+}
+
+.lineholder1{
+    grid-area: lineholder1;
+}
+
+.lineholder2{
+    grid-area: lineholder2;
+    margin: 0vh 5vw;
+}
+
+.input2{ 
+    width: 16vw;
+    height: 8vh;
+    font-size: 1.5em;
+    border-radius: 50px;
+    margin: 2vh 0vw 8vh 2vw;
+    padding: 1vh 1vw;
+    color: black;
+}
+
+.input3{ 
+    width: 10vw;
+    height: 8vh;
+    font-size: 1.5em;
+    border-radius: 50px;
+    margin: 2vh 4vw 9vh 2vw;
+    padding: 1vh 1vw;
+    color: black;
+}
+
+.input1, .input4{
+    font-size: 1.5em;
+    border-radius: 50px;
+    margin: 2vh 2vw 8vh 2vw;
+    padding: 1vh 1vw;
+    color: black;
+    width: 25vw;
+    height: 10vh;
+}
+
+
+.singleline{
+    display: inline-flex;
+    margin: 1vh 0vw;
+}
+
+
+.singleline p{
+    padding: 2vh 1vw;
+}
+
+.phrase1, .phrase2{
+    display: inline-flex;
+    padding: 1vh 1vw;
+}
+
+.phrase2{
+    float: right;
+    text-align: right;
+}
+
+.button4{
+    background-color: #ffd6ba;
+    color: #555b6e;
+    width: 12vw;
+    height: 8vh;
+    margin: 0.5vh 2vw;
+    border-radius: 51px;
+    font-size: 1.2em;
+}
+
+.button5{
+    background-color: #ffd6ba;
+    position: relative;
+    float: right;
+    right: 29%;
+    top: 20%;
+    color: #555b6e;
+    width: 15vw;
+    height: 10vh;
+    margin: 1vh 2vw;
+    border-radius: 51px;
+    font-size: 1.2em;
+}
+
+.part2{
+    grid-area: part2;
+    background-color: #89b0ae;
+    padding: 5vh 2vw 5vh 2vw;
+}
+
+.input5{ 
+    width: 19vw;
+    height: 3vw;
+    font-size: 1.5em;
+    border-radius: 15px;
+    padding: 1vh 1vw;
+    color: black;
+    background-color: #f7fade;
+}
+
+.wallet{
+    background-color: #dfedd6;
+    color: black;
+    padding: 3vh 2vw;
+    border-radius: 11px;
+    margin: 2vh 0vw;
+}
+
+.walletpic{
+    width: 4vw;
+    height: 8vh;
+    margin: 1.5vh 1vw;
+}
+
+.dropdown{
+    background-color: #f7fade;
+    width: 10vw;
+    height: 5vh;
+    margin: 2.5vh 0vw;
+    border-radius: 10px;
+    font-size: 2.5vh;
+    padding-left: .5vw;
+}
+
+.deleteIcon{
+    width: 1.5vw;
+    height: 7vh;
+    margin: 1.5vh 2vw 1.5vh 2vw;
+}
+
+.button6{
+    background-color: #ffd6ba;
+    color: #555b6e;
+    width: 8vw;
+    height: 5vh;
+    margin: 0.5vh 2vw;
+    border-radius: 51px;
+    font-size: 1.2em;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.checkbox{
+    width: 5vw;
+    height: 5vh;
+    margin: 0vh 2vw;
+}
+
+.visa{
+    background-color: white;
+    color: black;
+    padding: 2vh 2vw;
+    border-radius: 11px;
+    margin: 2vh 0vw;
+}
+
+.mastercard{
+    background-color: white;
+    color: black;
+    padding: 3vh 2vw;
+    border-radius: 11px;
+    margin: 2vh 0vw;
+    display: grid;
+    grid-template-areas: 
+    'masterinfo masterpic';
+}
+
+.mastercardinfo{
+    grid-area: masterinfo;
+}
+
+.mastercardpic{
+    padding: 2vh 0vw;
+    text-align: right;
+    grid-area: masterpic;
+}
+
+.mastercardpic img{
+    width: 12vw;
+    height: 20vh;
+}
+
+.cash{
+    background-color: #dfedd6;
+    color: black;
+    padding: 4vh 8vw;
+    border-radius: 11px;
+    margin: 1vh 0vw;
+}
