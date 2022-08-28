@@ -17,7 +17,7 @@
     position: relative;
     left: 35%;
     width: 30vw;
-    min-height: 55vh;
+    min-height: 53vh;
     border-radius: 25px;
 }
 
@@ -34,8 +34,8 @@ h5{
 
 .image1{
     width: 4vw;
-    height: 8vh;
-    margin: 5vh 0.5vw 1vh 7vw;
+    height: 7vh;
+    margin: 3vh 0.5vw 1vh 7vw;
 }
 
 .field1, .field2, .field3, .field4{
@@ -69,7 +69,7 @@ h5{
 
 .endingdiv{
     background-color: #89b0ae;
-    margin-top: 1.9vh;
+    margin-top: 4.3vh;
     padding: 1vh 5vw;
     border-bottom-left-radius:25px;
     border-bottom-right-radius:25px;

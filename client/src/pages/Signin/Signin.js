@@ -64,7 +64,9 @@ function SigninPage() {
               Submit
             </button>
             <div className={signinCSS.endingdiv}>
+              <Link to="/resetpassword" className={signinCSS.link}>  
               <p className={signinCSS.label1}> Forgot Password? </p>
+              </Link>
               <p className={signinCSS.label2}> Dont have an account? </p>
               <Link to="/signup" className={signinCSS.link}>
                 <p className={signinCSS.label3}> Sign Up </p>{" "}

@@ -2,13 +2,14 @@ import { Route, Routes } from "react-router-dom";
 
 import HomePage from "./pages/home/Home";
 import RestaurantsPage from "./pages/restaurants/Restaurants";
-import HelpPage from "./pages/Help";
+import HelpPage from "./pages/help/Help";
 import CategoriesPage from "./pages/categories/Categories";
 import SignupPage from "./pages/signup/Signup";
 import SigninPage from "./pages/signin/Signin";
 import PizzahutPage from "./pages/pizzahut/Pizzahut";
 import ComparisonPage from "./pages/comparison/Comparison";
 import OrderhistoryPage from "./pages/orderhistory/Orderhistory";
+import ResetpasswordPage from "./pages/resetpassword/Resetpassword";
 import PaymentmethodPage from "./pages/paymentmethod/Paymentmethod";
 
 import Navbar from "./components/layout/navbar/Navbar";
@@ -28,6 +29,7 @@ function App() {
       <Route path="/pizzahut" element={<PizzahutPage />} />
       <Route path="/comparison" element={<ComparisonPage />} />
       <Route path="/orderhistory" element={<OrderhistoryPage />} />
+      <Route path="/resetpassword" element={<ResetpasswordPage />} />
       <Route path="/paymentmethod" element={<PaymentmethodPage />} />
     </Routes>
       
