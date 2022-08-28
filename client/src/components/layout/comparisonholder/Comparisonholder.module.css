@@ -51,10 +51,11 @@ h4{
 .quantity1{
     display: flex;
     text-align: center;
-    width: 10vw;
+    width: 11vw;
     height: 9vh;
     margin: 5vh 7vw;
     border-radius: 5px;
+
 }
 
 .quantity1 p, .quantity2 p{
@@ -69,14 +70,15 @@ h4{
     height: 5vh;
     font-weight: bolder;
     font-size: x-large;
-    border-radius: 50px;
+    border-radius: 30px;
     border-width: 3px;
+    border-color: black;
 }
 
 .quantity2{
     display: flex;
     text-align: center;
-    width: 10vw;
+    width: 11vw;
     height: 9vh;
     margin: 5vh 7vw;
     border-radius: 5px;
