@@ -13,7 +13,7 @@ h3{
     font-size: 3em;
     font-family: Arial, Helvetica, sans-serif;
     color: #555b6e;
-    padding-top: 3vh;
+    padding-bottom: 2vh;
 }
 
 .segment1{
@@ -64,6 +64,7 @@ h3{
 
 .segment2{
     background-color: #f5f9fa; 
+    padding-bottom: 5vh;
 }
 
 .sub2{
@@ -72,7 +73,7 @@ h3{
     grid-template-areas: 
     'image3 image4 image5'
     'image6 image6 image7';
-    margin: 5vh 10vw;
+    margin: 0vh 10vw;
     text-align: center;
 }
 
@@ -173,7 +174,7 @@ h3{
 
 .segment3{
     background-color: #89b0ae;
-    padding-bottom: 3vh;
+    padding-bottom: 5vh;
 }
 
 .sub3{
@@ -182,7 +183,7 @@ h3{
     grid-template-areas: 
     'image8 image9 image10'
     'image11 image12 image12';
-    margin: 3vh 10vw;
+    margin: 0vh 10vw;
     text-align: center;
 }
 
