@@ -9,6 +9,7 @@ import SigninPage from "./pages/Signin/Signin";
 import PizzahutPage from "./pages/pizzahut/Pizzahut";
 import ComparisonPage from "./pages/comparison/Comparison";
 import OrderhistoryPage from "./pages/orderhistory/Orderhistory";
+import PaymentmethodPage from "./pages/paymentmethod/Paymentmethod";
 
 import Navbar from "./components/layout/navbar/Navbar";
 import Footer from "./components/layout/footer/Footer";
@@ -27,6 +28,7 @@ function App() {
       <Route path="/pizzahut" element={<PizzahutPage />} />
       <Route path="/comparison" element={<ComparisonPage />} />
       <Route path="/orderhistory" element={<OrderhistoryPage />} />
+      <Route path="/paymentmethod" element={<PaymentmethodPage />} />
     </Routes>
       <Footer />
     </div>
