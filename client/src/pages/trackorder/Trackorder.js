@@ -26,33 +26,33 @@ function TrackOrderPage(){
 
                 {/* Progress*/}
                 <div className={trackOrderCSS.progress}>
-                    <div>
-                        <div className={trackOrderCSS.Circle1}></div>
+                    <div className={trackOrderCSS.progLine}>
+                        <div className={trackOrderCSS.circle1}></div>
                         <img src={p1} alt="take order" width="150px" height="150px" />
                     </div>
 
                     <div>
-                        <div className={trackOrderCSS.Circle1}></div>
+                        <div className={trackOrderCSS.circle2}></div>
                         <img src={p2} alt="order confirmed" width="150px" height="150px" />
                     </div>
 
                     <div>
-                        <div className={trackOrderCSS.Circle1}></div>
+                        <div className={trackOrderCSS.circle3}></div>
                         <img src={p3} alt="order in process" width="150px" height="150px" />
                     </div>
 
-                    <div>
-                        <div className={trackOrderCSS.Circle2}></div>
+                    <div className={trackOrderCSS.progLine}>
+                        <div className={trackOrderCSS.circle4}></div>
                         <img src={p4} alt="order waiting collected" width="150px" height="150px" />
                     </div>
 
                     <div>
-                        <div className={trackOrderCSS.Circle2}></div>
+                        <div className={trackOrderCSS.circle5}></div>
                         <img src={p5} alt="order on the way" width="150px" height="150px" />
                     </div>
 
                     <div>
-                        <div className={trackOrderCSS.Circle2}></div>
+                        <div className={trackOrderCSS.circle6}></div>
                         <img src={p6} alt="order delivered" width="150px" height="150px" />
                     </div>
                     
@@ -68,7 +68,7 @@ function TrackOrderPage(){
                 {/* Footer notes*/}
                 <div className={trackOrderCSS.footer}>
                     <div className={trackOrderCSS.footer1}>
-                        <p>Thank you for ordering with</p><h4>TakeOut!</h4>
+                        <p className={trackOrderCSS.thanks}>Thank you for ordering with <b>TakeOut!</b></p>
                     </div>
                     <div className={trackOrderCSS.footer2}>
                         <p>Your receipt has been sent to your email.</p>

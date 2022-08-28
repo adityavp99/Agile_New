@@ -4,7 +4,7 @@ import HomePage from "./pages/home/Home";
 import RestaurantsPage from "./pages/restaurants/Restaurants";
 import HelpPage from "./pages/Help";
 import CategoriesPage from "./pages/categories/Categories";
-import SignupPage from "./pages/Signup/Signup";
+import SignupPage from "./pages/signup/Signup";
 import TrackOrderPage from "./pages/trackorder/Trackorder";
 
 import Navbar from "./components/layout/navbar/Navbar";
