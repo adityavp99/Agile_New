@@ -18,3 +18,14 @@
     margin: 1vh 11vw;
 }
 
+.submit{
+    background-color: #ffd6ba;
+    color: #555b6e;
+    width: 8vw;
+    height: 5vh;
+    margin-left: 45vw;
+    margin-bottom: 1vh;
+    border-radius: 51px;
+    font-size: 1.2em;
+    font-family: Helvetica, Arial, sans-serif;
+}

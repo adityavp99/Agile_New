@@ -60,7 +60,7 @@ function SigninPage() {
               type="password"
               className={signinCSS.field2}
             />
-            <button type="submit:" className={signinCSS.button1}>
+            <button type="submit" className={signinCSS.button1}>
               Sign in
             </button>
             <div className={signinCSS.endingdiv}>

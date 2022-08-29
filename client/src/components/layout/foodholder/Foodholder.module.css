@@ -28,7 +28,7 @@ h4{
 
 .foodpic img{
     width: 15vw;
-    height: 35vh;
+    height: 30vh;
     border-radius: 65%;
     margin: 1vh 1vw;
 }
@@ -89,4 +89,5 @@ h4{
     width: 15vw;
     height: 6vh;
     border-radius: 37px;
+
 }

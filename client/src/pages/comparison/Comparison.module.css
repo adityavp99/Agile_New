@@ -6,6 +6,17 @@
 
 .comparison{
     background-color: #bee3db;
-    padding: 5vh 0vw;
+    padding: 3vh 0vw;
 }
 
+.button{
+    background-color: #ffd6ba;
+    color: #555b6e;
+    width: 8vw;
+    height: 5vh;
+    margin-top: 3vh;
+    margin-left: 45vw;
+    border-radius: 51px;
+    font-size: 1.2em;
+    font-family: Helvetica, Arial, sans-serif;
+}
