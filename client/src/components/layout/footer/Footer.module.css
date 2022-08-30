@@ -7,7 +7,7 @@
 #footer{
   display: grid;
   grid-template-areas: 
-  'content content content logoholder'
+  'content content content logoholder';
 }
 
 #content{
@@ -29,15 +29,43 @@
   font-size: 1.5em;
 }
 
+.exploreTakeout{
+  margin: 2vh 3vw;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  font-size: 1.5em;
+}
+
 .ul{
   background-color: #4b5063;  /*b4dfd6; */
   color:#b4dfd6;
-  min-width: 100%;
-  margin-bottom: 0;
+  text-align: left;
+  margin: 3vh 8vw;
 }
 
-.li{
+.li1{
   margin: 1vh 3vw;
+  display: inline-block;
+}
+.li2{
+  margin: 1vh 14vw;
+  display: inline-block;
+}
+.li3{
+  margin: 1vh 2vw;
+  display: inline-block;
+}
+
+.li4{
+  margin: 1vh 3vw;
+  display: inline-block;
+}
+.li5{
+  margin: 1vh 13.4vw;
+  display: inline-block;
+}
+.li6{
+  margin: 1vh 4.8vw;
   display: inline-block;
 }
 
@@ -51,7 +79,7 @@
 #logo{
   margin: 0vh 0vw;
   float: right;
-  height: 22vh;
-  width: 16vw;
+  height: 35vh;
+  width: 19vw;
 }
 

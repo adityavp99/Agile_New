@@ -9,7 +9,7 @@ import profileCSS from "./Profile.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar, faTicket } from "@fortawesome/free-solid-svg-icons";
 
-import pinkprofileImg from ".././peachprofile.jpg";
+import pinkprofileImg from "../../images/profile.jpg";
 import walletImg from ".././wallet.jpg";
 
 function ProfilePage() {

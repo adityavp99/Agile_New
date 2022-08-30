@@ -10,11 +10,13 @@
     width: 74vw;
     height: 100vh;
     margin: 1vh 12vw;
+    border-radius: 25px;
 }
 
 .image{
     width: 74vw;
     height: 60vh;
+    border-radius: 25px;
 }
 
 .text1{

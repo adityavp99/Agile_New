@@ -27,6 +27,9 @@ function Navbar() {
           </Link>
         </li>
         <li className={navStyle.li}>
+          <Link to="/categories" className={navStyle.link}>Categories</Link>
+        </li>
+        <li className={navStyle.li}>
           <Link to="/restaurants" className={navStyle.link}>
             Restaurants
           </Link>
@@ -35,9 +38,6 @@ function Navbar() {
           <Link to="/help" className={navStyle.link}>
             Help
           </Link>
-        </li>
-        <li className={navStyle.li}>
-          <Link to="/categories" className={navStyle.link}>Categories</Link>
         </li>
       </ul>
     </nav>

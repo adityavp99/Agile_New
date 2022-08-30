@@ -8,35 +8,39 @@ function Footer() {
   return (
     <div id={footerStyle.footer}>
         <div id={footerStyle.content}>
-            <p className={footerStyle.p}> Explore Takeout</p>
+            <p className={footerStyle.exploreTakeout}> Explore Takeout</p>
             <ul className={footerStyle.ul}>
-                <li className={footerStyle.li}>
+                <li className={footerStyle.li1}>
                     <Link to="/" className={footerStyle.link}>
                         Home
                     </Link>
                 </li>
-                <li className={footerStyle.li}>
-                    <Link to="/restaurants" className={footerStyle.link}>
-                        Restaurants
-                    </Link>
-                </li>
-                <li className={footerStyle.li}>
-                    <Link to="/help" className={footerStyle.link}>
-                        Help
-                    </Link>
-                </li>
-                <li className={footerStyle.li}>
+                <li className={footerStyle.li2}>
                     <Link to="/categories" className={footerStyle.link}>
                         Categories
                     </Link>
                 </li>
-                <li className={footerStyle.li}>
+                <li className={footerStyle.li3}>
+                    <Link to="/restaurants" className={footerStyle.link}>
+                        Restaurants
+                    </Link>
+                </li>
+            </ul>
+            <ul className={footerStyle.ul}>
+                <li className={footerStyle.li4}>
+                <Link to="/signin" className={footerStyle.link}>
+                    Sign In
+                </Link>
+                </li>
+                <li className={footerStyle.li5}>
                     <Link to="/signup" className={footerStyle.link}>
                         Sign Up
                     </Link>
                 </li>
-                <li className={footerStyle.li}>
-                <Link to="/signin" className={footerStyle.link}>Sign In</Link>
+                <li className={footerStyle.li6}>
+                    <Link to="/help" className={footerStyle.link}>
+                        Help
+                    </Link>
                 </li>
             </ul>
         </div>

@@ -6,7 +6,7 @@
 
 h3 {
   font-size: 3em;
-  margin-top: 5vh;
+  margin-top: 1vh;
   color: black;
 }
 
@@ -65,15 +65,15 @@ h6 {
 
 .segmentheader {
   grid-area: segmentheader;
-  background-color: #758087;
   margin: 2vh 0vw 0vh 0vw;
   text-align: center;
 }
 
 .profilepic {
   width: 5vw;
-  height: 9vh;
+  height: 10vh;
   margin: 4vh 2vw 1vh 1vw;
+  border-radius: 100px;
 }
 
 .island1 {
@@ -87,6 +87,9 @@ h6 {
   grid-area: segment1;
   background-color: #758087;
   padding: 10vh 0vw 10vh 0vw;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  margin: 3vh 0vw;
 }
 
 .fields1 {
@@ -97,12 +100,16 @@ h6 {
   margin: 2vh 6vw;
   padding: 1vh 1vw;
   color: black;
+  border: none;
 }
 
 .segment2 {
   grid-area: segment2;
-  background-color: #758087;
+  background-color: #89b0ae;
   padding: 10vh 0vw 10vh 0vw;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  margin: 3vh 0vw;
 }
 
 .segment2 h5 {
@@ -117,6 +124,7 @@ h6 {
   margin: 2vh 5vw;
   padding: 1vh 1vw;
   color: black;
+  border: none;
 }
 
 .button1,
@@ -125,7 +133,7 @@ h6 {
   background-color: #ffd6ba;
   color: #555b6e;
   width: 12vw;
-  height: 5vh;
+  height: 7vh;
   margin: 1vh 5vw;
   border-radius: 51px;
   font-size: 1.2em;
@@ -147,6 +155,7 @@ h6 {
   margin: 2vh 0vw 2vh 2vw;
   padding: 1vh 1vw;
   color: black;
+  border: none;
 }
 
 .segment3 {
@@ -154,6 +163,9 @@ h6 {
   background-color: #758087;
   padding: 5vh 2vw 20vh 2vw;
   text-align: left;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  margin: 3vh 0vw;
 }
 
 .segment3 p {
@@ -181,6 +193,7 @@ h6 {
   margin: 2vh 4vw 2vh 2vw;
   padding: 1vh 1vw;
   color: black;
+  border: none;
 }
 
 .fieldspecial {
@@ -190,6 +203,7 @@ h6 {
   padding: 1vh 1vw;
   color: black;
   width: 22vw;
+  border: none;
 }
 
 .align,
@@ -210,7 +224,7 @@ h6 {
   background-color: #ffd6ba;
   color: #555b6e;
   width: 12vw;
-  height: 5vh;
+  height: 7vh;
   margin: 1vh 2vw;
   border-radius: 51px;
   font-size: 1.2em;
@@ -221,6 +235,9 @@ h6 {
   grid-area: segment4;
   background-color: #89b0ae;
   padding: 5vh 2vw 20vh 2vw;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  margin: 3vh 0vw;
 }
 
 .fields4 {
@@ -238,6 +255,7 @@ h6 {
   color: black;
   padding: 1vh 2vw;
   border-radius: 25px;
+  text-align: left;
 }
 
 .rewardPoints {
@@ -246,15 +264,16 @@ h6 {
   padding: 1vh 2vw;
   border-radius: 25px;
   margin: 2vh 0vw;
-
+  text-align: left;
 }
 
 .promoCodes{
-    background-color: #dfedd6;
-    color: black;
-    padding: 1vh 2vw;
-    border-radius: 25px;
-    margin: 2vh 0vw;
+  background-color: #dfedd6;
+  color: black;
+  padding: 1vh 2vw;
+  border-radius: 25px;
+  margin: 2vh 0vw;
+  text-align: left;
 }
 
 .alignRp, .alignPcodes{
