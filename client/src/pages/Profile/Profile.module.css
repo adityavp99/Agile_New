@@ -43,12 +43,13 @@ h6{
     'segmentheader' 
     'island1'
     'island2';
+    text-align: center;
 }
 
 .securityQues{
     margin-top: 3vh;
-    margin-left: 4vw;
-    color: white;
+    margin-left: 6vw;
+    color: #dfedd6;
 }
 
 .securityAns{
@@ -69,8 +70,8 @@ h6{
 }
 
 .profilepic{
-    width: 4vw;
-    height: 8vh;
+    width: 5vw;
+    height: 9vh;
     margin: 4vh 2vw 1vh 1vw;
 }
 

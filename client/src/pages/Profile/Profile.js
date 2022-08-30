@@ -184,7 +184,7 @@ function ProfilePage() {
                   min="0"
                   className={profileCSS.fields1}
                 />
-                <h2 className={profileCSS.securityQues}> Security Question (What was the first school that you studied in?)</h2>
+                <h2 className={profileCSS.securityQues}> Security Question: <br/>What was the first school that you studied in?</h2>
                 <TextField
                   placeholder="Security Answer"
                   name="securityAnswer"
