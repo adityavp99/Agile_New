@@ -12,6 +12,7 @@ import OrderhistoryPage from "./pages/orderhistory/Orderhistory";
 import ResetpasswordPage from "./pages/resetpassword/Resetpassword";
 import PaymentmethodPage from "./pages/paymentmethod/Paymentmethod";
 import TrackOrderPage from "./pages/trackorder/Trackorder";
+import CartPage from "./pages/cart/Cart";
 
 import Navbar from "./components/layout/navbar/Navbar";
 import Footer from "./components/layout/footer/Footer";
@@ -33,6 +34,7 @@ function App() {
       <Route path="/resetpassword" element={<ResetpasswordPage />} />
       <Route path="/paymentmethod" element={<PaymentmethodPage />} />
       <Route path="/trackorder" element={<TrackOrderPage />} />
+      <Route path="/cart" element={<CartPage />} />
     </Routes>
       
       <Footer />

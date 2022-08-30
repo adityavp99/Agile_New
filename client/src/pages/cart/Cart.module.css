@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.cart{
+    background-color: #bee3db;
+    padding: 5vh 0vw;
+    text-align: left;
+}
+
+h5{
+    font-size: 2em;
+    text-align: left;
+    padding: 3vh 1vw;
+}
+
+.forms{
+    color: #ffd6ba;
+    position: relative;
+    margin: 0vh 5vw;
+}
+
+.island{
+    display: grid;
+    grid-template-areas: 
+    'segment1 segment2';
+    margin: 0vh 7vw 2vh 7vw;
+    color: black;
+}
+
+.segment1{
+    grid-area: segment1;
+    background-color: #758087;
+    padding: 5vh 1vw 20vh 1vw;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.fieldslong{
+    font-size: 1.5em;
+    border-radius: 50px;
+    margin: 2vh 1vw;
+    margin-left: 2vw;
+    padding: 1vh 2vw;
+    color: black;
+    width: 25vw;
+}
+
+.segment2{
+    grid-area: segment2;
+    background-color: #89b0ae;
+    padding: 5vh 2vw;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.promosegment p{
+    margin: 0vh 1vw;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.field1{ 
+    width: 15vw;
+    height: 3vw;
+    font-size: 1.5em;
+    border-radius: 3px;
+    margin: 2vh 0vw 2vh 2vw;
+    padding: 1vh 1vw;
+}
+
+.align{
+    display: flex;
+    margin: 1vh 0vw;
+}
+
+.part1{
+    margin: 2vh 0vw;
+}
+
+.part2{
+    padding-top: 2vh;
+    margin: 5vh 0vw;
+}
+
+.part3{
+    padding-top: 2vh;
+    margin: 2vh 0vw;
+}
+
+.para{
+    color: #ffd6ba;
+    padding: 3vh 1vw;
+}
+
+.pararight{
+    color: #dfedd6;
+    position: relative;
+    text-align: right;
+    left: 17%;
+    padding: 2vh 1vw;
+}
+
+.paraleft{
+    color: #ffd6ba;
+    padding: 2vh 1vw;
+}
+
+.paraspecial{
+    color: #ffd6ba;
+    position: relative;
+    text-align: right;
+    top: 3vh;
+    left: 19%;
+}
+
+.button1, .button2, .button3, .button4{
+    background-color: #ffd6ba;
+    color: #555b6e;
+    width: 8vw;
+    height: 7vh;
+    margin: 1vh 2vw;
+    border-radius: 51px;
+    font-size: 1.2em;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.button4{
+    position: relative;
+    left: 0%;
+}
+
+.button5{
+    background-color: #ffd6ba;
+    color: #555b6e;
+    width: 10vw;
+    height: 8vh;
+    margin: 0vh 2vw;
+    margin-top: 12vh;
+    position: relative;
+    left: 27%;
+    border-radius: 21px;
+    font-size: 1.2em;
+    font-family: Helvetica, Arial, sans-serif;
+}

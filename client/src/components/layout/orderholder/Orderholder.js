@@ -10,7 +10,7 @@ return <div className={orderholderCSS.orderhold}>
                 <div className={orderholderCSS.right}>
                         <section className={orderholderCSS.words}>
                         <p className={orderholderCSS.word1}>restaurant.name_</p>
-                        <p className={orderholderCSS.word2}>order.date</p>
+                        <p className={orderholderCSS.word2}>delivery.date</p>
                         </section>
                         <table className={orderholderCSS.table1}>
                                 <tr>
