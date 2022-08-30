@@ -11,7 +11,6 @@ import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
 import pinkprofileImg from ".././peachprofile.jpg";
 import walletImg from ".././wallet.jpg";
-import deleteImg from ".././dustbin.jpg";
 
 function ProfilePage() {
   //Custom react hooks
@@ -67,6 +66,7 @@ function ProfilePage() {
         username: "",
         password: "",
         confirmPassword: "",
+        securityQuestion: "",
         email: "",
         phoneNumber: "",
         streetName: "",
@@ -90,6 +90,7 @@ function ProfilePage() {
           confirmPassword: values.ConfirmPassword,
           email: values.email,
           phoneNumber: values.phoneNumber,
+          securityQuestion: values.securityQuestion,
           streetName: values.streetName,
           blkNumber: values.blkNumber,
           buildingName: values.buildingName,
@@ -110,6 +111,7 @@ function ProfilePage() {
               confirmPassword: confirmPassword,
               email: email,
               phoneNumber: phoneNumber,
+              securityQuestion: securityQuestion,
               streetName: streetName,
               blkNumber: blkNumber,
               buildingName: buildingName,
@@ -143,7 +145,8 @@ function ProfilePage() {
 
             <div className={profileCSS.island1}>
               <div className={profileCSS.segment1}>
-                <h4>Profile:</h4>
+                {/* Profile section */}
+                <h5 className={profileCSS.profileTitle}>Profile:</h5>
                 <TextField
                   placeholder="Name"
                   name="name"
@@ -184,7 +187,7 @@ function ProfilePage() {
                 <h2 className={profileCSS.securityQues}> Security Question (What was the first school that you studied in?)</h2>
                 <TextField
                   placeholder="Security Answer"
-                  name="phoneNumber"
+                  name="securityAnswer"
                   type="text"
                   className={profileCSS.securityAns}
                 />
