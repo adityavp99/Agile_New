@@ -4,7 +4,7 @@ import HomePage from "./pages/home/Home";
 import RestaurantsPage from "./pages/restaurants/Restaurants";
 import HelpPage from "./pages/help/Help";
 import CategoriesPage from "./pages/categories/Categories";
-import SignupPage from "./pages/signup/signup";
+import SignupPage from "./pages/signup/Signup";
 import SigninPage from "./pages/signin/Signin";
 import PizzahutPage from "./pages/pizzahut/Pizzahut";
 import ComparisonPage from "./pages/comparison/Comparison";

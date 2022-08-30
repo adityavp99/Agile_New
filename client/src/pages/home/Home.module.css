@@ -1,300 +1,301 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    font-family: Helvetica, Arial, sans-serif;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
-.home{
-    
+h3 {
+  text-align: center;
+  font-size: 3em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #555b6e;
+  padding-bottom: 2vh;
 }
 
-h3{
-    text-align: center;
-    font-size: 3em;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #555b6e;
-    padding-bottom: 2vh;
+.segment1 {
+  position: relative;
+  background-color: #bee3db;
+  text-align: center;
+  grid-template-areas: "image1 image2";
 }
 
-.segment1{
-    position: relative;
-    background-color: #bee3db; 
-    text-align: center;
-    grid-template-areas: 
-    'image1 image2'
+.label1 {
+  position: absolute;
+  top: 38%;
+  left: 16%;
+  color: white;
+  font-size: 3em;
+  font-weight: bold;
+  z-index: 2;
+  /* Black see-through */
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 10px;
 }
 
-.label1{
-    position: absolute;
-    top: 38%;
-    left: 16%;
-    color: white;
-    font-size: 3em;
-    font-weight: bold;
-    z-index: 2;
-    /* Black see-through */
-    background: rgba(0, 0, 0, 0.7); 
-    border-radius: 10px;
-    padding: 10px;
-} 
-
-.label2{
-    position: absolute;
-    top: 38%;
-    left: 65%;
-    color: white;
-    font-size: 3em;
-    font-weight: bold;
-    z-index: 2; 
-   /* Black see-through */
-   background: rgba(0, 0, 0, 0.7); 
-   border-radius: 10px;
-   padding: 10px;
+.label2 {
+  position: absolute;
+  top: 38%;
+  left: 64%;
+  color: white;
+  font-size: 3em;
+  font-weight: bold;
+  z-index: 2;
+  /* Black see-through */
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 10px;
 }
 
-.image1{
-    grid-area: image1;
-    height: 30vh; 
-    width: 40vw;
-    margin: 3vh 3vw;
-    border-radius: 15px;
-    color: white;
+.image1 {
+  grid-area: image1;
+  height: 30vh;
+  width: 40vw;
+  margin: 3vh 3vw;
+  border-radius: 15px;
+  color: white;
 }
 
-.image2{
-    grid-area: image2;
-    height: 30vh; 
-    width: 40vw;
-    margin: 3vh 3vw;
-    border-radius: 15px;
-    color: white;
+.image2 {
+  grid-area: image2;
+  height: 30vh;
+  width: 40vw;
+  margin: 3vh 3vw;
+  border-radius: 15px;
+  color: white;
 }
 
-.segment2{
-    background-color: #f5f9fa; 
-    padding-bottom: 5vh;
+.segment2 {
+  background-color: #f5f9fa;
+  padding-bottom: 5vh;
 }
 
-.sub2{
-    position: relative;
-    display: grid;
-    grid-template-areas: 
-    'image3 image4 image5'
-    'image6 image6 image7';
-    margin: 0vh 10vw;
-    text-align: center;
+.sub2 {
+  position: relative;
+  display: grid;
+  grid-template-areas:
+    "image3 image4 image5"
+    "image6 image6 image7";
+  margin: 0vh 10vw;
+  text-align: center;
 }
 
-.image3{
-    grid-area: image3;
-    height: 26vh; 
-    width: 25vw;
-    margin: 1vh 1vw;
-    border-radius: 15px;
-    color: white;
+.image3 {
+  grid-area: image3;
+  height: 26vh;
+  width: 25vw;
+  margin: 1vh 1vw;
+  border-radius: 15px;
+  color: white;
 }
 
-.image4{
-    grid-area: image4;
-    height: 26vh; 
-    width: 25vw;
-    margin: 1vh 1vw;
-    border-radius: 15px;
-    color: white;
+.image4 {
+  grid-area: image4;
+  height: 26vh;
+  width: 25vw;
+  margin: 1vh 1vw;
+  border-radius: 15px;
+  color: white;
 }
 
-.image5{
-    grid-area: image5;
-    height: 26vh; 
-    width: 26vw;
-    margin: 1vh 1vw;
-    border-radius: 15px;
-    color: white;
+.image5 {
+  grid-area: image5;
+  height: 26vh;
+  width: 26vw;
+  margin: 1vh 1vw;
+  border-radius: 15px;
+  color: white;
 }
 
-.image6{
-    grid-area: image6;
-    height: 26vh; 
-    width: 52vw;
-    margin: 1vh 1vw;
-    border-radius: 15px;
-    color: white;
+.image6 {
+  grid-area: image6;
+  height: 26vh;
+  width: 52vw;
+  margin: 1vh 1vw;
+  border-radius: 15px;
+  color: white;
 }
 
-.image7{
-    grid-area: image7;
-    height: 26vh; 
-    width: 26vw;
-    margin: 1vh 1vw;
-    border-radius: 15px;
-    color: white;
+.image7 {
+  grid-area: image7;
+  height: 26vh;
+  width: 26vw;
+  margin: 1vh 1vw;
+  border-radius: 15px;
+  color: white;
 }
 
-.label3{
-    position: absolute;
-    top: 35%;
-    left: 3%;
-    color: white;
-    font-size: 2em;
-    font-weight: bold;
-    z-index: 2;
+.label3 {
+  position: absolute;
+  top: 35%;
+  left: 3%;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  z-index: 2;
 }
 
-.label4{
-    position: absolute;
-    top: 35%;
-    left: 38%;
-    color: white;
-    font-size: 2em;
-    font-weight: bold;
-    z-index: 2;
+.label4 {
+  position: absolute;
+  top: 35%;
+  left: 38%;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  z-index: 2;
 }
 
-.label5{
-    position: absolute;
-    top: 35%;
-    left: 72%;
-    color: white;
-    font-size: 2em;
-    font-weight: bold;
-    z-index: 2;
+.label5 {
+  position: absolute;
+  top: 35%;
+  left: 72%;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  z-index: 2;
 }
 
-.label6{
-    position: absolute;
-    top: 85%;
-    left: 3%;
-    color: white;
-    font-size: 2em;
-    font-weight: bold;
-    z-index: 2;
+.label6 {
+  position: absolute;
+  top: 85%;
+  left: 3%;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  z-index: 2;
 }
 
-.label7{
-    position: absolute;
-    top: 85%;
-    left: 72%;
-    color: white;
-    font-size: 2em;
-    font-weight: bold;
-    z-index: 2;
+.label7 {
+  position: absolute;
+  top: 85%;
+  left: 72%;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  z-index: 2;
 }
 
-.segment3{
-    background-color: #89b0ae;
-    padding-bottom: 5vh;
+.segment3 {
+  background-color: #89b0ae;
+  padding-bottom: 5vh;
 }
 
-.sub3{
-    position: relative;
-    display: grid;
-    grid-template-areas: 
-    'image8 image9 image10'
-    'image11 image12 image12';
-    margin: 0vh 10vw;
-    text-align: center;
+.sub3 {
+  position: relative;
+  display: grid;
+  grid-template-areas:
+    "image8 image9 image10"
+    "image11 image12 image12";
+  margin: 0vh 10vw;
+  text-align: center;
 }
 
-.image8{
-    grid-area: image8;
-    height: 26vh; 
-    width: 25vw;
-    margin: 1vh 1vw;
-    border-radius: 15px;
-    color: white;
+.image8 {
+  grid-area: image8;
+  height: 26vh;
+  width: 25vw;
+  margin: 1vh 1vw;
+  border-radius: 15px;
+  color: white;
 }
 
-.image9{
-    grid-area: image9;
-    height: 26vh; 
-    width: 25vw;
-    margin: 1vh 1vw;
-    border-radius: 15px;
-    color: white;
+.image9 {
+  grid-area: image9;
+  height: 26vh;
+  width: 25vw;
+  margin: 1vh 1vw;
+  border-radius: 15px;
+  color: white;
 }
 
-.image10{
-    grid-area: image10;
-    height: 26vh; 
-    width: 26vw;
-    margin: 1vh 1vw;
-    border-radius: 15px;
-    color: white;
+.image10 {
+  grid-area: image10;
+  height: 26vh;
+  width: 26vw;
+  margin: 1vh 1vw;
+  border-radius: 15px;
+  color: white;
 }
 
-.image11{
-    grid-area: image11;
-    height: 27vh; 
-    width: 25vw;
-    margin: 1vh 1vw;
-    border-radius: 15px;
-    color: white;
+.image11 {
+  grid-area: image11;
+  height: 27vh;
+  width: 25vw;
+  margin: 1vh 1vw;
+  border-radius: 15px;
+  color: white;
 }
 
-.image12{
-    grid-area: image12;
-    height: 27vh; 
-    width: 53vw;
-    margin: 1vh 1vw;
-    border-radius: 15px;
-    color: white;
+.image12 {
+  grid-area: image12;
+  height: 27vh;
+  width: 53vw;
+  margin: 1vh 1vw;
+  border-radius: 15px;
+  color: white;
 }
 
-.label8{
-    position: absolute;
-    top: 35%;
-    left: 3%;
-    color: white;
-    font-size: 2em;
-    font-weight: bold;
-    z-index: 2;
+.label8 {
+  position: absolute;
+  top: 35%;
+  left: 3%;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  z-index: 2;
 }
 
-.label9{
-    position: absolute;
-    top: 35%;
-    left: 38%;
-    color: white;
-    font-size: 2em;
-    font-weight: bold;
-    z-index: 2;
+.label9 {
+  position: absolute;
+  top: 35%;
+  left: 38%;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  z-index: 2;
 }
 
-.label10{
-    position: absolute;
-    top: 35%;
-    left: 72%;
-    color: white;
-    font-size: 2em;
-    font-weight: bold;
-    z-index: 2;
+.label10 {
+  position: absolute;
+  top: 35%;
+  left: 72%;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  z-index: 2;
 }
 
-.label11{
-    position: absolute;
-    top: 85%;
-    left: 3%;
-    color: white;
-    font-size: 2em;
-    font-weight: bold;
-    z-index: 2;
+.label11 {
+  position: absolute;
+  top: 85%;
+  left: 3%;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  z-index: 2;
 }
 
-.label12{
-    position: absolute;
-    top: 85%;
-    left: 38%;
-    color: white;
-    font-size: 2em;
-    font-weight: bold;
-    z-index: 2;
+.label12 {
+  position: absolute;
+  top: 85%;
+  left: 38%;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  z-index: 2;
 }
 
-
-.image1:hover, .image2:hover, .image3:hover, 
-.image4:hover, .image5:hover, .image6:hover,
-.image7:hover, .image8:hover, .image9:hover,
-.image10:hover, .image11:hover, .image12:hover
-{
-    opacity: 50%;
+.image1:hover,
+.image2:hover,
+.image3:hover,
+.image4:hover,
+.image5:hover,
+.image6:hover,
+.image7:hover,
+.image8:hover,
+.image9:hover,
+.image10:hover,
+.image11:hover,
+.image12:hover {
+  opacity: 50%;
 }

@@ -73,7 +73,7 @@ function TrackOrderPage(){
                     <div className={trackOrderCSS.footer2}>
                         <p>Your receipt has been sent to your email.</p>
                         <Link to="/orderhistory" className={trackOrderCSS.link}>
-                            <h4>Order History</h4>
+                            <h4 className={trackOrderCSS.orderHist}>Order History</h4>
                         </Link>
                     </div>
                 </div>
