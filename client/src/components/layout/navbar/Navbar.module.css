@@ -6,17 +6,38 @@
 
 .nav{
   background-color: #89b0ae; 
+  padding: 2vh 0vw;
+  padding-left: 2.5vw;
 }
 
 ul{
+  margin-top: 2vh;
   background-color: #89b0ae; /*b4dfd6; */
   text-align: center;
   min-width: 100%;
-  margin-bottom: 0px;
 }
 
-.li{
+.li1{
   margin: 1vh 2vw;
+  margin-bottom: 0px;
+  display: inline;
+}
+
+.li2{
+  margin: 1vh 2vw;
+  margin-bottom: 0px;
+  display: inline;
+}
+
+.li3{
+  margin: 1vh 2vw;
+  margin-bottom: 0px;
+  display: inline;
+}
+
+.li4{
+  margin: 1vh 2vw;
+  margin-right: 4vw;
   margin-bottom: 0px;
   display: inline;
 }

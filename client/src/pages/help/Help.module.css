@@ -5,13 +5,13 @@
 }
 
 .wrapper {
-  background-color: #7da7a5;
+  background-color: #bee3db;
   padding: 3.5vh 2.1vh;
 }
 
 .mainContainer {
   background-color: #4b5063;
-  margin: auto;
+  margin: 3vh 5.3vw;
   padding: 4vh 4vw;
   width: 90%;
   border-radius: 10px;

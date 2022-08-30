@@ -17,8 +17,8 @@
 }
 
 .image{
-    width: 23vw;
-    height: 25vh;
+    width: 25vw;
+    height: 26vh;
     border-radius: 15px;
 }
 
@@ -30,7 +30,7 @@
 
 .label2{
     position: relative;
-    top: 11%;
+    top: 10%;
     text-align: right;
     padding: 0vh 1vw;
     font-size: 2em;
@@ -40,4 +40,10 @@
     text-align: left;
     padding: 4vh 1vw;
     font-size: 2em;
+}
+
+.star{
+    color: gold;
+    margin: 0vh 0.5vw;
+    margin-bottom: 0.3vh;
 }
