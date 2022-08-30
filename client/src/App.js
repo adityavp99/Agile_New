@@ -13,6 +13,7 @@ import ResetpasswordPage from "./pages/resetpassword/Resetpassword";
 import PaymentmethodPage from "./pages/paymentmethod/Paymentmethod";
 import TrackOrderPage from "./pages/trackorder/Trackorder";
 import CartPage from "./pages/cart/Cart";
+import ProfilePage from "./pages/profile/Profile";
 
 import Navbar from "./components/layout/navbar/Navbar";
 import Footer from "./components/layout/footer/Footer";
@@ -35,6 +36,7 @@ function App() {
       <Route path="/paymentmethod" element={<PaymentmethodPage />} />
       <Route path="/trackorder" element={<TrackOrderPage />} />
       <Route path="/cart" element={<CartPage />} />
+      <Route path="/profile" element={<ProfilePage />} />
     </Routes>
       
       <Footer />
