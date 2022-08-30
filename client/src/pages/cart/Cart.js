@@ -1,11 +1,10 @@
-
-
 //importing dependencies and files
 import { Formik, Form } from "formik";
 import { TextField } from "../../components/layout/Form/TextField";
 import * as Yup from "yup";
 import { useState } from "react";
 import Axios from "axios";
+import { Link } from "react-router-dom";
 
 import cartCSS from "./Cart.module.css";
 import CartHolder from "../../components/layout/cartholder/Cartholder";
@@ -124,101 +123,113 @@ function CartPage() {
     >
       {(formik) => (
         <div className={cartCSS.cart}>
-            <div className={cartCSS.opening}>
-                <CartHolder />
-                <CartHolder />
-            </div>    
+          <div className={cartCSS.opening}>
+            <CartHolder />
+            <CartHolder />
+          </div>
 
-            {/* Form Creation */}
-            <Form className={cartCSS.forms}>
-                <div className={cartCSS.island}>
-                {/* Form to add new card */}
-                <div className={cartCSS.segment1}>
-                    <h5> Address: </h5>
+          {/* Form Creation */}
+          <Form className={cartCSS.forms}>
+            <div className={cartCSS.island}>
+              {/* Form to add new card */}
+              <div className={cartCSS.segment1}>
+                <h5 className={cartCSS.addressTitle}> Address: </h5>
+                <TextField
+                  placeholder="Street Name"
+                  name="streetName"
+                  type="text"
+                  className={cartCSS.fieldslong}
+                />
+                <TextField
+                  placeholder="Block Number"
+                  name="blkNumber"
+                  type="text"
+                  className={cartCSS.fieldslong}
+                />
+                <TextField
+                  placeholder="Building Name"
+                  name="buildingName"
+                  type="text"
+                  className={cartCSS.fieldslong}
+                />
+                <TextField
+                  placeholder="Level Number"
+                  name="lvlNumber"
+                  type="number"
+                  className={cartCSS.fieldslong}
+                />
+                <TextField
+                  placeholder="Unit Number"
+                  name="unitNumber"
+                  type="number"
+                  className={cartCSS.fieldslong}
+                />
+                <TextField
+                  placeholder="Postal Code"
+                  name="postalCode"
+                  type="number"
+                  className={cartCSS.fieldslong}
+                />
+                <button type="submit" className={cartCSS.button3}>
+                  Save
+                </button>
+              </div>
+
+              <div className={cartCSS.segment2}>
+                <div className={cartCSS.promosegment}>
+                  <div className={cartCSS.part1}>
+                    <p className={cartCSS.paraleft}> Promo Code: </p>
                     <TextField
-                    placeholder="Street Name"
-                    name="streetName"
-                    type="text"
-                    className={cartCSS.fieldslong}
+                      placeholder="Add your promo code here"
+                      name="promocode"
+                      type="text"
+                      className={cartCSS.fieldslong}
                     />
-                    <TextField
-                    placeholder="Block Number"
-                    name="blkNumber"
-                    type="text"
-                    className={cartCSS.fieldslong}
-                    />
-                    <TextField
-                    placeholder="Building Name"
-                    name="buildingName"
-                    type="text"
-                    className={cartCSS.fieldslong}
-                    />
-                    <TextField
-                    placeholder="Level Number"
-                    name="lvlNumber"
-                    type="number"
-                    className={cartCSS.fieldslong}
-                    />
-                    <TextField
-                    placeholder="Unit Number"
-                    name="unitNumber"
-                    type="number"
-                    className={cartCSS.fieldslong}
-                    />
-                    <TextField
-                    placeholder="Postal Code"
-                    name="postalCode"
-                    type="number"
-                    className={cartCSS.fieldslong}
-                    />
-                    <button type="submit" className={cartCSS.button3}>
-                    Save
+                    <button type="submit" className={cartCSS.button2}>
+                      Apply
                     </button>
-                </div>
+                  </div>
 
-                <div className={cartCSS.segment2}>
-                    <div className={cartCSS.promosegment}>
-                      <div className={cartCSS.part1}> 
-                        <p className={cartCSS.paraleft}> Promo Code: </p>
-                        <TextField
-                            placeholder="Add your promo code here"
-                            name="promocode"
-                            type="text"
-                            className={cartCSS.fieldslong}
-                        />
-                        <button type="submit" className={cartCSS.button2}>Apply</button>
-                        </div>
+                  <div className={cartCSS.part2}>
+                    <section className={cartCSS.align}>
+                      <p className={cartCSS.paraleft}> Points Available: </p>
+                      <p className={cartCSS.pararight}> user.points </p>
+                    </section>
 
-                        <div className={cartCSS.part2}> 
-                        <section className={cartCSS.align}>
-                            <p className={cartCSS.paraleft}> Points Available:  </p>
-                            <p className={cartCSS.pararight}> user.points </p>
-                        </section>
-                        
-                        <section  className={cartCSS.align}>
-                            <TextField
-                                placeholder="00"
-                                name="delivery.points"
-                                type="number"
-                                className={cartCSS.field1}
-                            />
-                            <p className={cartCSS.paraspecial}> user.points </p>
-                        </section>
-                        <button type="submit" className={cartCSS.button3}>Redeem</button>
-                        </div>
+                    <section className={cartCSS.align}>
+                      <TextField
+                        placeholder="00"
+                        name="delivery.points"
+                        type="number"
+                        className={cartCSS.field1}
+                      />
+                      <p className={cartCSS.paraspecial}> user.points </p>
+                    </section>
+                    <button type="submit" className={cartCSS.button3}>
+                      Redeem
+                    </button>
+                  </div>
 
-                        <div className={cartCSS.part3}> 
-                        <section  className={cartCSS.align}>
-                            <p className={cartCSS.paraleft}> Total Cost:  </p>
-                            <p className={cartCSS.pararight}> delivery.totalcost </p>
-                        </section>
-                        <button type="submit" className={cartCSS.button4}>Go back</button>
-                        <button type="submit" className={cartCSS.button5}>Proceed to Pay</button>
-                        </div>
-                    </div>
+                  <div className={cartCSS.part3}>
+                    <section className={cartCSS.align}>
+                      <p className={cartCSS.paraleft}> Total Cost: </p>
+                      <p className={cartCSS.pararight}> delivery.totalcost </p>
+                    </section>
+                    <Link to="/comparison">
+                      <button type="submit" className={cartCSS.button4}>
+                        Go back
+                      </button>
+                    </Link>
+                    <Link to="/paymentmethod">
+                      <button type="submit" className={cartCSS.button5}>
+                        Proceed to Pay
+                      </button>
+                    </Link>
+                  </div>
                 </div>
-                </div>
-            </Form>
+              </div>
+            </div>
+          </Form>
         </div>
       )}
     </Formik>

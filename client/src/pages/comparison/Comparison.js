@@ -7,9 +7,11 @@ function ComparisonPage() {
       <div className={comparisonCSS.starting}>
         <ComparisonHolder />
       </div>
-      <button type="submit" className={comparisonCSS.button}>
-        Payment
-      </button>
+      <a href="/cart">
+        <button type="submit" className={comparisonCSS.button}>
+          Payment
+        </button>
+      </a>
     </div>
   );
 }

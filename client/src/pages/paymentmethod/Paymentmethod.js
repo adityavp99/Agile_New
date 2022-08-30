@@ -5,6 +5,7 @@ import * as Yup from "yup";
 import { useState } from "react";
 import Axios from "axios";
 import paymentMethodCSS from "./Paymentmethod.module.css";
+import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
@@ -171,10 +172,11 @@ function PaymentmethodPage() {
                 <button type="submit" className={paymentMethodCSS.button4}>
                   Add Card
                 </button>
-
-                <button type="submit" className={paymentMethodCSS.button5}>
-                  Pay
-                </button>
+                <Link to="/trackorder">
+                  <button type="submit" className={paymentMethodCSS.button5}>
+                    Pay
+                  </button>
+                </Link>
               </div>
 
               <div className={paymentMethodCSS.part2}>
@@ -187,7 +189,10 @@ function PaymentmethodPage() {
                     />
                     <h6> E-wallet: </h6>
                     <select className={paymentMethodCSS.dropdown} name="cards">
-                      <option className={paymentMethodCSS.cardName} value="Visa">
+                      <option
+                        className={paymentMethodCSS.cardName}
+                        value="Visa"
+                      >
                         Visa
                       </option>
                       <option
@@ -219,7 +224,7 @@ function PaymentmethodPage() {
                       Top-Up
                     </button>
                   </section>
-                  <section >
+                  <section>
                     <p className={paymentMethodCSS.phrase1}>Balance:</p>
                     <p className={paymentMethodCSS.phrase2}>$1</p>
                   </section>
@@ -235,40 +240,45 @@ function PaymentmethodPage() {
                   </section>
                 </div>
 
-
                 <div className={paymentMethodCSS.visa}>
-                    <h6> Visa </h6>
-                    <p className={paymentMethodCSS.phrase1}>user.cardnumber</p>
-                  <section >
+                  <h6> Visa </h6>
+                  <p className={paymentMethodCSS.phrase1}>user.cardnumber</p>
+                  <section>
                     <p className={paymentMethodCSS.phrase1}>Expires:</p>
                     <p className={paymentMethodCSS.phrase2}>user.visacvv</p>
                   </section>
-                  <section >
+                  <section>
                     <p className={paymentMethodCSS.phrase1}>Cardholder Name:</p>
-                    <p className={paymentMethodCSS.phrase2}>user.cardholdername</p>
+                    <p className={paymentMethodCSS.phrase2}>
+                      user.cardholdername
+                    </p>
                   </section>
                 </div>
 
                 <div className={paymentMethodCSS.mastercard}>
-                    <section className={paymentMethodCSS.mastercardinfo}>
-                        <h6> Mastercard </h6>
-                        <p className={paymentMethodCSS.phrase1}>user.cardnumber</p>
-                        <section>
-                        <p className={paymentMethodCSS.phrase1}>Expires:</p>
-                        <p className={paymentMethodCSS.phrase2}>user.visacvv</p>
-                        </section>
-                        <section>
-                        <p className={paymentMethodCSS.phrase1}>Cardholder Name:</p>
-                        <p className={paymentMethodCSS.phrase2}>user.cardholdername</p>
-                        </section>
+                  <section className={paymentMethodCSS.mastercardinfo}>
+                    <h6> Mastercard </h6>
+                    <p className={paymentMethodCSS.phrase1}>user.cardnumber</p>
+                    <section>
+                      <p className={paymentMethodCSS.phrase1}>Expires:</p>
+                      <p className={paymentMethodCSS.phrase2}>user.visacvv</p>
                     </section>
-                    <section className={paymentMethodCSS.mastercardpic}>
-                        <img
-                        src={mastercardLogo}
-                        className={paymentMethodCSS.walletpic}
-                        alt="Master Card Logo"
-                        />
+                    <section>
+                      <p className={paymentMethodCSS.phrase1}>
+                        Cardholder Name:
+                      </p>
+                      <p className={paymentMethodCSS.phrase2}>
+                        user.cardholdername
+                      </p>
                     </section>
+                  </section>
+                  <section className={paymentMethodCSS.mastercardpic}>
+                    <img
+                      src={mastercardLogo}
+                      className={paymentMethodCSS.walletpic}
+                      alt="Master Card Logo"
+                    />
+                  </section>
                 </div>
 
                 <div className={paymentMethodCSS.cash}>

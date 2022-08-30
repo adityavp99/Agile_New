@@ -10,7 +10,8 @@
     text-align: left;
 }
 
-h5{
+.addressTitle{
+    color: #ffd6ba;
     font-size: 2em;
     text-align: left;
     padding: 3vh 1vw;

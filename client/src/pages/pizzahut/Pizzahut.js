@@ -85,9 +85,11 @@ function PizzahutPage() {
         <FoodHolder food={garlicbread} className={pizzahutCSS.indi} />
         <FoodHolder food={lasagna} className={pizzahutCSS.indi} />
       </div>
-      <button type="submit" className={pizzahutCSS.submit}>
-        Continue
-      </button>
+      <a href="/comparison">
+        <button type="submit" className={pizzahutCSS.submit}>
+          Continue
+        </button>
+      </a>
     </div>
   );
 }
