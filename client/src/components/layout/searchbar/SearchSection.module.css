@@ -19,7 +19,7 @@
     width: 50vw;
     padding: 3vh 2vw;
     margin: 0vh 2vw;
-    border-color: aliceblue;
+    border: none;
 }
 
 .visuallyHidden {

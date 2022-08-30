@@ -18,7 +18,7 @@ import wokheyImg from "../../images/wokhey.jpg";
 
 //dummy data (temporary)
 const pizzahut = {name_:"PizzaHut", rating:"4.0", distance: "3km", image: pizzahutImg }; 
-const macdonalds = {name_:"Macdonald's", rating:"3.0", distance: "2km", image: macdonaldsImg };
+const macdonalds = {name_:"Mcdonald's", rating:"3.0", distance: "2km", image: macdonaldsImg };
 const pastamania = {name_:"Pastamania", rating:"3.0", distance: "11km", image: pastamaniaImg };
 
 const balithai = {name_:"Bali Thai", rating:"4.5", distance: "13km", image: balithaiImg }; 

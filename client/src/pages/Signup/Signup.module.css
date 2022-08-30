@@ -7,7 +7,6 @@
 .signup{
     background-color: #bee3db;
     padding: 5vh 5vw;
-    min-height: 90vh;
     text-align: center;
 }
 
@@ -34,7 +33,7 @@
 
 .image1{
     width: 4vw;
-    height: 7vh;
+    height: 8vh;
     margin: 3vh 0.5vw 1vh 6vw;
 }
 

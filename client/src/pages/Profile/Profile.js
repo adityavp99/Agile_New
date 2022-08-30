@@ -139,7 +139,7 @@ function ProfilePage() {
                   alt="Profile Icon"
                   className={profileCSS.profilepic}
                 />
-                <h3> User.name </h3>
+                <h3 className={profileCSS.name}> User.name </h3>
               </section>
             </div>
 

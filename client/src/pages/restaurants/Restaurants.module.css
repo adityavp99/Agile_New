@@ -19,7 +19,7 @@ h3{
 
 .sub1, .sub2, .sub3{
     display: flex;
-    margin: 5vh 5vw;
+    margin: 5vh 5.5vw;
     max-width: 100vw;
     text-align: center;
 }

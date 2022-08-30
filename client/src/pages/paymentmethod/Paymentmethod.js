@@ -132,7 +132,7 @@ function PaymentmethodPage() {
             <div className={paymentMethodCSS.box}>
               {/* Form to add new card */}
               <div className={paymentMethodCSS.part1}>
-                <h5> Add New Card: </h5>
+                <h5 className={paymentMethodCSS.addTitle}> Add New Card: </h5>
                 <p>Card Number:</p>
                 <TextField
                   placeholder="0000 0000 0000 0000"
@@ -187,7 +187,7 @@ function PaymentmethodPage() {
                       className={paymentMethodCSS.walletpic}
                       alt="Wallet Icon"
                     />
-                    <h6> E-wallet: </h6>
+                    <h6 className={paymentMethodCSS.paymentTitles}> E-wallet: </h6>
                     <select className={paymentMethodCSS.dropdown} name="cards">
                       <option
                         className={paymentMethodCSS.cardName}
@@ -241,7 +241,7 @@ function PaymentmethodPage() {
                 </div>
 
                 <div className={paymentMethodCSS.visa}>
-                  <h6> Visa </h6>
+                  <h6 className={paymentMethodCSS.paymentTitles}> Visa </h6>
                   <p className={paymentMethodCSS.phrase1}>user.cardnumber</p>
                   <section>
                     <p className={paymentMethodCSS.phrase1}>Expires:</p>
@@ -257,7 +257,7 @@ function PaymentmethodPage() {
 
                 <div className={paymentMethodCSS.mastercard}>
                   <section className={paymentMethodCSS.mastercardinfo}>
-                    <h6> Mastercard </h6>
+                    <h6 className={paymentMethodCSS.paymentTitles}> Mastercard </h6>
                     <p className={paymentMethodCSS.phrase1}>user.cardnumber</p>
                     <section>
                       <p className={paymentMethodCSS.phrase1}>Expires:</p>
@@ -288,7 +288,7 @@ function PaymentmethodPage() {
                       className={paymentMethodCSS.walletpic}
                       alt="Wallet Icon"
                     />
-                    <h6> Pay by Cash </h6>
+                    <h6 className={paymentMethodCSS.paymentTitles}> Pay by Cash </h6>
                   </section>
                 </div>
               </div>

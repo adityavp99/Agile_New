@@ -16,7 +16,8 @@
 .image{
     width: 74vw;
     height: 60vh;
-    border-radius: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
 .text1{
@@ -38,3 +39,10 @@
 
 .text3, .text4, .text5{color: #555b6e;}
  .text6{color: #89b0ae;}
+
+ .star{
+    color: gold;
+    margin: 0vh 0.5vw;
+    margin-right: 0vw;
+    margin-bottom: 0.3vh;
+}

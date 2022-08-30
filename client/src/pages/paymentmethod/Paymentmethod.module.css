@@ -21,7 +21,13 @@ h5{
     padding: 3vh 1vw;
 }
 
-h6{
+.addTitle{
+    font-size: 2em;
+    text-align: left;
+    padding: 4vh 1vw;
+}
+
+.paymentTitles{
     color: #555b6e;
     font-size: 2em;
     text-align: left;
@@ -55,7 +61,9 @@ h6{
     grid-area: part1;
     background-color: #758087;
     padding: 5vh 1vw 5vh 2vw;
-    
+    margin: 2vh 0vw;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
 }
 
 .part1 p{
@@ -120,11 +128,7 @@ h6{
 .phrase1, .phrase2{
     display: inline-flex;
     padding: 1vh 1vw;
-}
-
-.phrase2{
-    float: right;
-    text-align: right;
+    margin-top: 3vh;
 }
 
 .button4{
@@ -155,6 +159,9 @@ h6{
     grid-area: part2;
     background-color: #89b0ae;
     padding: 5vh 2vw 5vh 2vw;
+    margin: 2vh 0vw;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 .input5{ 
@@ -172,7 +179,7 @@ h6{
     color: black;
     padding: 3vh 2vw;
     border-radius: 11px;
-    margin: 2vh 0vw;
+    margin: 1vh 0vw;
 }
 
 .walletpic{
