@@ -7,7 +7,7 @@ import Axios from "axios";
 import profileCSS from "./Profile.module.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTrash } from "@fortawesome/free-solid-svg-icons";
+import { faStar, faTicket } from "@fortawesome/free-solid-svg-icons";
 
 import pinkprofileImg from ".././peachprofile.jpg";
 import walletImg from ".././wallet.jpg";
@@ -184,7 +184,11 @@ function ProfilePage() {
                   min="0"
                   className={profileCSS.fields1}
                 />
-                <h2 className={profileCSS.securityQues}> Security Question: <br/>What was the first school that you studied in?</h2>
+                <h2 className={profileCSS.securityQues}>
+                  {" "}
+                  Security Question: <br />
+                  What was the first school that you studied in?
+                </h2>
                 <TextField
                   placeholder="Security Answer"
                   name="securityAnswer"
@@ -308,11 +312,6 @@ function ProfilePage() {
                         Mastercard
                       </option>
                     </select>
-                    <FontAwesomeIcon
-                      icon={faTrash}
-                      size="2x"
-                      className={profileCSS.deleteIcon}
-                    />
                   </section>
 
                   <section className={profileCSS.align}>
@@ -343,6 +342,30 @@ function ProfilePage() {
                       type="checkbox"
                       className={profileCSS.checkbox}
                     />
+                  </section>
+                </div>
+                <div className={profileCSS.rewardPoints}>
+                  <section className={profileCSS.alignRp}>
+                    <FontAwesomeIcon
+                      icon={faStar}
+                      size="3x"
+                      className={profileCSS.starIcon}
+                    />
+                    <h6>Reward Points:</h6>
+                  </section>
+                  <section className={profileCSS.shortline}>
+                    <p>Balance:</p>
+                    <p>1pts</p>
+                  </section>
+                </div>
+                <div className={profileCSS.promoCodes}>
+                  <section className={profileCSS.alignPcodes}>
+                    <FontAwesomeIcon
+                      icon={faTicket}
+                      size="2x"
+                      className={profileCSS.ticketIcon}
+                    />
+                    <h6>Promo Codes:</h6>
                   </section>
                 </div>
               </div>
