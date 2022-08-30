@@ -34,6 +34,8 @@ h5{
     grid-area: segment1;
     background-color: #758087;
     padding: 5vh 1vw 20vh 1vw;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .fieldslong{
@@ -50,7 +52,8 @@ h5{
     grid-area: segment2;
     background-color: #89b0ae;
     padding: 5vh 2vw;
-    
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .promosegment p{
@@ -71,6 +74,20 @@ h5{
 .align{
     display: flex;
     margin: 1vh 0vw;
+}
+
+.part1{
+    margin: 2vh 0vw;
+}
+
+.part2{
+    padding-top: 2vh;
+    margin: 5vh 0vw;
+}
+
+.part3{
+    padding-top: 2vh;
+    margin: 2vh 0vw;
 }
 
 .para{
@@ -110,6 +127,11 @@ h5{
     font-family: Helvetica, Arial, sans-serif;
 }
 
+.button4{
+    position: relative;
+    left: 0%;
+}
+
 .button5{
     background-color: #ffd6ba;
     color: #555b6e;
@@ -117,6 +139,8 @@ h5{
     height: 8vh;
     margin: 0vh 2vw;
     margin-top: 12vh;
+    position: relative;
+    left: 27%;
     border-radius: 21px;
     font-size: 1.2em;
     font-family: Helvetica, Arial, sans-serif;

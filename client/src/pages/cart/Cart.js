@@ -178,7 +178,8 @@ function CartPage() {
 
                 <div className={cartCSS.segment2}>
                     <div className={cartCSS.promosegment}>
-                        <p className={cartCSS.paraleft}> Promo Code </p>
+                      <div className={cartCSS.part1}> 
+                        <p className={cartCSS.paraleft}> Promo Code: </p>
                         <TextField
                             placeholder="Add your promo code here"
                             name="promocode"
@@ -186,12 +187,14 @@ function CartPage() {
                             className={cartCSS.fieldslong}
                         />
                         <button type="submit" className={cartCSS.button2}>Apply</button>
+                        </div>
 
+                        <div className={cartCSS.part2}> 
                         <section className={cartCSS.align}>
                             <p className={cartCSS.paraleft}> Points Available:  </p>
                             <p className={cartCSS.pararight}> user.points </p>
                         </section>
-
+                        
                         <section  className={cartCSS.align}>
                             <TextField
                                 placeholder="00"
@@ -202,13 +205,16 @@ function CartPage() {
                             <p className={cartCSS.paraspecial}> user.points </p>
                         </section>
                         <button type="submit" className={cartCSS.button3}>Redeem</button>
-                        
+                        </div>
+
+                        <div className={cartCSS.part3}> 
                         <section  className={cartCSS.align}>
                             <p className={cartCSS.paraleft}> Total Cost:  </p>
                             <p className={cartCSS.pararight}> delivery.totalcost </p>
                         </section>
                         <button type="submit" className={cartCSS.button4}>Go back</button>
                         <button type="submit" className={cartCSS.button5}>Proceed to Pay</button>
+                        </div>
                     </div>
                 </div>
                 </div>
