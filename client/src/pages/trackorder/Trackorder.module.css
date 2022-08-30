@@ -1,0 +1,104 @@
+.Green {
+    background-color: #bee3db;
+    padding: 30px;
+}
+
+.Yellow {
+    background-color: #f6f9da;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 1vh;
+}
+
+.SmallLine {
+    width: 5vw;
+    height: 2px;
+    background-color: rgb(61, 81, 81);
+    border-radius: 1rem;
+    display: inline-flex;
+    align-self: center;
+}
+
+
+.LongLine {
+    width: 50vw;
+    height: 2px;
+    background-color: rgb(61, 81, 81);
+    border-radius: 1rem;
+    display: inline-flex;
+}
+
+.LongLine2 {
+    width: 45vw;
+    height: 2px;
+    background-color: rgb(61, 81, 81);
+    border-radius: 1rem;
+    display: inline-flex;
+}
+
+.Header h1 {
+    display: inline-flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.text {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.circle1, .circle2, .circle3 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(37, 205, 37);
+    vertical-align: auto;
+    margin: auto;
+}
+
+.circle4, .circle5, .circle6 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    vertical-align: auto;
+    margin: auto;
+    border-style: dashed;
+
+}
+
+.progress {
+    display: flex;
+    padding: 3vh;
+
+}
+
+.progress img {
+    vertical-align: auto;
+margin-left: 1.3vw;
+}
+
+.footer {
+    width:100%;
+}
+
+.footer1 {
+    padding-top:30px;
+    padding-left: 30px;
+}
+
+.footer2 {
+    display: inline-flex;
+    padding-top: 10px;
+    padding-left: 30px;
+    width:100%;
+}
+
+.link {
+    margin-right: 0;
+    margin-left: auto;
+    color: darkslategrey;
+    font-weight: 200;
+}
