@@ -1,10 +1,14 @@
 import SearchbarCSS from "./SearchSection.module.css";
 
+//importing fontawesome icons for search bar
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+//importing magnifying glass icon from fontawesome for search bar
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
+//Search bar function containing JSX code
 const Searchbar = () => {
     return (
+        // div wrapping search bar
         <div className={SearchbarCSS.container}>
             <form action="/" method="get" className={SearchbarCSS.form}>
                 <label htmlFor="header-search">

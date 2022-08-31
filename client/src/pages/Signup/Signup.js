@@ -1,23 +1,31 @@
 //importing dependencies and files
 import { Link } from "react-router-dom";
+//react library for form creation
 import { Formik, Form } from "formik";
 import { TextField } from "../../components/layout/Form/TextField";
+// Javascript schema builder for form validation
 import * as Yup from "yup";
+//Importing react hook for changing states
 import { useState } from "react";
+//To connect database with front end
 import Axios from "axios";
 
+//Importing CSS for signup page
 import signupCSS from "./Signup.module.css";
+//Importing profile icon
 import profileIcon from "../../images/peachprofile.jpg";
 
+//Sign up page function containing JSX code
 function SignupPage() {
   //Custom react hooks
   const [username] = useState("");
   const [password] = useState("");
   const [confirmPassword] = useState("");
   const [email] = useState("");
+  const [securityAnswer] = useState("");
   const [userList, setUserList] = useState("");
 
-  //Form Validation
+  // Form Validation
   const validate = Yup.object({
     username: Yup.string()
       .max(15, "Must be 15 characters or less")
@@ -29,9 +37,11 @@ function SignupPage() {
       .oneOf([Yup.ref("password"), null], "Passwords must match")
       .required("Confirm password is required"),
     email: Yup.string().email("Invalid Email").required("Email is required"),
+    securityAnswer: Yup.string().required(
+      "Please answer the security question"
+    ),
   });
 
-  //useEffect not imported
   //To get data from the backend
   //   useEffect(() => {
   //     Axios.get("http://localhost:3001/api/get").then((response) => {
@@ -39,6 +49,7 @@ function SignupPage() {
   //     });
   //   }, []);
 
+  //Sign up page function containing JSX code
   return (
     <Formik
       //Initialising form fields
@@ -47,23 +58,28 @@ function SignupPage() {
         password: "",
         confirmPassword: "",
         email: "",
+        securityAnswer: "",
       }}
+      //To validate values
       validationSchema={validate}
       onSubmit={(values) => {
-        //Pushing data to the backend
+        // Pushing data to the backend
         Axios.post("http://localhost:3001/api/insert", {
           username: values.username,
           password: values.password,
           confirmPassword: values.ConfirmPassword,
           email: values.email,
+          securityAnswer: values.securityAnswer,
         }).then(() => {
           setUserList([
             ...userList,
             {
+              // custom react hooks defined above in line 19
               username: username,
               password: password,
               confirmPassword: confirmPassword,
               email: email,
+              securityAnswer: securityAnswer,
             },
           ]);
         });
@@ -82,6 +98,7 @@ function SignupPage() {
               />
               <h5 className={signupCSS.title}>Sign Up</h5>
             </div>
+            {/* creating input field */}
             <TextField
               placeholder="Username"
               name="username"

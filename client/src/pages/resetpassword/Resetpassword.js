@@ -1,13 +1,19 @@
 //importing dependencies and files
 import { Link } from "react-router-dom";
+//react library for form creation
 import { Formik, Form } from "formik";
 import { TextField } from "../../components/layout/Form/TextField";
+// Javascript schema builder for form validation
 import * as Yup from "yup";
+//To connect database with front end
 import Axios from "axios";
 
+//Importing CSS for reset password page
 import resetCSS from "./Resetpassword.module.css";
+//Importing profile icon
 import profileIcon from "../../images/peachprofile.jpg";
 
+//Reset password page function containing JSX code
 function ResetpasswordPage() {
   //Form Validation
   const validate = Yup.object({
@@ -30,6 +36,7 @@ function ResetpasswordPage() {
   //     });
   //   }, []);
 
+  //Reset password page function containing JSX code
   return (
     <Formik
       //Initialising form fields
@@ -58,6 +65,7 @@ function ResetpasswordPage() {
               />
               <h5 className={resetCSS.title}>Reset Password</h5>
             </div>
+            {/* creating input field */}
             <TextField
               placeholder="Enter your email"
               name="email"
@@ -89,16 +97,14 @@ function ResetpasswordPage() {
               Submit
             </button>
             <div className={resetCSS.endingdiv}>
-              <p className={resetCSS.label2}> Already have an account? </p>
+              <p className={resetCSS.label1}> Already have an account? </p>
               <Link to="/signin" className={resetCSS.link}>
-                <p className={resetCSS.label1}> Sign In </p>
+                <p className={resetCSS.label2}> Sign In </p>
               </Link>
-              <p className={resetCSS.label2}> Don't have an account? </p>
+              <p className={resetCSS.label1}> Don't have an account? </p>
               <Link to="/signup" className={resetCSS.link}>
-                <p className={resetCSS.label3}> Register Now </p>{" "}
+                <p className={resetCSS.label2}> Register Now </p>{" "}
               </Link>
-
-              {/* Replace with link later on */}
             </div>
           </Form>
         </div>

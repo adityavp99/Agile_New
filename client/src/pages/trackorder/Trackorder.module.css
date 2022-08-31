@@ -1,8 +1,10 @@
+/* styling for page wrapper */
 .Green {
   background-color: #bee3db;
   padding: 30px;
 }
 
+/* styling for main container */
 .Yellow {
   background-color: #f6f9da;
   width: 80%;
@@ -11,6 +13,7 @@
   border-radius: 1vh;
 }
 
+/* styling for short line before header text */
 .SmallLine {
   width: 5vw;
   height: 2px;
@@ -20,6 +23,7 @@
   align-self: center;
 }
 
+/* styling for long line after header text */
 .LongLine {
   width: 50vw;
   height: 2px;
@@ -28,25 +32,13 @@
   display: inline-flex;
 }
 
-.LongLine2 {
-  width: 45vw;
-  height: 2px;
-  background-color: rgb(61, 81, 81);
-  border-radius: 1rem;
-  display: inline-flex;
-}
-
-.Header h1 {
-  display: inline-flex;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
+/* styling for header text */
 .text {
   padding-left: 10px;
   padding-right: 10px;
 }
 
+/* styling for completed progress circles */
 .circle1,
 .circle2,
 .circle3 {
@@ -58,6 +50,7 @@
   margin: auto;
 }
 
+/* styling for incomplete progress circles */
 .circle4,
 .circle5,
 .circle6 {
@@ -70,25 +63,46 @@
   border-style: dashed;
 }
 
+/* styling for progress container */
 .progress {
   display: flex;
   padding: 3vh;
 }
 
+/* styling for progress images */
 .progress img {
   vertical-align: auto;
   margin-left: 1.3vw;
 }
 
+/* styling for long line before estimated time label */
+.LongLine2 {
+  width: 45vw;
+  height: 2px;
+  background-color: rgb(61, 81, 81);
+  border-radius: 1rem;
+  display: inline-flex;
+}
+
+/* styling for estimated time label */
+.Header h1 {
+  display: inline-flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* styling for end notes section */
 .footer {
   width: 100%;
 }
 
+/* styling for thank you label */
 .footer1 {
   padding-top: 30px;
   padding-left: 30px;
 }
 
+/* styling for receipt confirmation label */
 .footer2 {
   display: inline-flex;
   padding-top: 10px;
@@ -96,10 +110,7 @@
   width: 100%;
 }
 
-.link {
-  text-decoration: none;
-}
-
+/* styling for order history label */
 .orderHist {
   font-size: large;
   margin: 0vh 4vw;
@@ -108,3 +119,9 @@
   left: 90%;
   top: 30%;
 }
+
+/* styling for link */
+.link {
+  text-decoration: none;
+}
+

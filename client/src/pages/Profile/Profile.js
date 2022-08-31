@@ -1,16 +1,24 @@
 //importing dependencies and files
+//react library for form creation
 import { Formik, Form } from "formik";
 import { TextField } from "../../components/layout/Form/TextField";
+//Javascript schema builder for form validation
 import * as Yup from "yup";
+//Importing react hook for changing states
 import { useState } from "react";
+//To connect database with front end
 import Axios from "axios";
+
+//Importing CSS for signin page
 import profileCSS from "./Profile.module.css";
 
+//Importing Font Awesome Icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar, faTicket } from "@fortawesome/free-solid-svg-icons";
 
+//Importing profile and wallet icons
 import pinkprofileImg from "../../images/profile.jpg";
-import walletImg from ".././wallet.jpg";
+import walletImg from "../../images/wallet.jpg";
 
 function ProfilePage() {
   //Custom react hooks
@@ -58,6 +66,7 @@ function ProfilePage() {
   //     });
   //   }, []);
 
+  //Profile page function containing JSX code
   return (
     <Formik
       //Initialising form fields
@@ -143,10 +152,11 @@ function ProfilePage() {
               </section>
             </div>
 
+            {/* div container segment1: contains the profile section */}
             <div className={profileCSS.island1}>
               <div className={profileCSS.segment1}>
-                {/* Profile section */}
                 <h5 className={profileCSS.profileTitle}>Profile:</h5>
+                {/* creating input field */}
                 <TextField
                   placeholder="Name"
                   name="name"
@@ -203,7 +213,7 @@ function ProfilePage() {
                 </button>
               </div>
 
-              {/* Address form */}
+              {/* div container segment2: Address form */}
               <div className={profileCSS.segment2}>
                 <h5> Address: </h5>
                 <TextField
@@ -248,7 +258,8 @@ function ProfilePage() {
               </div>
             </div>
             <div className={profileCSS.island2}>
-              {/* Form to add new card */}
+
+              {/* div container segment3: Form to add new card */}
               <div className={profileCSS.segment3}>
                 <h5> Add New Card: </h5>
                 <p>Card Number:</p>
@@ -292,6 +303,7 @@ function ProfilePage() {
                 </button>
               </div>
 
+              {/* div container segment4: Added cards and remaining points */}
               <div className={profileCSS.segment4}>
                 <div className={profileCSS.wallet}>
                   <section className={profileCSS.align}>
@@ -346,6 +358,7 @@ function ProfilePage() {
                 </div>
                 <div className={profileCSS.rewardPoints}>
                   <section className={profileCSS.alignRp}>
+                    {/* importing fontawesome icons delcared above in line 16 */}
                     <FontAwesomeIcon
                       icon={faStar}
                       size="3x"

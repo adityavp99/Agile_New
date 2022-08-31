@@ -4,7 +4,7 @@
   font-family: Helvetica, Arial, sans-serif;
 }
 
-.name{
+.name {
   font-size: 3em;
   margin: 0vh 2vw;
   margin-top: 1vh;
@@ -31,11 +31,13 @@ h6 {
   padding: 3vh 5vw 3vh 2vw;
 }
 
+/* styling for page wrapper */
 .profile {
   background-color: #bee3db;
   text-align: left;
 }
 
+/* styling for form container */
 .forms {
   color: #ffd6ba;
   position: relative;
@@ -48,6 +50,7 @@ h6 {
   text-align: center;
 }
 
+/* styling for security question */
 .securityQues {
   margin-top: 3vh;
   margin-left: 6vw;
@@ -55,6 +58,7 @@ h6 {
   text-align: left;
 }
 
+/* styling for security answer*/
 .securityAns {
   width: 34vw;
   height: 4vw;
@@ -65,12 +69,14 @@ h6 {
   color: black;
 }
 
+/* styling for segment header (title and image position) */
 .segmentheader {
   grid-area: segmentheader;
   margin: 2vh 0vw 0vh 0vw;
   text-align: center;
 }
 
+/* styling for profile icon */
 .profilepic {
   width: 5vw;
   height: 10vh;
@@ -78,6 +84,7 @@ h6 {
   border-radius: 100px;
 }
 
+/* styling for the top container containing profile and address */
 .island1 {
   grid-area: island1;
   display: grid;
@@ -85,6 +92,7 @@ h6 {
   margin: 0vh 0vw 2vh 0vw;
 }
 
+/* styling for profile section */
 .segment1 {
   grid-area: segment1;
   background-color: #758087;
@@ -105,6 +113,7 @@ h6 {
   border: none;
 }
 
+/* styling for address section */
 .segment2 {
   grid-area: segment2;
   background-color: #89b0ae;
@@ -142,6 +151,7 @@ h6 {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+/* styling for the bottom container containing add new card, e-wallet and reward points */
 .island2 {
   grid-area: island2;
   display: grid;
@@ -149,17 +159,7 @@ h6 {
   margin: 0vh 0vw 2vh 0vw;
 }
 
-.fields31 {
-  width: 15vw;
-  height: 3vw;
-  font-size: 1.5em;
-  border-radius: 50px;
-  margin: 2vh 0vw 2vh 2vw;
-  padding: 1vh 1vw;
-  color: black;
-  border: none;
-}
-
+/* styling for add new card section */
 .segment3 {
   grid-area: segment3;
   background-color: #758087;
@@ -185,6 +185,18 @@ h6 {
 .inline2 {
   grid-area: inline2;
   margin: 0vh 5vw;
+}
+
+/* styling for individual fields */
+.fields31 {
+  width: 15vw;
+  height: 3vw;
+  font-size: 1.5em;
+  border-radius: 50px;
+  margin: 2vh 0vw 2vh 2vw;
+  padding: 1vh 1vw;
+  color: black;
+  border: none;
 }
 
 .fields32 {
@@ -233,6 +245,7 @@ h6 {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+/* styling for e-wallet, reward points and promocodes section */
 .segment4 {
   grid-area: segment4;
   background-color: #89b0ae;
@@ -240,6 +253,21 @@ h6 {
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   margin: 3vh 0vw;
+}
+
+/* styling for wallet section */
+.wallet {
+  background-color: #dfedd6;
+  color: black;
+  padding: 1vh 2vw;
+  border-radius: 25px;
+  text-align: left;
+}
+
+.walletpic {
+  width: 4vw;
+  height: 8vh;
+  margin: 1.5vh 0vw;
 }
 
 .fields4 {
@@ -252,48 +280,6 @@ h6 {
   background-color: #f7fade;
 }
 
-.wallet {
-  background-color: #dfedd6;
-  color: black;
-  padding: 1vh 2vw;
-  border-radius: 25px;
-  text-align: left;
-}
-
-.rewardPoints {
-  background-color: #dfedd6;
-  color: black;
-  padding: 1vh 2vw;
-  border-radius: 25px;
-  margin: 2vh 0vw;
-  text-align: left;
-}
-
-.promoCodes{
-  background-color: #dfedd6;
-  color: black;
-  padding: 1vh 2vw;
-  border-radius: 25px;
-  margin: 2vh 0vw;
-  text-align: left;
-}
-
-.alignRp, .alignPcodes{
-    display: flex;
-}
-
-.rpTitle{
-    text-align: left;
-    font-size: larger;
-    font-weight: bold;
-}
-
-.walletpic {
-  width: 4vw;
-  height: 8vh;
-  margin: 1.5vh 0vw;
-}
-
 .dropdown {
   background-color: #f7fade;
   width: 10vw;
@@ -304,15 +290,10 @@ h6 {
   padding-left: 0.5vw;
 }
 
-.deleteIcon {
-  width: 1.5vw;
-  height: 7vh;
-  margin: 1.5vh 2vw 1.5vh 2vw;
-}
-
-.starIcon{
-    height: 6vh;
-    margin-top: 2vh;
+.checkbox {
+  width: 5vw;
+  height: 5vh;
+  margin: 0vh 2vw;
 }
 
 .button5 {
@@ -326,13 +307,43 @@ h6 {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-.checkbox {
-  width: 5vw;
-  height: 5vh;
-  margin: 0vh 2vw;
+/* styling for reward points section */
+.rewardPoints {
+  background-color: #dfedd6;
+  color: black;
+  padding: 1vh 2vw;
+  border-radius: 25px;
+  margin: 2vh 0vw;
+  text-align: left;
 }
 
-.ticketIcon{
-    height: 6vh;
-    margin-top: 2vh;
+.rpTitle {
+  text-align: left;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.starIcon {
+  height: 6vh;
+  margin-top: 2vh;
+}
+
+.alignRp,
+.alignPcodes {
+  display: flex;
+}
+
+/* styling for promo codes section */
+.promoCodes {
+  background-color: #dfedd6;
+  color: black;
+  padding: 1vh 2vw;
+  border-radius: 25px;
+  margin: 2vh 0vw;
+  text-align: left;
+}
+
+.ticketIcon {
+  height: 6vh;
+  margin-top: 2vh;
 }

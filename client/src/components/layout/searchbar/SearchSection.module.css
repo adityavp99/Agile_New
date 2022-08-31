@@ -3,15 +3,12 @@
     padding: 3vh 0vw;
 }
 
+/* styling for form wrapper */
 .form {
     text-align: center;
 }
 
-/* .searchIcon{
-    position: relative;
-    top: 5%; 
-} */
-
+/* styling for input bar */
 .inputbar {
     text-align: center;
     align-self: center;
@@ -22,6 +19,7 @@
     border: none;
 }
 
+/* styling to hide search label */
 .visuallyHidden {
     clip: rect (0 0 0 0);
     clip-path: inset(50%);
@@ -32,6 +30,7 @@
     width: 1px;
 }
 
+/* styling for search button */
 .button {
     background-color: #fed1b4;
     border: hidden;

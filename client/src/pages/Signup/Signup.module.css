@@ -1,111 +1,119 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
 
-
-.signup{
-    background-color: #bee3db;
-    padding: 5vh 5vw;
-    text-align: center;
+/* styling for page wrapper */
+.signup {
+  background-color: #bee3db;
+  padding: 5vh 5vw;
+  text-align: center;
 }
 
-.form{
-    background-color: #758087;
-    color: #ffd6ba;
-    position: relative;
-    left: 35%;
-    width: 30vw;
-    min-height: 63vh;
-    border-radius: 25px;
+/* styling for form container */
+.form {
+  background-color: #758087;
+  color: #ffd6ba;
+  position: relative;
+  left: 35%;
+  width: 30vw;
+  min-height: 63vh;
+  border-radius: 25px;
 }
 
-.openingdiv{
-    display: flex;
+.openingdiv {
+  display: flex;
 }
 
-.title{
-    color: #ffd6ba;
-    text-align: center;
-    font-size: 2.5em;
-    padding: 3.5vh 1vw;
+.title {
+  color: #ffd6ba;
+  text-align: center;
+  font-size: 2.5em;
+  padding: 3.5vh 1vw;
 }
 
-.image1{
-    width: 4vw;
-    height: 8vh;
-    margin: 3vh 0.5vw 1vh 6vw;
+/* styling for profile icon */
+.image1 {
+  width: 4vw;
+  height: 8vh;
+  margin: 3vh 0.5vw 1vh 6vw;
 }
 
-.field1, .field2, .field3, .field4{
-    width: 18vw;
-    height: 6vh;
-    margin: 0.5vh 5vw;
-    border-radius: 50px;
-    padding-left: 2vh;
-    color: black;
-    font-size: 1.2em;
+/* styling for top 4 input fields */
+.field1,
+.field2,
+.field3,
+.field4 {
+  width: 18vw;
+  height: 6vh;
+  margin: 0.5vh 5vw;
+  border-radius: 50px;
+  padding-left: 2vh;
+  color: black;
+  font-size: 1.2em;
 }
 
-.securityQuestion{
-    color: white;
-    margin-top: 1vh;
-    font-size: large;
+/* styling for security quesiton */
+.securityQuestion {
+  color: white;
+  margin-top: 1vh;
+  font-size: large;
 }
 
-.securityAnswer{
-    width: 18vw;
-    height: 6vh;
-    margin: 0.5vh 6vw;
-    border-radius: 50px;
-    padding-left: 2vh;
-    color: black;
-    font-size: 1.2em;
+/* styling for security answer input field */
+.securityAnswer {
+  width: 18vw;
+  height: 6vh;
+  margin: 0.5vh 6vw;
+  border-radius: 50px;
+  padding-left: 2vh;
+  color: black;
+  font-size: 1.2em;
 }
 
-.fields:required{
-    color: #ffd6ba;
+.fields:required {
+  color: #ffd6ba;
 }
 
-.button1, .button2{
-    background-color: #ffd6ba;
-    color: #555b6e;
-    width: 12vw;
-    height: 5vh;
-    margin: 1vh 5vw;
-    border-radius: 51px;
-    font-size: 1.2em;
-    font-family: Helvetica, Arial, sans-serif;
+/* stying for sign up button */
+.button1 {
+  background-color: #ffd6ba;
+  color: #555b6e;
+  width: 12vw;
+  height: 5vh;
+  margin: 1vh 5vw;
+  border-radius: 51px;
+  font-size: 1.2em;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
-.button2{
-    margin: 0vh 5vw;
+/* styling for div containing signin label  */
+.endingdiv {
+  background-color: #89b0ae;
+  margin-top: 2vh;
+  padding: 1vh 5vw;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
-.endingdiv{
-    background-color: #89b0ae;
-    margin-top: 2vh;
-    padding: 1vh 5vw;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-
+/* styling for already have an account label */
+.label1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.3em;
+  color: #555b63;
+  margin: 1vh 2vw;
 }
 
-.label1{
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 1.3em;
-    color: #555b63;
-    margin: 1vh 2vw;
+/* styling for sign in label */
+.label2 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.3em;
+  font-weight: bolder;
+  color: #555b63;
+  margin: 1vh 2vw;
 }
 
-.label2{
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 1.3em;
-    font-weight: bolder;
-    color: #555b63;
-    margin: 1vh 2vw;
-}
-
-.link{
-    text-decoration: none;
+/* styling for links */
+.link {
+  text-decoration: none;
 }

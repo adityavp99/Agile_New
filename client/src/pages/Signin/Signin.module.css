@@ -1,104 +1,106 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
 
-
-.signin{
-    background-color: #bee3db;
-    padding: 5vh 5vw;
-    min-height: 40vh;
-    text-align: center;
+/* styling for page wrapper */
+.signin {
+  background-color: #bee3db;
+  padding: 5vh 5vw;
+  min-height: 40vh;
+  text-align: center;
 }
 
-.form{
-    background-color: #758087;
-    color: #ffd6ba;
-    position: relative;
-    left: 35%;
-    width: 30vw;
-    min-height: 53vh;
-    border-radius: 25px;
+/* styling for form container */
+.form {
+  background-color: #758087;
+  color: #ffd6ba;
+  position: relative;
+  left: 35%;
+  width: 30vw;
+  min-height: 53vh;
+  border-radius: 25px;
 }
 
-.openingdiv{
-    display: flex;
+.openingdiv {
+  display: flex;
 }
 
-.title{
-    color: #ffd6ba;
-    text-align: center;
-    font-size: 2em;
-    padding: 5vh 1vw;
+.title {
+  color: #ffd6ba;
+  text-align: center;
+  font-size: 2em;
+  padding: 5vh 1vw;
 }
 
-.image1{
-    width: 4vw;
-    height: 8vh;
-    margin: 4vh 0.5vw 1vh 7vw;
+/* styling for profile icon */
+.image1 {
+  width: 4vw;
+  height: 8vh;
+  margin: 4vh 0.5vw 1vh 7vw;
 }
 
-.field1, .field2, .field3, .field4{
-    width: 18vw;
-    height: 6vh;
-    margin: 0.5vh 5vw;
-    border-radius: 50px;
-    padding-left: 2vh;
-    color: black;
-    font-size: 1.2em;
+/* styling for input fields */
+.field1,
+.field2 {
+  width: 18vw;
+  height: 6vh;
+  margin: 0.5vh 5vw;
+  border-radius: 50px;
+  border: none;
+  padding-left: 2vh;
+  font-size: 1.2em;
 }
 
-.fields:required{
-    color: #ffd6ba;
+/* stying for sign in button */
+.button1 {
+  background-color: #ffd6ba;
+  color: #555b6e;
+  width: 12vw;
+  height: 5vh;
+  margin: 1vh 5vw;
+  border-radius: 51px;
+  font-size: 1.2em;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
-.button1, .button2{
-    background-color: #ffd6ba;
-    color: #555b6e;
-    width: 12vw;
-    height: 5vh;
-    margin: 1vh 5vw;
-    border-radius: 51px;
-    font-size: 1.2em;
-    font-family: Helvetica, Arial, sans-serif;
+/* styling for div containing forgot password and signup labels  */
+.endingdiv {
+  background-color: #89b0ae;
+  margin-top: 4.3vh;
+  padding: 1vh 5vw;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
-.button2{
-    margin: 0vh 5vw;
-}
-
-.endingdiv{
-    background-color: #89b0ae;
-    margin-top: 4.3vh;
-    padding: 1vh 5vw;
-    border-bottom-left-radius:25px;
-    border-bottom-right-radius:25px;
-    
-}
-
+/* styling for forgot password label */
 .label1 {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 1.3em;
-    font-weight: bolder;
-    color: #555b63;
-    margin: 1vh 2vw;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.3em;
+  font-weight: bolder;
+  color: #555b63;
+  margin: 1vh 2vw;
 }
+
+/* styling for dont have an account label */
 .label2 {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 1.3em;
-    color: #555b63;
-    margin: 1vh 2vw;
-    padding-top: 5px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.3em;
+  color: #555b63;
+  margin: 1vh 2vw;
+  padding-top: 5px;
 }
 
-.label3{
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 1.3em;
-    font-weight: bolder;
-    color: #555b63;
-    margin: 1vh 2vw;
+/* styling for sign up label */
+.label3 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.3em;
+  font-weight: bolder;
+  color: #555b63;
+  margin: 1vh 2vw;
 }
 
-.link{
-    text-decoration: none;
+/* styling for links */
+.link {
+  text-decoration: none;
 }

@@ -1,16 +1,18 @@
-//FontAwesome Icons for Contact Info
+//FontAwesome Icons for Contact Info Section
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
-
-//CSS
+//Importing CSS for help page
 import helpCSS from "./Help.module.css";
 
+//Help page function containing JSX code
 function HelpPage() {
   return (
+    //Page Wrapper (Green area)
     <div className={helpCSS.wrapper}>
+      {/* Wrapper containing form and page contents(grey area) */}
       <div className={helpCSS.mainContainer}>
         <h1 className={helpCSS.title}>Help </h1>
         <h2 className={helpCSS.faqTitle}>FAQ </h2>
@@ -18,7 +20,7 @@ function HelpPage() {
         {/*FAQ Container  */}
         <div className={helpCSS.faqContainer}>
           <div>
-            {/* Individual Question */}
+            {/* Individual Questions */}
             <details className={helpCSS.faqSegment}>
               <summary className={helpCSS.faqQuestion}>
                 How do I make a payment?
@@ -89,10 +91,11 @@ function HelpPage() {
             </button>
           </div>
         </form>
-        
+
         {/* Contact Us Section */}
         <div className={helpCSS.contactUs}>
           <div className={helpCSS.phone}>
+            {/* Using the imported icons from FontAwesome */}
             <FontAwesomeIcon
               icon={faPhone}
               size="2x"

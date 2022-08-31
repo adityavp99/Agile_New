@@ -1,15 +1,21 @@
 import { Link } from "react-router-dom";
 
+//Importing CSS for footer
 import footerStyle from "./Footer.module.css";
+//Importing logo image
 import companylogo from "../../../images/takeoutlogo.jpg";
 
-
+//Footer function containing JSX code
 function Footer() {
   return (
+    //footer wrapper
     <div id={footerStyle.footer}>
+        {/* div to wrap contents in the footer */}
         <div id={footerStyle.content}>
             <p className={footerStyle.exploreTakeout}> Explore Takeout</p>
+            {/* list containing individual items in the footer */}
             <ul className={footerStyle.ul}>
+                {/* individual items in the list */}
                 <li className={footerStyle.li1}>
                     <Link to="/" className={footerStyle.link}>
                         Home
@@ -44,6 +50,7 @@ function Footer() {
                 </li>
             </ul>
         </div>
+        {/* div containing the logo */}
         <div id={footerStyle.logoholder}>
             <Link to="/" className={footerStyle.link}>
                 <img src={companylogo} id={footerStyle.logo} alt="TakeOut Logo" />
