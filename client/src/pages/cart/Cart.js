@@ -1,3 +1,5 @@
+// Cartpage JS/HTML code
+
 //importing dependencies and files
 import { Formik, Form } from "formik";
 import { TextField } from "../../components/layout/Form/TextField";
@@ -6,9 +8,14 @@ import { useState } from "react";
 import Axios from "axios";
 import { Link } from "react-router-dom";
 
+// importing CSS styling for home page from CSS Stylesheet file
 import cartCSS from "./Cart.module.css";
+
+// importing CartHolder from components folder
+// Each CartHolder contains an order summary for a particular restaurant
 import CartHolder from "../../components/layout/cartholder/Cartholder";
 
+// Comparisonpage function containing HTML code
 function CartPage() {
   //Custom react hooks
   const [name] = useState("");
@@ -122,16 +129,26 @@ function CartPage() {
       }}
     >
       {(formik) => (
+        //div container for the cart page
         <div className={cartCSS.cart}>
+
+          {/* div container to hold the cartholders*/}
           <div className={cartCSS.opening}>
+
+             {/* Component that summarizes orders: 
+            Order from 2 restaurants will mean 2 CartHolders*/}
             <CartHolder />
             <CartHolder />
           </div>
 
           {/* Form Creation */}
+          {/* div container to hold the address and promo forms */}
           <Form className={cartCSS.forms}>
+
+             {/* Sub div to hold the 2 forms*/}
             <div className={cartCSS.island}>
-              {/* Form to add new card */}
+
+              {/* Address form for ordering */}
               <div className={cartCSS.segment1}>
                 <h5 className={cartCSS.addressTitle}> Address: </h5>
                 <TextField
@@ -175,8 +192,13 @@ function CartPage() {
                 </button>
               </div>
 
+              {/* Promo form for ordering */}
               <div className={cartCSS.segment2}>
+
+                {/* sub div to contain the promo segment */}
                 <div className={cartCSS.promosegment}>
+
+                  {/* div to contain promo code section */}
                   <div className={cartCSS.part1}>
                     <p className={cartCSS.paraleft}> Promo Code: </p>
                     <TextField
@@ -190,6 +212,7 @@ function CartPage() {
                     </button>
                   </div>
 
+                  {/* div to contain points section */}
                   <div className={cartCSS.part2}>
                     <section className={cartCSS.align}>
                       <p className={cartCSS.paraleft}> Points Available: </p>
@@ -210,6 +233,7 @@ function CartPage() {
                     </button>
                   </div>
 
+                  {/* div to contain total cost section and navigating buttons */}
                   <div className={cartCSS.part3}>
                     <section className={cartCSS.align}>
                       <p className={cartCSS.paraleft}> Total Cost: </p>
@@ -236,4 +260,5 @@ function CartPage() {
   );
 }
 
+// exports the HTML code to be called on App.js
 export default CartPage;

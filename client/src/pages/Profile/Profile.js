@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar, faTicket } from "@fortawesome/free-solid-svg-icons";
 
 import pinkprofileImg from "../../images/profile.jpg";
-import walletImg from ".././wallet.jpg";
+import walletImg from "../../images/wallet.jpg";
 
 function ProfilePage() {
   //Custom react hooks

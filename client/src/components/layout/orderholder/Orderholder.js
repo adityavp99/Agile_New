@@ -1,17 +1,30 @@
+// OrderHolder JS/HTML code
+
+// importing CSS styling for OrderHolder from CSS Stylesheet file
 import orderholderCSS from "./Orderholder.module.css";
+// importing pizzahut restaurant image from images folder
 import pizzahutImg from "../../../images/pizzahut.jpg";
 
+// OrderHolder function containing HTML code, parses restaurant, food, delivery objects
 const OrderHolder = ({restaurant}) => {
+        //div container for the orderholder
 return <div className={orderholderCSS.orderhold}> 
+
+                {/* div container to hold the restaurant image */}
                 <div className={orderholderCSS.left}>
                         <img src={pizzahutImg} className={orderholderCSS.photo} alt="Pizzahut Logo" />
                 </div>
-
+                
+                {/* div container to hold the delivery details */}
                 <div className={orderholderCSS.right}>
+
+                        {/* section containing some details */}
                         <section className={orderholderCSS.words}>
                         <p className={orderholderCSS.word1}>restaurant.name_</p>
                         <p className={orderholderCSS.word2}>delivery.date</p>
                         </section>
+
+                        {/* table holding the food details */}
                         <table className={orderholderCSS.table1}>
                                 <tr>
                                         <th className={orderholderCSS.toptablecontent}>Food.name</th>
@@ -24,6 +37,8 @@ return <div className={orderholderCSS.orderhold}>
                                         <td className={orderholderCSS.toptablecontent}>Food.cost</td>
                                 </tr>
                         </table>
+
+                        {/* table holding the delivery details */}
                         <table className={orderholderCSS.table2}>
                                 <tr>
                                         <th>Delivered To:</th>
@@ -59,5 +74,5 @@ return <div className={orderholderCSS.orderhold}>
 
 }
 
-
+// exports the HTML code to be called on App.js
 export default OrderHolder;

@@ -1,9 +1,13 @@
+/* CSS Stylesheet for the OrderHolder */
+
+/* Setting initial Styling for all objects */
 *{
     box-sizing: border-box;
     margin: 0;
     font-family: Helvetica, Arial, sans-serif;
 }
 
+/* Styling for the orderhold div */
 .orderhold{
     text-align: left;
     background-color: #f7fade;
@@ -15,11 +19,13 @@
     border-radius: 21px;
 }
 
+/* Styling for the restaurant image div */
 .right{
     grid-area: right;
     
 }
 
+/* Styling for the restaurant image */
 .photo{
     grid-area: left;
     width: 26vw;
@@ -27,18 +33,21 @@
     border-radius: 10px;
 }
 
+/* Styling for the section containing some details */
 .words{
     grid-area: words;
     display: flex;
     margin: 2vh 3.5vw;
 }
 
+/* Styling for the restaurant name title */
 .word1{
     font-weight: bolder;
     margin: 2vh 0vw;
     font-size: 2em;
 }
 
+/* Styling for the delivery date title */
 .word2{
     position: relative;
     left: 10%;
@@ -47,20 +56,24 @@
     font-size: 1.5em;
 }
 
+/* Styling for the table containing the food order details */
 .table1{
     margin: 5vh 0vw;
     font-size: 1.5em;
 }
 
+/* Styling for the table containing the delivery order details */
 .table2{
     margin: 5vh 3.5vw;
     font-size: 1.5em;
 }
 
+/* Styling for the texts in the table containing food order details */
 .toptablecontent{
     padding: 3vh 3.5vw;
 }
 
+/* Styling for the texts in the table containing delivery order details */
 .data{
     position: relative;
     text-align: right;

@@ -1,3 +1,5 @@
+// Paymentmethod JS/HTML code
+
 //importing dependencies and files
 import { Formik, Form } from "formik";
 import { TextField } from "../../components/layout/Form/TextField";
@@ -7,12 +9,15 @@ import Axios from "axios";
 import paymentMethodCSS from "./Paymentmethod.module.css";
 import { Link } from "react-router-dom";
 
+//importing FontAwesome Icons for the E-Wallet Section
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
+//importing images for the wallet and mastercard section
 import walletImg from "../../images/wallet.jpg";
 import mastercardLogo from "../../images/mastercard.jpg";
 
+// Homepage function containing HTML/JSX code
 function PaymentmethodPage() {
   //Custom react hooks
   const [name] = useState("");
@@ -126,11 +131,17 @@ function PaymentmethodPage() {
       }}
     >
       {(formik) => (
+        // div container for the paymentmethod page 
         <div className={paymentMethodCSS.paymentmethod}>
+
           {/* Form Creation */}
+          {/* div to hold the form contents */}
           <Form className={paymentMethodCSS.formholder}>
+
+            {/* div container to hold the the 2 parts */}
             <div className={paymentMethodCSS.box}>
-              {/* Form to add new card */}
+
+              {/* div to add new card */}
               <div className={paymentMethodCSS.part1}>
                 <h5 className={paymentMethodCSS.addTitle}> Add New Card: </h5>
                 <p>Card Number:</p>
@@ -172,6 +183,7 @@ function PaymentmethodPage() {
                 <button type="submit" className={paymentMethodCSS.button4}>
                   Add Card
                 </button>
+                {/* Link to trackorder page*/}
                 <Link to="/trackorder">
                   <button type="submit" className={paymentMethodCSS.button5}>
                     Pay
@@ -179,7 +191,10 @@ function PaymentmethodPage() {
                 </Link>
               </div>
 
+              {/* div to select the type of payment */}
               <div className={paymentMethodCSS.part2}>
+
+                {/* sub div for e-wallet */}
                 <div className={paymentMethodCSS.wallet}>
                   <section className={paymentMethodCSS.singleline}>
                     <img
@@ -240,6 +255,7 @@ function PaymentmethodPage() {
                   </section>
                 </div>
 
+                {/* sub div for visa */}
                 <div className={paymentMethodCSS.visa}>
                   <h6 className={paymentMethodCSS.paymentTitles}> Visa </h6>
                   <p className={paymentMethodCSS.phrase1}>user.cardnumber</p>
@@ -255,6 +271,7 @@ function PaymentmethodPage() {
                   </section>
                 </div>
 
+                {/* sub div for mastercard */}
                 <div className={paymentMethodCSS.mastercard}>
                   <section className={paymentMethodCSS.mastercardinfo}>
                     <h6 className={paymentMethodCSS.paymentTitles}> Mastercard </h6>
@@ -281,6 +298,7 @@ function PaymentmethodPage() {
                   </section>
                 </div>
 
+                {/* sub div for cash */}
                 <div className={paymentMethodCSS.cash}>
                   <section className={paymentMethodCSS.singleline}>
                     <img
@@ -300,4 +318,5 @@ function PaymentmethodPage() {
   );
 }
 
+// exports the HTML code to be called on App.js
 export default PaymentmethodPage;
