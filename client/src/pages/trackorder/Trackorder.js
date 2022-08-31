@@ -28,32 +28,32 @@ function TrackOrderPage(){
                 <div className={trackOrderCSS.progress}>
                     <div className={trackOrderCSS.progLine}>
                         <div className={trackOrderCSS.circle1}></div>
-                        <img src={p1} alt="take order" width="150px" height="150px" />
+                        <img src={p1} alt="take order" className={trackOrderCSS.images} />
                     </div>
 
                     <div>
                         <div className={trackOrderCSS.circle2}></div>
-                        <img src={p2} alt="order confirmed" width="150px" height="150px" />
+                        <img src={p2} alt="order confirmed" className={trackOrderCSS.images}/>
                     </div>
 
                     <div>
                         <div className={trackOrderCSS.circle3}></div>
-                        <img src={p3} alt="order in process" width="150px" height="150px" />
+                        <img src={p3} alt="order in process" className={trackOrderCSS.images} />
                     </div>
 
                     <div className={trackOrderCSS.progLine}>
                         <div className={trackOrderCSS.circle4}></div>
-                        <img src={p4} alt="order waiting collected" width="150px" height="150px" />
+                        <img src={p4} alt="order waiting collected" className={trackOrderCSS.images} />
                     </div>
 
                     <div>
                         <div className={trackOrderCSS.circle5}></div>
-                        <img src={p5} alt="order on the way" width="150px" height="150px" />
+                        <img src={p5} alt="order on the way" className={trackOrderCSS.images} />
                     </div>
 
                     <div>
                         <div className={trackOrderCSS.circle6}></div>
-                        <img src={p6} alt="order delivered" width="150px" height="150px" />
+                        <img src={p6} alt="order delivered" className={trackOrderCSS.images} />
                     </div>
                     
                 </div>

@@ -122,3 +122,120 @@ h3{
 .image1:hover,.image2:hover,.image3:hover,.image4:hover{
     opacity: 70%;
 }
+
+@media(max-width:768px){
+    /* Styling for the categories page div container*/
+    .categories{
+        background-color: #bee3db;
+    }
+
+    /* H3 styling */
+    h3{
+        font-size: 3em;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #555b6e;
+        padding-top: 5vh;
+    }
+
+    /* Styling for subholder div (Div to control the grid layout of the images) */
+    .subholder{
+        position: relative;
+        text-align: center;
+        display: grid;
+        grid-template-areas: 
+        'image1'
+        'image2'
+        'image3'
+        'image4';
+        margin: 0vh 0.5vw;
+    }
+
+    /* Styling for the Halal image in subholder div*/
+    .image1{
+        grid-area: image1;
+        height: 30vh; 
+        width: 80vw;
+        margin: 3vh 10vw;
+        border-radius: 15px;
+        color: white;
+    }
+
+    /* Styling for the Indian image in subholder div*/
+    .image2{
+        grid-area: image2;
+        height: 30vh; 
+        width: 80vw;
+        margin: 3vh 10vw;
+        border-radius: 15px;
+        color: white;
+    }
+
+    /* Styling for the Vegetarian image in subholder div*/
+    .image3{
+        grid-area: image3;
+        height: 30vh; 
+        width: 80vw;
+        margin: 3vh 10vw;
+        border-radius: 15px;
+        color: white;
+    }
+
+    /* Styling for the Japanese image in subholder div*/
+    .image4{
+        grid-area: image4;
+        height: 30vh; 
+        width: 80vw;
+        margin: 3vh 10vw;
+        border-radius: 15px;
+        color: white;
+    }
+
+    /* Styling for the Halal image label in subholder div*/
+    .label1{
+        position: absolute;
+        top: 10%;
+        left: 44%;
+        color: white;
+        font-size: 3em;
+        font-weight: bold;
+        z-index: 2;
+    } 
+
+    /* Styling for the Indian image label in subholder div*/
+    .label2{
+        position: absolute;
+        top: 35%;
+        left: 43%;
+        color: white;
+        font-size: 3em;
+        font-weight: bold;
+        z-index: 2;
+    }
+
+    /* Styling for the Vegetarian image in subholder div*/
+    .label3{
+        position: absolute;
+        top: 60%;
+        left: 36%;
+        color: white;
+        font-size: 3em;
+        font-weight: bold;
+        z-index: 2;
+    }
+
+    /* Styling for the Japanese image label in subholder div*/
+    .label4{
+        position: absolute;
+        top: 85%;
+        left: 38%;
+        color: white;
+        font-size: 3em;
+        font-weight: bold;
+        z-index: 2;
+    }
+
+    /* Image hover styling for the images in the Categories page */
+    .image1:hover,.image2:hover,.image3:hover,.image4:hover{
+        opacity: 70%;
+    }
+}

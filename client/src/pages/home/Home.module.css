@@ -333,3 +333,369 @@ h3 {
 .image12:hover {
   opacity: 50%;
 }
+
+@media(max-width:768px){
+
+  /* H3 styling */
+h3 {
+  text-align: center;
+  font-size: 3em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #555b6e;
+  padding-bottom: 2vh;
+}
+
+/* Styling for segment1 div (Contains explore image and categories image) */
+.segment1 {
+  position: relative;
+  background-color: #bee3db;
+  text-align: center;
+  grid-template-areas: "image1 image2";
+}
+
+/* Styling for the explore label on top of image*/
+.label1 {
+  position: absolute;
+  top: 38%;
+  left: 16%;
+  color: white;
+  font-size: 3em;
+  font-weight: bold;
+  z-index: 2;
+  /* Black see-through */
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Styling for the categories label on top of image*/
+.label2 {
+  position: absolute;
+  top: 38%;
+  left: 64%;
+  color: white;
+  font-size: 3em;
+  font-weight: bold;
+  z-index: 2;
+  /* Black see-through */
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Styling for the explore image in segment1 div*/
+.image1 {
+  grid-area: image1;
+  height: 30vh;
+  width: 40vw;
+  margin: 3vh 3vw;
+  border-radius: 15px;
+  color: white;
+}
+
+/* Styling for the categories image in segment1 div*/
+.image2 {
+  grid-area: image2;
+  height: 30vh;
+  width: 40vw;
+  margin: 3vh 3vw;
+  border-radius: 15px;
+  color: white;
+}
+
+/* Styling for segment2 div (Trending Now segment) */
+.segment2 {
+  background-color: #f5f9fa;
+  padding-bottom: 5vh;
+}
+
+/* Styling for sub2 div (Div to control the grid layout of the images) */
+.sub2 {
+  text-align: center;
+  grid-template-areas:
+    "image3 image4" 
+    "image6 image6"
+    "image5 image7" ;
+}
+
+.label1{
+  top: 42%;
+  left: 21%;
+  font-size: 1.5em;
+}
+
+.label2{
+  top: 42%;
+  left: 60%;
+  font-size: 1.5em;
+}
+
+.image1 {
+  flex-direction: column;
+  grid-area: image1;
+  height: 30vh;
+  width: 36vw;
+  margin: 3vh 1vw;
+  margin-left: 3vw;
+}
+
+.image2 {
+  flex-direction: column;
+  grid-area: image2;
+  height: 30vh;
+  width: 36vw;
+  margin: 3vh 1vw;
+  border-radius: 15px;
+  color: white;
+}
+
+/* Styling for the Koi image in the Tending Now segment */
+.image3 {
+  grid-area: image3;
+  height: 26vh;
+  width: 35vw;
+  margin: 1vh 4vw;
+  border-radius: 15px;
+  color: white;
+}
+
+/* Styling for the Pasta image in the Tending Now segment */
+.image4 {
+  grid-area: image4;
+  height: 26vh;
+  width: 35vw;
+  margin: 1vh 1vw;
+  border-radius: 15px;
+  color: white;
+}
+
+/* Styling for the Burger image in the Tending Now segment */
+.image5 {
+  grid-area: image5;
+  height: 26vh;
+  width: 35vw;
+  margin: 1vh 4vw;
+  border-radius: 15px;
+  color: white;
+}
+
+/* Styling for the Pizza image in the Tending Now segment */
+.image6 {
+  grid-area: image6;
+  height: 26vh;
+  width: 75vw;
+  margin: 1vh 4vw;
+  margin-right: 1vw;
+  border-radius: 15px;
+  color: white;
+}
+
+/* Styling for the Salad image in the Tending Now segment */
+.image7 {
+  grid-area: image7;
+  height: 26vh;
+  width: 35vw;
+  margin: 1vh 1vw;
+  border-radius: 15px;
+  color: white;
+}
+
+/* Styling for the Koi label in the Tending Now segment */
+.label3 {
+  position: absolute;
+  top: 24%;
+  left: 7%;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  z-index: 2;
+}
+
+/* Styling for the Pasta label in the Tending Now segment */
+.label4 {
+  position: absolute;
+  top: 24%;
+  left: 57%;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  z-index: 2;
+}
+
+/* Styling for the Burger label in the Tending Now segment */
+.label5 {
+  position: absolute;
+  top: 90%;
+  left: 7%;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  z-index: 2;
+}
+
+/* Styling for the Pizza label in the Tending Now segment */
+.label6 {
+  position: absolute;
+  top: 57%;
+  left: 7%;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  z-index: 2;
+}
+
+/* Styling for the Salad label in the Tending Now segment */
+.label7 {
+  position: absolute;
+  top: 90%;
+  left: 57%;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  z-index: 2;
+}
+
+/* Styling for segment3 div (Growing Local Flavours segment) */
+.segment3 {
+  background-color: #89b0ae;
+  padding-bottom: 5vh;
+}
+
+/* Styling for sub3 div (Div to control the grid layout of the images) */
+.sub3 {
+  position: relative;
+  display: grid;
+  grid-template-areas:
+    "image8 image9" 
+    "image12 image12"
+    "image10 image11";
+  margin: 0vh 13vw;
+  text-align: center;
+}
+
+/* Styling for the Nasi lemak image in the Growing Local Flavours segment */
+.image8 {
+  grid-area: image8;
+  height: 26vh;
+  width: 36vw;
+  margin: 1vh 1vw;
+  border-radius: 15px;
+  color: white;
+}
+
+/* Styling for the Idly image in the Growing Local Flavours segment */
+.image9 {
+  grid-area: image9;
+  height: 26vh;
+  width: 36vw;
+  margin: 1vh 1vw;
+  border-radius: 15px;
+  color: white;
+}
+
+/* Styling for the Chilli Crab image in the Growing Local Flavours segment */
+.image10 {
+  grid-area: image10;
+  height: 26vh;
+  width: 36vw;
+  margin: 1vh 1vw;
+  border-radius: 15px;
+  color: white;
+}
+
+/* Styling for the Chicken Rice image in the Growing Local Flavours segment */
+.image11 {
+  grid-area: image11;
+  height: 27vh;
+  width: 36vw;
+  margin: 1vh 1vw;
+  border-radius: 15px;
+  color: white;
+}
+
+/* Styling for the View More image in the Growing Local Flavours segment */
+.image12 {
+  grid-area: image12;
+  height: 27vh;
+  width: 75vw;
+  margin: 1vh 1vw;
+  border-radius: 15px;
+  color: white;
+}
+
+/* Styling for the Nasi lemak label in the Growing Local Flavours segment */
+.label8 {
+  position: absolute;
+  top: 24%;
+  left: 3%;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  z-index: 2;
+}
+
+/* Styling for the Idly label in the Growing Local Flavours segment */
+.label9 {
+  position: absolute;
+  top: 24%;
+  left: 55%;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  z-index: 2;
+}
+
+/* Styling for the Chilli Crab label in the Growing Local Flavours segment */
+.label10 {
+  position: absolute;
+  top: 89%;
+  left: 3%;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  z-index: 2;
+}
+
+/* Styling for the Chicken Rice label in the Growing Local Flavours segment */
+.label11 {
+  position: absolute;
+  top: 89%;
+  left: 55%;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  z-index: 2;
+}
+
+/* Styling for the View More label in the Growing Local Flavours segment */
+.label12 {
+  position: absolute;
+  top: 57%;
+  left: 3%;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  z-index: 2;
+}
+
+/* Image hover styling for the images in the Home page */
+.image1:hover,
+.image2:hover,
+.image3:hover,
+.image4:hover,
+.image5:hover,
+.image6:hover,
+.image7:hover,
+.image8:hover,
+.image9:hover,
+.image10:hover,
+.image11:hover,
+.image12:hover {
+  opacity: 50%;
+}
+
+  
+
+
+
+}

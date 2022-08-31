@@ -3,7 +3,6 @@
     margin: 0;
 }
 
-
 .signin{
     background-color: #bee3db;
     padding: 5vh 5vw;
@@ -101,4 +100,105 @@
 
 .link{
     text-decoration: none;
+}
+
+@media(max-width:768px){
+    .signin{
+        background-color: #bee3db;
+        padding: 5vh 5vw;
+        min-height: 40vh;
+        text-align: center;
+    }
+    
+    .form{
+        background-color: #758087;
+        color: #ffd6ba;
+        position: relative;
+        left: 25%;
+        width: 50vw;
+        min-height: 53vh;
+        border-radius: 25px;
+    }
+    
+    .openingdiv{
+        display: flex;
+    }
+    
+    .title{
+        color: #ffd6ba;
+        text-align: center;
+        font-size: 2em;
+        padding: 5vh 2vw;
+    }
+    
+    .image1{
+        width: 8vw;
+        height: 9vh;
+        margin: 4vh 0.5vw 1vh 12vw;
+    }
+    
+    .field1, .field2, .field3, .field4{
+        width: 32vw;
+        height: 6vh;
+        margin: 0.5vh 5vw;
+        border-radius: 50px;
+        padding-left: 2vh;
+        color: black;
+        font-size: 1.2em;
+    }
+    
+    .fields:required{
+        color: #ffd6ba;
+    }
+    
+    .button1, .button2{
+        background-color: #ffd6ba;
+        color: #555b6e;
+        width: 15vw;
+        height: 6vh;
+        margin: 1vh 5vw;
+        border-radius: 51px;
+        font-size: 1.2em;
+        font-family: Helvetica, Arial, sans-serif;
+    }
+    
+    .button2{
+        margin: 0vh 5vw;
+    }
+    
+    .endingdiv{
+        background-color: #89b0ae;
+        margin-top: 4.3vh;
+        padding: 1vh 5vw;
+        border-bottom-left-radius:25px;
+        border-bottom-right-radius:25px;
+        
+    }
+    
+    .label1 {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 1.3em;
+        font-weight: bolder;
+        color: #555b63;
+        margin: 1vh 2vw;
+    }
+    .label2 {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 1.3em;
+        color: #555b63;
+        margin: 1vh 2vw;
+        padding-top: 5px;
+    }
+    
+    .label3{
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 1.3em;
+        font-weight: bolder;
+        color: #555b63;
+        margin: 1vh 2vw;
+    }
+    
+    .link{
+        text-decoration: none;
+    }
 }
