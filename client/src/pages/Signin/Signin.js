@@ -76,7 +76,7 @@ function SigninPage() {
               </Link>
               <p className={signinCSS.label2}> Dont have an account? </p>
               <Link to="/signup" className={signinCSS.link}>
-                <p className={signinCSS.label3}> Sign Up </p>=
+                <p className={signinCSS.label3}> Sign Up </p>
               </Link>
             </div>
           </Form>

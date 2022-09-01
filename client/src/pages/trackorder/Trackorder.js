@@ -49,8 +49,7 @@ function TrackOrderPage() {
             <img
               src={p4}
               alt="order waiting collected"
-              width="150px"
-              height="150px"
+              className={trackOrderCSS.images}
             />
           </div>
 
