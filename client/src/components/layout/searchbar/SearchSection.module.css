@@ -36,3 +36,44 @@
     background-color: #fed1b4;
     border: hidden;
 }
+
+@media(max-width:426px){
+.container {
+    background-color: #fed1b4;
+    padding: 3vh 0vw;
+    max-width: 100%;
+}
+
+/* styling for form wrapper */
+.form {
+    text-align: center;
+}
+
+/* styling for input bar */
+.inputbar {
+    text-align: center;
+    align-self: center;
+    border-radius: 88px;
+    width: 50vw;
+    padding: 3vh 5vw;
+    margin: 0vh 4vw;
+    border: none;
+}
+
+/* styling to hide search label */
+.visuallyHidden {
+    clip: rect (0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+/* styling for search button */
+.button {
+    background-color: #fed1b4;
+    border: hidden;
+}
+}

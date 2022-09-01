@@ -57,3 +57,59 @@
     margin: 0vh 0.5vw;
     margin-bottom: 0.3vh;
 }
+
+@media(max-width:426px){
+/* Styling for restaurant holder */
+.holder{
+    background-color: #f7fade;
+    width: 78vw;
+    height: 50vh;
+    margin: 1vh 7vw;
+    border-radius: 19px;
+    padding-top: 2vh;
+}
+
+/* Styling for the a tag that links the to the restaurant page (pizzahut link) */
+.atag{
+    text-decoration: none;
+    color: black;
+}
+
+/* Styling for restaurant images */
+.image{
+    width: 70vw;
+    height: 30vh;
+    border-radius: 15px;
+}
+
+/* Styling for restaurant name label*/
+.label1{
+    text-align: left;
+    padding: 0vh 1vw;
+    font-size: 2em;
+}
+
+/* Styling for restaurant rating label */
+.label2{
+    position: relative;
+    top: 7%;
+    text-align: right;
+    padding: 0vh 1vw;
+    font-size: 2em;
+}
+
+/* Styling for restaurant distance label */
+.label3{
+    text-align: left;
+    padding: 4vh 1vw;
+    font-size: 2em;
+}
+
+/* Styling for restaurant rating star icon */
+.star{
+    color: gold;
+    margin: 0vh 0.5vw;
+    margin-bottom: 0.3vh;
+}
+
+}
