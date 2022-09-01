@@ -81,3 +81,79 @@
     padding: 3vh 2vw;
 }
 
+@media(max-width:768px){
+    /* Styling for the orderhold div */
+    .orderhold{
+        text-align: left;
+        background-color: #f7fade;
+        color: black;
+        margin: 3vh 12vw;
+        display: grid;
+        grid-template-areas:
+        'left right';
+        border-radius: 10px;
+    }
+
+    /* Styling for the restaurant image div */
+    .right{
+        grid-area: right;
+        
+    }
+
+    /* Styling for the restaurant image */
+    .photo{
+        grid-area: left;
+        width: 26vw;
+        height: 40vh;
+        border-radius: 10px;
+    }
+
+    /* Styling for the section containing some details */
+    .words{
+        grid-area: words;
+        display: flex;
+        margin: 2vh 3.5vw;
+    }
+
+    /* Styling for the restaurant name title */
+    .word1{
+        font-weight: bolder;
+        margin: 2vh 0vw;
+        font-size: 1.3em;
+    }
+
+    /* Styling for the delivery date title */
+    .word2{
+        position: relative;
+        left: 3%;
+        margin: 3vh 2vw;
+        padding: 0vh 5vw;
+        font-size: 1em;
+    }
+
+    /* Styling for the table containing the food order details */
+    .table1{
+        margin: 5vh 0vw;
+        font-size: 1em;
+    }
+
+    /* Styling for the table containing the delivery order details */
+    .table2{
+        margin: 5vh 1.5vw;
+        font-size: 1em;
+    }
+
+    /* Styling for the texts in the table containing food order details */
+    .toptablecontent{
+        padding: 3vh 2.5vw;
+    }
+
+    /* Styling for the texts in the table containing delivery order details */
+    .data{
+        position: relative;
+        text-align: right;
+        left: 41%;
+        padding: 3vh 0.5vw;
+    }
+
+}

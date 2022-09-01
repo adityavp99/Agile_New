@@ -36,3 +36,52 @@
     font-size: 1.2em;
     font-family: Helvetica, Arial, sans-serif;
 }
+
+@media(max-width:768px){
+
+    /* Styling for pizzahut div containing restaurant heading and foodholders */
+    .pizzahut{
+        background-color: #bee3db;
+        padding: 4vh 0vw;
+    }
+
+    /* Styling for head div containing restaurant heading */
+    .head{
+        grid-area: head;
+        font-size: 0.9em;
+        margin: 1vh 1vw;
+    }
+
+    /* Styling for head div containing foodholders */
+    .foods{
+        grid-area: foods;
+        margin: 1vh 12vw;
+        display: grid;
+        grid-template-areas: 
+        'food'
+        'food'
+        'food'
+        'food'
+        'food'
+        'food';
+    }
+
+    .indi{
+        grid-area: food;
+        margin: 1vh 12vw;
+    }
+
+    /* Styling for link to Comparison page */
+    .submit{
+        background-color: #ffd6ba;
+        color: #555b6e;
+        width: 15vw;
+        height: 5vh;
+        margin-left: 45vw;
+        margin-bottom: 1vh;
+        border-radius: 51px;
+        font-size: 1.2em;
+        font-family: Helvetica, Arial, sans-serif;
+    }
+
+}

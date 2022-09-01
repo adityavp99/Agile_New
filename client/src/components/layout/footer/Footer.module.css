@@ -7,7 +7,9 @@
 /* styling for footer wrapper */
 #footer {
   display: grid;
-  grid-template-areas: "content content content logoholder";
+  grid-template-areas: 
+  'content content content logoholder';
+  max-width: 100%;
 }
 
 /* styling for content wrapper */
@@ -79,8 +81,8 @@
   margin: 0vh 0vw;
   float: right;
   height: 35vh;
-  width: 19vw;
-}
+    width: 22vw;
+  }
 
 /* styling for link */
 .link {
@@ -89,3 +91,84 @@
   font-size: 1.2em;
   text-decoration: double;
 }
+
+@media(max-width:768px){
+  #footer{
+    display: grid;
+    grid-template-areas: 
+    'content content content logoholder';
+  }
+  
+  #content{
+    grid-area: content;
+    background-color: #4b5063;
+    color:#b4dfd6;
+    font-size: 1.1em;
+  }
+  
+  #logoholder{
+    grid-area: logoholder;
+    background-color: #4b5063;
+  }
+  
+  .p{
+    margin: 2vh 3vw;
+    padding-top: 2vh;
+    padding-bottom: 3vh;
+    font-size: 1.5em;
+  }
+  
+  .exploreTakeout{
+    margin: 2vh 3vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    font-size: 1.5em;
+  }
+  
+  .ul{
+    background-color: #4b5063;  /*b4dfd6; */
+    color:#b4dfd6;
+    text-align: left;
+    margin: 3vh 2vw;
+  }
+  
+  .li1{
+    margin: 1vh 0.5vw;
+    display: inline-block;
+  }
+  .li2{
+    margin: 1vh 14.5vw;
+    display: inline-block;
+  }
+  .li3{
+    margin: 1vh 0vw;
+    display: inline-block;
+  }
+  
+  .li4{
+    margin: 1vh 0.5vw;
+    display: inline-block;
+  }
+  .li5{
+    margin: 1vh 13.4vw;
+    display: inline-block;
+  }
+  .li6{
+    margin: 1vh 4.8vw;
+    display: inline-block;
+  }
+  
+  .link{
+    text-decoration: none;
+    color:#b4dfd6;
+    font-size: 1.2em;
+    text-decoration: double;
+  }
+  
+  #logo{
+    margin: 0vh 0vw;
+    float: right;
+    height: 35vh;
+    width: 22vw;
+  }
+}  

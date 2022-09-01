@@ -1,6 +1,7 @@
 .container {
     background-color: #fed1b4;
     padding: 3vh 0vw;
+    max-width: 100%;
 }
 
 /* styling for form wrapper */
