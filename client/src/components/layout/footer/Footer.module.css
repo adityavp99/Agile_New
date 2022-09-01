@@ -93,12 +93,14 @@
 }
 
 @media(max-width:768px){
+  /* styling for footer wrapper */
   #footer{
     display: grid;
     grid-template-areas: 
     'content content content logoholder';
   }
   
+  /* styling for content wrapper */
   #content{
     grid-area: content;
     background-color: #4b5063;
@@ -106,18 +108,20 @@
     font-size: 1.1em;
   }
   
+  /* styling for logo section */
   #logoholder{
     grid-area: logoholder;
     background-color: #4b5063;
   }
   
-  .p{
+  /* .p{
     margin: 2vh 3vw;
     padding-top: 2vh;
     padding-bottom: 3vh;
     font-size: 1.5em;
-  }
+  } */
   
+  /* styling for explore takeout header */
   .exploreTakeout{
     margin: 2vh 3vw;
     padding-top: 2vh;
@@ -125,6 +129,7 @@
     font-size: 1.5em;
   }
   
+  /* styling for ul container */
   .ul{
     background-color: #4b5063;  /*b4dfd6; */
     color:#b4dfd6;
@@ -132,6 +137,7 @@
     margin: 3vh 2vw;
   }
   
+  /* styling for individual list items */
   .li1{
     margin: 1vh 0.5vw;
     display: inline-block;
@@ -158,6 +164,7 @@
     display: inline-block;
   }
   
+  /* styling for link */
   .link{
     text-decoration: none;
     color:#b4dfd6;
@@ -165,6 +172,7 @@
     text-decoration: double;
   }
   
+  /* styling for logo */
   #logo{
     margin: 0vh 0vw;
     float: right;
