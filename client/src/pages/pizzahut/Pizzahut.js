@@ -1,7 +1,15 @@
-import FoodHolder from "../../components/layout/foodholder/Foodholder";
-import RestaurantHeading from "../../components/layout/restaurantheading/Restaurantheading";
-import pizzahutCSS from "./Pizzahut.module.css";
+// Pizzahutpage JS/HTML code
 
+// importing CSS styling for home page from CSS Stylesheet file
+import pizzahutCSS from "./Pizzahut.module.css";
+// importing RestaurantHeading from components folder
+// Each RestaurantHeading contains the details of 1 restaurant
+import RestaurantHeading from "../../components/layout/restaurantheading/Restaurantheading";
+// importing FoodHolder from components folder
+// Each FoodHolder contains 1 food item from that restaurant
+import FoodHolder from "../../components/layout/foodholder/Foodholder";
+
+// importing restaurant and food images from the images folder
 import pizzahutImg from "../../images/pizzahut.jpg";
 import veggieloversImg from "../../images/veggielovers.jpg";
 import pepperoniImg from "../../images/pepperoni.jpg";
@@ -71,20 +79,33 @@ const lasagna = {
   image: lasagnaImg,
 };
 
+// Pizzahutpage function containing HTML code
 function PizzahutPage() {
   return (
+    //div container for the Pizzahut page
     <div className={pizzahutCSS.pizzahut}>
+      {/* sub div container for the restaurant display */}
       <div className={pizzahutCSS.head}>
         <RestaurantHeading restaurant={pizzahut} />
       </div>
+
+      {/* sub div container for the food items from the restaurant */}
       <div className={pizzahutCSS.foods}>
+        {/* Component that displays 1 food item: 1 food item will mean 1 foodholder */}
         <FoodHolder food={veggielovers} className={pizzahutCSS.indi} />
+        {/* Component that displays 1 food item: 1 food item will mean 1 foodholder */}
         <FoodHolder food={pepperoni} className={pizzahutCSS.indi} />
+        {/* Component that displays 1 food item: 1 food item will mean 1 foodholder */}
         <FoodHolder food={hawaiian} className={pizzahutCSS.indi} />
+        {/* Component that displays 1 food item: 1 food item will mean 1 foodholder */}
         <FoodHolder food={currychicken} className={pizzahutCSS.indi} />
+        {/* Component that displays 1 food item: 1 food item will mean 1 foodholder */}
         <FoodHolder food={garlicbread} className={pizzahutCSS.indi} />
+        {/* Component that displays 1 food item: 1 food item will mean 1 foodholder */}
         <FoodHolder food={lasagna} className={pizzahutCSS.indi} />
       </div>
+
+      {/* Link to Comparison page after confirming food items to order */}
       <a href="/comparison">
         <button type="submit" className={pizzahutCSS.submit}>
           Continue
@@ -94,4 +115,5 @@ function PizzahutPage() {
   );
 }
 
+// exports the HTML code to be called on App.js
 export default PizzahutPage;

@@ -1,23 +1,30 @@
+/* CSS Stylesheet for the Home page */
+
+/* Setting initial Styling for all objects */
 *{
     box-sizing: border-box;
     margin: 0;
     font-family: Helvetica, Arial, sans-serif;
 }
 
+/* Styling for pizzahut div containing restaurant heading and foodholders */
 .pizzahut{
     background-color: #bee3db;
     padding: 4vh 0vw;
 }
 
+/* Styling for head div containing restaurant heading */
 .head{
     grid-area: head;
 }
 
+/* Styling for head div containing foodholders */
 .foods{
     grid-area: foods;
     margin: 1vh 11vw;
 }
 
+/* Styling for link to Comparison page */
 .submit{
     background-color: #ffd6ba;
     color: #555b6e;

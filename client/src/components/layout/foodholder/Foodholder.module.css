@@ -1,13 +1,18 @@
+/* CSS Stylesheet for the FoodHolder */
+
+/* Setting initial Styling for all objects */
 *{
     box-sizing: border-box;
 }
 
+/* H4 styling */
 h4{
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     padding-top: 3vh;
 }
 
+/* Styling for the foodholder div */
 .group{
     background-color: #f7fade;
     color: black;
@@ -21,11 +26,13 @@ h4{
     border-radius: 35px;
 }
 
+/* Styling for restaurant image div */
 .foodpic{
     grid-area: image;
     text-align: left;
 }
 
+/* Styling for restaurant image */
 .foodpic img{
     width: 15vw;
     height: 30vh;
@@ -33,17 +40,21 @@ h4{
     margin: 1vh 1vw;
 }
 
+/* Styling for foods' details div */
 .content{
     grid-area: text;
     padding-top: 2vh;
     padding: 2vh 0.6vw;
 }
 
+/* Styling to align food name and quantity buttons */
 .topline{
     display: flex;
     margin: 1.5vh 0vw;
 }
 
+
+/* Styling for food name label */
 .label1{
     text-align: left;
     padding: 2vh 0vw;
@@ -51,6 +62,7 @@ h4{
     font-size: 1.2em;
 }
 
+/* Styling for - and + buttons */
 .button1,.button2{
     margin: 1.5vh 0.5vw;
     width: 2vw;
@@ -62,23 +74,28 @@ h4{
     border-radius: 50px;
     border-width: 3px;
 }
+
+/* Styling for quantity counter div */
 .counter{
     display: flex;
     margin: 0vh 1vw;
 }
 
+/* Styling for quantity label */
 .counter p{
     font-size: 1.5em;
     margin: 1.5vh 0.5vw;
     border-color: black;
 }
 
+/* Styling for food cost label */
 .label2{
     text-align: left;
     padding-top: 4vh;
     font-size: 1.3em;
 }
 
+/* Styling for Add to Cost button */
 .button3{
     position: relative;
     top: 12%;
@@ -89,5 +106,4 @@ h4{
     width: 15vw;
     height: 6vh;
     border-radius: 37px;
-
 }

@@ -1,14 +1,19 @@
+/* CSS Stylesheet for the Comparison page */
+
+/* Setting initial Styling for all objects */
 *{
     box-sizing: border-box;
     margin: 0;
     font-family: Helvetica, Arial, sans-serif;
 }
 
+/* Styling for the comparison page div */
 .comparison{
     background-color: #bee3db;
     padding: 5vh 0vw;
 }
 
+/* Styling for the payment button */
 .button{
     background-color: #ffd6ba;
     color: #555b6e;

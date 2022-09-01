@@ -1,7 +1,11 @@
+/* CSS Stylesheet for the RestaurantHolder */
+
+/* Setting initial Styling for all objects */
 *{
     box-sizing: border-box;
 }
 
+/* Styling for restaurant holder */
 .holder{
     background-color: #f7fade;
     width: 28vw;
@@ -11,23 +15,27 @@
     padding-top: 2vh;
 }
 
+/* Styling for the a tag that links the to the restaurant page (pizzahut link) */
 .atag{
     text-decoration: none;
     color: black;
 }
 
+/* Styling for restaurant images */
 .image{
     width: 25vw;
     height: 26vh;
     border-radius: 15px;
 }
 
+/* Styling for restaurant name label*/
 .label1{
     text-align: left;
     padding: 0vh 1vw;
     font-size: 2em;
 }
 
+/* Styling for restaurant rating label */
 .label2{
     position: relative;
     top: 10%;
@@ -36,12 +44,14 @@
     font-size: 2em;
 }
 
+/* Styling for restaurant distance label */
 .label3{
     text-align: left;
     padding: 4vh 1vw;
     font-size: 2em;
 }
 
+/* Styling for restaurant rating star icon */
 .star{
     color: gold;
     margin: 0vh 0.5vw;

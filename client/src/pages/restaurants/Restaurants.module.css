@@ -1,14 +1,19 @@
+/* CSS Stylesheet for the Restaurants page */
+
+/* Setting initial Styling for all objects */
 *{
     box-sizing: border-box;
     margin: 0;
     font-family: Helvetica, Arial, sans-serif;
 }
 
+/* Styling for the comparison page div */
 .restaurants{
     background-color: #bee3db;
     padding-bottom: 3vh;
 }
 
+/* H3 styling */
 h3{
     text-align: center;
     font-size: 3em;
@@ -17,6 +22,7 @@ h3{
     padding-top: 3vh;
 }
 
+/* Styling for sub divs containing row of 3 restaurants */
 .sub1, .sub2, .sub3{
     display: flex;
     margin: 5vh 5.5vw;

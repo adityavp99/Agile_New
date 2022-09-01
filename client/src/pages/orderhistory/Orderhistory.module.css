@@ -1,9 +1,13 @@
+/* CSS Stylesheet for the Home page */
+
+/* Setting initial Styling for all objects */
 *{
     box-sizing: border-box;
     margin: 0;
     font-family: Helvetica, Arial, sans-serif;
 }
 
+/* Styling for orderhistory div containing OrderHolders*/
 .orderhistory{
     background-color: #bee3db;
     padding: 2vh 0vw;

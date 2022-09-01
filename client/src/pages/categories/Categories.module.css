@@ -1,13 +1,18 @@
+/* CSS Stylesheet for the Categories page */
+
+/* Setting initial Styling for all objects */
 *{
     box-sizing: border-box;
     margin: 0;
     font-family: Helvetica, Arial, sans-serif;
 }
 
+/* Styling for the categories page div container*/
 .categories{
     background-color: #bee3db;
 }
 
+/* H3 styling */
 h3{
     font-size: 3em;
     font-family: Arial, Helvetica, sans-serif;
@@ -16,6 +21,7 @@ h3{
     margin-left: 6vw;
 }
 
+/* Styling for subholder div (Div to control the grid layout of the images) */
 .subholder{
     position: relative;
     text-align: center;
@@ -28,6 +34,7 @@ h3{
     margin: 0vh 6vw;
 }
 
+/* Styling for the Halal image in subholder div*/
 .image1{
     grid-area: image1;
     height: 30vh; 
@@ -37,6 +44,7 @@ h3{
     color: white;
 }
 
+/* Styling for the Indian image in subholder div*/
 .image2{
     grid-area: image2;
     height: 30vh; 
@@ -46,6 +54,7 @@ h3{
     color: white;
 }
 
+/* Styling for the Vegetarian image in subholder div*/
 .image3{
     grid-area: image3;
     height: 30vh; 
@@ -55,6 +64,7 @@ h3{
     color: white;
 }
 
+/* Styling for the Japanese image in subholder div*/
 .image4{
     grid-area: image4;
     height: 30vh; 
@@ -64,6 +74,7 @@ h3{
     color: white;
 }
 
+/* Styling for the Halal image label in subholder div*/
 .label1{
     position: absolute;
     top: 10%;
@@ -74,6 +85,7 @@ h3{
     z-index: 2;
 } 
 
+/* Styling for the Indian image label in subholder div*/
 .label2{
     position: absolute;
     top: 35%;
@@ -84,6 +96,7 @@ h3{
     z-index: 2;
 }
 
+/* Styling for the Vegetarian image in subholder div*/
 .label3{
     position: absolute;
     top: 61%;
@@ -94,6 +107,7 @@ h3{
     z-index: 2;
 }
 
+/* Styling for the Japanese image label in subholder div*/
 .label4{
     position: absolute;
     top: 86%;
@@ -104,6 +118,7 @@ h3{
     z-index: 2;
 }
 
+/* Image hover styling for the images in the Categories page */
 .image1:hover,.image2:hover,.image3:hover,.image4:hover{
     opacity: 70%;
 }
