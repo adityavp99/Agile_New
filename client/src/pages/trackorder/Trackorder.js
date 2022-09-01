@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 import trackOrderCSS from "./Trackorder.module.css";
 
 //Importing order progress pics
-import p1 from "./p1.png";
-import p2 from "./p2.png";
-import p3 from "./p3.png";
-import p4 from "./p4.png";
-import p5 from "./p5.png";
-import p6 from "./p6.png";
+import orderProg1 from "../../images/orderProg1.png";
+import orderProg2 from "../../images/orderProg2.png";
+import orderProg3 from "../../images/orderProg3.png";
+import orderProg4 from "../../images/orderProg4.png";
+import orderProg5 from "../../images/orderProg5.png";
+import orderProg6 from "../../images/orderProg6.png";
 
 //Track order page function containing JSX code
 function TrackOrderPage() {
@@ -31,23 +31,23 @@ function TrackOrderPage() {
         <div className={trackOrderCSS.progress}>
           <div className={trackOrderCSS.progLine}>
             <div className={trackOrderCSS.circle1}></div>
-            <img src={p1} alt="take order" className={trackOrderCSS.images} />
+            <img src={orderProg1} alt="take order" className={trackOrderCSS.images} />
           </div>
 
           <div>
             <div className={trackOrderCSS.circle2}></div>
-            <img src={p2} alt="order confirmed" className={trackOrderCSS.images}/>
+            <img src={orderProg2} alt="order confirmed" className={trackOrderCSS.images}/>
           </div>
 
           <div>
             <div className={trackOrderCSS.circle3}></div>
-            <img src={p3} alt="order in process" className={trackOrderCSS.images} />
+            <img src={orderProg3} alt="order in process" className={trackOrderCSS.images} />
           </div>
 
           <div className={trackOrderCSS.progLine}>
             <div className={trackOrderCSS.circle4}></div>
             <img
-              src={p4}
+              src={orderProg4}
               alt="order waiting collected"
               className={trackOrderCSS.images}
             />
@@ -55,12 +55,12 @@ function TrackOrderPage() {
 
           <div>
             <div className={trackOrderCSS.circle5}></div>
-            <img src={p5} alt="order on the way" className={trackOrderCSS.images} />
+            <img src={orderProg5} alt="order on the way" className={trackOrderCSS.images} />
           </div>
 
           <div>
             <div className={trackOrderCSS.circle6}></div>
-            <img src={p6} alt="order delivered" className={trackOrderCSS.images} />
+            <img src={orderProg6} alt="order delivered" className={trackOrderCSS.images} />
           </div>
         </div>
 
