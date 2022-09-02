@@ -9,6 +9,12 @@ import helpCSS from "./Help.module.css";
 
 //Help page function containing JSX code
 function HelpPage() {
+  function feedbackReceived() {
+    alert(
+      "Thank you for your comments! We value your feedback & will address them soon!"
+    );
+  }
+
   return (
     //Page Wrapper (Green area)
     <div className={helpCSS.wrapper}>
@@ -86,7 +92,11 @@ function HelpPage() {
           <div className={helpCSS.feedback}>
             <h2 className={helpCSS.feedbackHeader}>Feedback</h2>
             <input type="text" className={helpCSS.feedbackArea} />
-            <button type="reset" className={helpCSS.submit}>
+            <button
+              type="reset"
+              onClick={feedbackReceived}
+              className={helpCSS.submit}
+            >
               Submit
             </button>
           </div>
