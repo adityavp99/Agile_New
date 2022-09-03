@@ -211,15 +211,38 @@ function PaymentmethodPage() {
 
                   <section className={paymentMethodCSS.singleline}>
                     <p>Amount:</p>
-                    <TextField
-                      placeholder="$0.00"
-                      name="amount"
-                      type="text"
-                      maxlength="3"
-                      min="0"
-                      max="999"
-                      className={paymentMethodCSS.input5}
-                    />
+                    <select className={paymentMethodCSS.dropdown2} placeholder="$0.00" name="cards">
+                      <option
+                        className={paymentMethodCSS.cardName}
+                        value="$10.00"
+                      >
+                        $10.00
+                      </option>
+                      <option
+                        className={paymentMethodCSS.cardName}
+                        value="$20.00"
+                      >
+                        $20.00
+                      </option>
+                      <option
+                        className={paymentMethodCSS.cardName}
+                        value="$30.00"
+                      >
+                        $30.00
+                      </option>
+                      <option
+                        className={paymentMethodCSS.cardName}
+                        value="$40.00"
+                      >
+                        $40.00
+                      </option>
+                      <option
+                        className={paymentMethodCSS.cardName}
+                        value="$50.00"
+                      >
+                        $50.00
+                      </option>
+                    </select>
                     <button type="submit" className={paymentMethodCSS.button6}>
                       Top-Up
                     </button>

@@ -1,5 +1,6 @@
 // Homepage JS/HTML code
 
+import { Link } from 'react-router-dom';
 // importing CSS styling for home page from CSS Stylesheet file
 import homeCSS from "./Home.module.css";
 
@@ -63,8 +64,12 @@ function HomePage() {
           <p className={homeCSS.label5}>Burger</p>
           <img src={burgerImg} className={homeCSS.image5} alt="Burger" />
 
-          <p className={homeCSS.label6}>Pizza</p>
-          <img src={pizzaImg} className={homeCSS.image6} alt="Pizza" />
+          <section className={homeCSS.pizzaholder}>
+            <Link to='/pizzahut'>
+              <p className={homeCSS.label6}>Pizza</p>
+              <img src={pizzaImg} className={homeCSS.image6} alt="Pizza" />
+            </Link>
+          </section>
 
           <p className={homeCSS.label7}>Salads</p>
           <img src={saladsImg} className={homeCSS.image7} alt="Salads" />

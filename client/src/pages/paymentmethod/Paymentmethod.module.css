@@ -193,7 +193,7 @@ h5 {
 }
 
 /* Styling for Amount inputs */
-.input5 {
+.dropdown2 {
   width: 19vw;
   height: 3vw;
   font-size: 1.5em;
@@ -501,7 +501,7 @@ h5 {
   }
 
   /* Styling for Amount inputs */
-  .input5 {
+  .dropdown2 {
     width: 19vw;
     height: 6vw;
     font-size: 1.5em;
@@ -839,10 +839,10 @@ h5 {
   }
 
   /* Styling for Amount inputs */
-  .input5 {
+  .dropdown2 {
     width: 23vw;
     height: 8vw;
-    font-size: 1.5em;
+    font-size: 1em;
     border-radius: 15px;
     margin-top: 0.3vh;
     padding: 1vh 1vw;

@@ -121,9 +121,12 @@ h3 {
   color: white;
 }
 
+.pizzaholder{
+  grid-area: image6;
+}
+
 /* Styling for the Pizza image in the Tending Now segment */
 .image6 {
-  grid-area: image6;
   height: 26vh;
   width: 52vw;
   margin: 1vh 1vw;

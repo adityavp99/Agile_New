@@ -76,21 +76,21 @@ const ComparisonHolder = ({restaurant}) => {
                         <table className={comparisonHolderCSS.deliverytable}>
                             <tr>
                                 <th><img src={grabImg} className={comparisonHolderCSS.deliverypic} alt="Grab Logo" /></th>
-                                <td className={comparisonHolderCSS.deliverycontent}>delivery.partner</td>
                                 <td className={comparisonHolderCSS.deliverycontent}>delivery.timing</td>
+                                <td className={comparisonHolderCSS.deliverycontent}>delivery.totalcost</td>
                                 <td className={comparisonHolderCSS.deliverychoice}><input type="radio" name= "selection"></input></td>
                             </tr>
                             
                             <tr>
                                 <th><img src={foodpandaImg} className={comparisonHolderCSS.deliverypic} alt="Foodpanda Logo" /></th>
-                                <td className={comparisonHolderCSS.deliverycontent}>delivery.partner</td>
                                 <td className={comparisonHolderCSS.deliverycontent}>delivery.timing</td>
+                                <td className={comparisonHolderCSS.deliverycontent}>delivery.totalcost</td>
                                 <td className={comparisonHolderCSS.deliverychoice}><input type="radio" name= "selection"></input></td>
                             </tr>
                             <tr>
                                 <th><img src={lalamoveImg} className={comparisonHolderCSS.deliverypic} alt="Lalamove Logo" /></th>
-                                <td className={comparisonHolderCSS.deliverycontent}>delivery.partner</td>
                                 <td className={comparisonHolderCSS.deliverycontent}>delivery.timing</td>
+                                <td className={comparisonHolderCSS.deliverycontent}>delivery.totalcost</td>
                                 <td className={comparisonHolderCSS.deliverychoice}><input type="radio" name="selection"></input></td>
                             </tr>
                         </table>
