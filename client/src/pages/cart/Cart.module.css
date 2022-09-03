@@ -333,3 +333,170 @@
 
 
 }
+
+@media(max-width:426px){
+    /* Styling for the cart page div */
+    .cart{
+        background-color: #bee3db;
+        padding: 5vh 0vw;
+        text-align: left;
+    }
+
+    /* Styling for the forms div container */
+    .forms{
+        color: #ffd6ba;
+        position: relative;
+        margin: 0vh 5vw;
+    }
+
+    /* Styling for island div (Div to control the grid layout of the images) */
+    .island{
+        display: grid;
+        grid-template-areas: 
+        "segment1" 
+        "segment2";
+        margin: 0vh 7vw 2vh 7vw;
+        color: black;
+    }
+
+    /* Styling for the address form Title */
+    .addressTitle{
+        color: #ffd6ba;
+        font-size: 1.5em;
+        text-align: left;
+        padding: 3vh 5vw;
+    }
+
+    /* Styling for the address form segment */
+    .segment1{
+        grid-area: segment1;
+        background-color: #758087;
+        padding: 5vh 2vw;
+        border-radius: 10px;
+    }
+
+    /* Styling to set width of the form fields */
+    .fieldslong{
+        font-size: 1.5em;
+        border-radius: 50px;
+        margin: 2vh 1vw;
+        margin-left: 8vw;
+        padding: 1vh 4vw;
+        color: black;
+        width: 58vw;
+    }
+
+    /* Styling for the promocode form segment */
+    .segment2{
+        grid-area: segment2;
+        background-color: #89b0ae;
+        margin: 3vh 0vw;
+        padding: 5vh 2vw;
+        border-radius: 10px;
+    }
+
+    /* Styling for the promocode segement paragraphs */
+    .promosegment p{
+        margin: 1vh 1vw;
+        font-size: 1.1em;
+        font-weight: bolder;
+    }
+
+    /* Styling for the promo points input */
+    .field1{ 
+        width: 25vw;
+        height: 5vh;
+        font-size: 1.5em;
+        border-radius: 3px;
+        margin: 2vh 0vw 2vh 10vw;
+        padding: 1vh 1vw;
+    }
+
+    .promosegment .fieldslong{ 
+        width: 62vw;
+        height: 6vh;
+        font-size: 1.5em;
+        border-radius: 50px;
+        margin: 1vh 0vw 1vh 8vw;
+        padding: 1vh 2.8vw;
+    }
+
+    /* Styling to make conten aligned horizontally */
+    .align{
+        display: flex;
+        margin: 1vh 0vw;
+    }
+
+    /* Styling for the promocode div div inside promosegment*/
+    .part1{
+        margin: 1vh 0vw;
+    }
+
+    /* Styling for the points div inside promosegment*/
+    .part2{
+        padding-top: 2vh;
+        margin: 1vh 0vw;
+    }
+
+    /* Styling for the totalcost/buttons div inside promosegment*/
+    .part3{
+        padding-top: 2vh;
+        margin: 1vh 0vw;
+    }
+
+    /* Styling to align words to the right */
+    .pararight{
+        color: #dfedd6;
+        position: relative;
+        text-align: right;
+        left: 3%;
+        padding: 2vh 1vw;
+    }
+
+    /* Styling to align words to the left */
+    .paraleft{
+        color: #ffd6ba;
+        padding: 2vh 3vw;
+    }
+
+    /* Styling to align word to the right*/
+    .paraspecial{
+        color: #ffd6ba;
+        position: relative;
+        text-align: right;
+        top: 1.5vh;
+        left: 14%;
+    }
+
+    /* Styling for the (save, apply, go back, redeem) buttons in the address and promo form*/
+    .button1, .button2, .button3, .button4{
+        background-color: #ffd6ba;
+        color: #555b6e;
+        width: 28vw;
+        height: 7vh;
+        margin: 1vh 8vw;
+        border-radius: 51px;
+        font-size: 1.2em;
+        font-family: Helvetica, Arial, sans-serif;
+    }
+
+    /* Additional Styling for the reedem button in the promo form*/
+    .button4{
+        width: 28vw;
+        margin: 5vh 8vw;
+    }
+
+    /* Styling for the proceed to pay button in the promo form*/
+    .button5{
+        background-color: #ffd6ba;
+        color: #555b6e;
+        width: 32vw;
+        height: 8vh;
+        margin: 0vh 3vw;
+        border-radius: 21px;
+        font-size: 1.2em;
+        font-family: Helvetica, Arial, sans-serif;
+    }
+
+
+}

@@ -25,7 +25,6 @@ function ProfilePage() {
   const [name] = useState("");
   const [username] = useState("");
   const [password] = useState("");
-  const [confirmPassword] = useState("");
   const [email] = useState("");
   const [phoneNumber] = useState("");
   const [securityQuestion] = useState("");
@@ -50,9 +49,6 @@ function ProfilePage() {
     password: Yup.string()
       .min(6, "Password must be atleast 6 characters long")
       .required("Password is required"),
-    confirmPassword: Yup.string()
-      .oneOf([Yup.ref("password"), null], "Passwords must match")
-      .required("Confirm password is required"),
     email: Yup.string().email("Invalid Email").required("Email is required"),
     phoneNumber: Yup.string()
       .min(8, "Must be a Singapore Number (8 Digits)")
@@ -74,7 +70,6 @@ function ProfilePage() {
         name: "",
         username: "",
         password: "",
-        confirmPassword: "",
         securityQuestion: "",
         email: "",
         phoneNumber: "",
@@ -96,7 +91,6 @@ function ProfilePage() {
           name: values.name,
           username: values.username,
           password: values.password,
-          confirmPassword: values.ConfirmPassword,
           email: values.email,
           phoneNumber: values.phoneNumber,
           securityQuestion: values.securityQuestion,
@@ -117,7 +111,6 @@ function ProfilePage() {
               name: name,
               username: username,
               password: password,
-              confirmPassword: confirmPassword,
               email: email,
               phoneNumber: phoneNumber,
               securityQuestion: securityQuestion,
@@ -172,12 +165,6 @@ function ProfilePage() {
                 <TextField
                   placeholder="Password"
                   name="password"
-                  type="password"
-                  className={profileCSS.fields1}
-                />
-                <TextField
-                  placeholder="Confirm Password"
-                  name="confirmPassword"
                   type="password"
                   className={profileCSS.fields1}
                 />
@@ -364,7 +351,7 @@ function ProfilePage() {
                       size="3x"
                       className={profileCSS.starIcon}
                     />
-                    <h6>Reward Points:</h6>
+                    <h6 className={profileCSS.rpTitle}>Reward Points:</h6>
                   </section>
                   <section className={profileCSS.shortline}>
                     <p>Balance:</p>

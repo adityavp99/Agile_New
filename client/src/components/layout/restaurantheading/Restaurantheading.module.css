@@ -56,3 +56,58 @@
     margin-right: 0vw;
     margin-bottom: 0.3vh;
 }
+
+@media(max-width:426px){
+    /* Styling for the Restaurant Header display div */
+.displayholder{
+    text-align: left;
+    background-color: #f7fade;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    width: 74vw;
+    height: 75vh;
+    margin: 1vh 12vw;
+    border-radius: 25px;
+}
+
+/* Styling for the restaurant image */
+.image{
+    width: 74vw;
+    height: 40vh;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+/* Styling for the restaurant name */
+.text1{
+    font-weight: bolder;
+}
+
+/* Styling for the restaurant name, category, openinghours */
+.text1,.text3, .text5{
+    margin: 1vh 4vw;
+    font-size: 1.5em;
+}
+
+/* Styling for the restaurant rating, distance, status */
+.text2, .text4, .text6{
+    position: relative;
+    top: 7%;
+    text-align: right;
+    padding: 0vh 5vw;
+    font-size: 1.5em;
+}
+
+/* Styling for the restaurant category, distance, openinghours, status */
+.text3, .text4, .text5{color: #555b6e;}
+ .text6{color: #89b0ae;}
+
+ /* Styling for the restaurant rating star icon */
+ .star{
+    color: gold;
+    margin: 0vh 0.5vw;
+    margin-right: 0vw;
+    margin-bottom: 0.3vh;
+}
+
+}

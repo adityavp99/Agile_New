@@ -81,3 +81,84 @@ ul {
   text-decoration: double;
   margin-bottom: 0px;
 }
+
+@media (max-width: 426px) {
+  /* styling for navbar wrapper */
+  .nav {
+    background-color: #89b0ae;
+    padding: 2vh 0vw;
+  }
+
+  /* styling for icon wrapper */
+  .logosholder {
+    text-align: center;
+  }
+
+  /* styling for icons  */
+  #logo1 {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin: 3.5vh 0vw;
+    margin-right: 2vw;
+  }
+
+  #logo2 {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: 2vh 1.5vw;
+    margin-bottom: 0.1vh;
+  }
+
+  #logo3 {
+    height: 40px;
+    width: 40px;
+    margin: 3.5vh 0vw;
+    margin-left: 2vw;
+    color: white;
+  }
+
+  /* styling navlinks container */
+  ul {
+    margin-top: 2vh;
+    background-color: #89b0ae; /*b4dfd6; */
+    text-align: center;
+    min-width: 100%;
+  }
+
+  /* styling individual links */
+  .li1 {
+    margin: 1vh 1vw;
+    margin-bottom: 0px;
+    display: inline;
+  }
+
+  .li2 {
+    margin: 1vh 1vw;
+    margin-bottom: 0px;
+    display: inline;
+  }
+
+  .li3 {
+    margin: 1vh 1vw;
+    margin-bottom: 0px;
+    display: inline;
+  }
+
+  .li4 {
+    margin: 1vh 1vw;
+    margin-right: 5vw;
+    margin-bottom: 0px;
+    display: inline;
+  }
+
+  /* styling for links */
+  .link {
+    text-decoration: none;
+    color: #faf9f9;
+    font-size: 1.4em;
+    text-decoration: double;
+    margin-bottom: 0px;
+  }
+}

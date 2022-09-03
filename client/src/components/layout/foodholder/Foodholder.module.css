@@ -214,3 +214,112 @@ h4{
 
 
 }
+
+
+@media(max-width:426px){
+    /* H4 styling */
+    h4{
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        padding-top: 3vh;
+    }
+
+    /* Styling for the foodholder div */
+    .group{
+        background-color: #f7fade;
+        color: black;
+        width: 74vw;
+        margin: 1vh 1vw;
+        text-align: left;
+        display: inline-flex;
+        grid-template-areas: 
+        'image text';
+        border-radius: 35px;
+    }
+
+    /* Styling for restaurant image div */
+    .foodpic{
+        grid-area: image;
+        text-align: left;
+    }
+
+    /* Styling for restaurant image */
+    .foodpic img{
+        width: 18vw;
+        height: 20vh;
+        border-radius: 65%;
+        margin: 4vh 2vw;
+    }
+
+    /* Styling for foods' details div */
+    .content{
+        grid-area: text;
+        padding-top: 2vh;
+        padding: 2vh 3vw;
+    }
+
+    /* Styling to align food name and quantity buttons */
+    .topline{
+        display: flex;
+        margin: 1vh 0vw;
+    }
+
+
+    /* Styling for food name label */
+    .label1{
+        text-align: left;
+        margin-right: 2vw;
+        padding: 2vh 0vw;
+        padding-bottom: 3vh;
+        font-size: 1.2em;
+    }
+
+    /* Styling for - and + buttons */
+    .button1,.button2{
+        margin: 1.5vh 1vw;
+        width: 6vw;
+        height: 5vh;
+        font-size: 1em;
+        color: red;
+        border-color: red;
+        background-color: rgba(255, 0, 0, 0);
+        border-radius: 50px;
+        border-width: 3px;
+    }
+
+    /* Styling for quantity counter div */
+    .counter{
+        display: flex;
+        margin: 0vh 1vw;
+    }
+
+    /* Styling for quantity label */
+    .counter p{
+        font-size: 1.5em;
+        margin: 1.5vh 0.5vw;
+        border-color: black;
+    }
+
+    /* Styling for food cost label */
+    .label2{
+        text-align: left;
+        padding-top: 1vh;
+        font-size: 1.1em;
+    }
+
+    /* Styling for Add to Cost button */
+    .button3{
+        position: relative;
+        top: 12%;
+        background-color: #89b0ae;
+        color: white;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 1.1em;
+        width: 28vw;
+        height: 6vh;
+        margin-bottom: 3vh;
+        border-radius: 37px;
+    }
+
+
+}

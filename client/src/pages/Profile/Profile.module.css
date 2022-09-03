@@ -318,9 +318,10 @@ h6 {
 }
 
 .rpTitle {
+  color: #555b6e;
+  font-size: 2em;
   text-align: left;
-  font-size: larger;
-  font-weight: bold;
+  padding: 3vh 3vw 3vh 2vw;
 }
 
 .starIcon {
@@ -348,40 +349,40 @@ h6 {
   margin-top: 2vh;
 }
 
-@media(max-width:768px){
-  .name{
+@media (max-width: 768px) {
+  .name {
     font-size: 3em;
     margin: 0vh 2vw;
     margin-top: 1vh;
     color: black;
   }
-  
+
   .profileTitle {
     font-size: 2em;
     margin-left: 3vw;
     margin-top: 0.5vh;
     padding: 1.5vh 1vw;
   }
-  
+
   h5 {
     font-size: 2em;
     text-align: left;
     padding: 0vh 1vw;
   }
-  
+
   h6 {
     color: #555b6e;
     font-size: 2em;
     text-align: left;
     padding: 3vh 5vw 3vh 2vw;
   }
-  
+
   /* styling for page wrapper */
   .profile {
     background-color: #bee3db;
     text-align: left;
   }
-  
+
   /* styling for form container */
   .forms {
     color: #ffd6ba;
@@ -394,7 +395,7 @@ h6 {
       "island2";
     text-align: center;
   }
-  
+
   /* styling for security question */
   .securityQues {
     margin-top: 3vh;
@@ -402,7 +403,7 @@ h6 {
     color: #dfedd6;
     text-align: left;
   }
-  
+
   /* styling for security answer*/
   .securityAns {
     width: 38vw;
@@ -420,7 +421,7 @@ h6 {
     margin: 2vh 0vw 0vh 0vw;
     text-align: center;
   }
-  
+
   /* styling for profile icon */
   .profilepic {
     width: 10vw;
@@ -428,17 +429,17 @@ h6 {
     margin: 4vh 0vw 1vh 4vw;
     border-radius: 100px;
   }
-  
+
   /* styling for the top container containing profile and address */
   .island1 {
     grid-area: island1;
     display: grid;
-    grid-template-areas: 
-    "segment1" 
-    "segment2";
+    grid-template-areas:
+      "segment1"
+      "segment2";
     margin: 0vh 0vw 2vh 0vw;
   }
-  
+
   /* styling for profile section */
   .segment1 {
     grid-area: segment1;
@@ -447,9 +448,8 @@ h6 {
     margin: 3vh 5vw;
     padding: 4vh 0vw;
     border-radius: 25px;
-    
   }
-  
+
   .fields1 {
     width: 38vw;
     height: 6vh;
@@ -460,7 +460,7 @@ h6 {
     color: black;
     border: none;
   }
-  
+
   /* styling for address section */
   .segment2 {
     grid-area: segment2;
@@ -470,11 +470,11 @@ h6 {
     padding: 10vh 0vw 10vh 0vw;
     border-radius: 25px;
   }
-  
+
   .segment2 h5 {
     margin: 1vh 2vw;
   }
-  
+
   .fields2 {
     width: 38vw;
     height: 6vh;
@@ -485,7 +485,7 @@ h6 {
     color: black;
     border: none;
   }
-  
+
   .button1,
   .button2,
   .button3 {
@@ -498,17 +498,17 @@ h6 {
     font-size: 1.2em;
     font-family: Helvetica, Arial, sans-serif;
   }
-  
+
   /* styling for the bottom container containing add new card, e-wallet and reward points */
   .island2 {
     grid-area: island2;
     display: grid;
-    grid-template-areas: 
-    "segment3" 
-    "segment4";
+    grid-template-areas:
+      "segment3"
+      "segment4";
     margin: 0vh 0vw 2vh 0vw;
   }
-  
+
   /* styling for individual fields */
   .fields31 {
     width: 32vw;
@@ -520,7 +520,7 @@ h6 {
     color: black;
     border: none;
   }
-  
+
   .segment3 {
     grid-area: segment3;
     background-color: #758087;
@@ -530,24 +530,24 @@ h6 {
     text-align: left;
     border-radius: 25px;
   }
-  
+
   .segment3 p {
     margin: 1vh 2vw;
   }
-  
+
   .inline {
     display: inline-flex;
   }
-  
+
   .inline1 {
     grid-area: inline1;
   }
-  
+
   .inline2 {
     grid-area: inline2;
     margin: 0vh 5vw;
   }
-  
+
   .fields32 {
     width: 28vw;
     height: 6vh;
@@ -559,7 +559,6 @@ h6 {
     border: none;
   }
 
-
   .fieldspecial {
     width: 45vw;
     height: 6vh;
@@ -570,21 +569,21 @@ h6 {
     color: black;
     border: none;
   }
-  
+
   .align,
   .shortline {
     display: inline-flex;
     margin: 1vh 0vw;
   }
-  
+
   .align p {
     padding: 2vh 1vw;
   }
-  
+
   .shortline p {
     padding: 1vh 1vw;
   }
-  
+
   .button4 {
     background-color: #ffd6ba;
     color: #555b6e;
@@ -595,7 +594,7 @@ h6 {
     font-size: 1.2em;
     font-family: Helvetica, Arial, sans-serif;
   }
-  
+
   /* styling for e-wallet, reward points and promocodes section */
   .segment4 {
     grid-area: segment4;
@@ -605,7 +604,7 @@ h6 {
     padding: 5vh 2vw;
     border-radius: 25px;
   }
-  
+
   .fields4 {
     width: 19vw;
     height: 6vh;
@@ -615,7 +614,7 @@ h6 {
     color: black;
     background-color: #f7fade;
   }
-  
+
   /* styling for wallet section */
   .wallet {
     background-color: #dfedd6;
@@ -624,7 +623,7 @@ h6 {
     border-radius: 25px;
     text-align: left;
   }
-  
+
   /* styling for reward points section */
   .rewardPoints {
     background-color: #dfedd6;
@@ -634,9 +633,9 @@ h6 {
     margin: 2vh 0vw;
     text-align: left;
   }
-  
+
   /* styling for promo codes section */
-  .promoCodes{
+  .promoCodes {
     background-color: #dfedd6;
     color: black;
     padding: 1vh 2vw;
@@ -644,23 +643,25 @@ h6 {
     margin: 2vh 0vw;
     text-align: left;
   }
-  
-  .alignRp, .alignPcodes{
-      display: flex;
+
+  .alignRp,
+  .alignPcodes {
+    display: flex;
   }
-  
-  .rpTitle{
-      text-align: left;
-      font-size: larger;
-      font-weight: bold;
+
+  .rpTitle {
+    color: #555b6e;
+    font-size: 2em;
+    text-align: left;
+    padding: 3vh 3vw 3vh 2vw;
   }
-  
+
   .walletpic {
     width: 4vw;
     height: 8vh;
     margin: 1.5vh 0vw;
   }
-  
+
   .dropdown {
     background-color: #f7fade;
     width: 15vw;
@@ -670,18 +671,18 @@ h6 {
     font-size: 2.5vh;
     padding-left: 0.5vw;
   }
-  
+
   .deleteIcon {
     width: 1.5vw;
     height: 7vh;
     margin: 1.5vh 2vw 1.5vh 2vw;
   }
-  
-  .starIcon{
-      height: 6vh;
-      margin-top: 2vh;
+
+  .starIcon {
+    height: 6vh;
+    margin-top: 2vh;
   }
-  
+
   .button5 {
     background-color: #ffd6ba;
     color: #555b6e;
@@ -693,19 +694,381 @@ h6 {
     font-size: 1.2em;
     font-family: Helvetica, Arial, sans-serif;
   }
-  
+
   .checkbox {
     width: 5vw;
     height: 5vh;
     margin: 0vh 2vw;
   }
-  
-  .ticketIcon{
-      height: 6vh;
-      margin-top: 3vh;
+
+  .ticketIcon {
+    height: 6vh;
+    margin-top: 3vh;
   }
 }
 
-@media(max-width:425px){
-  
+@media (max-width: 426px) {
+  /* styling for profile icon */
+  .profilepic {
+    width: 23vw;
+    height: 11vh;
+    margin: 3vh 0vw 1vh 1vw;
+    border-radius: 100px;
+  }
+
+  .name {
+    font-size: 3em;
+    margin: 0vh 2vw;
+    margin-top: 1vh;
+    color: black;
+  }
+
+  .profileTitle {
+    font-size: 2em;
+    margin-left: 4vw;
+    margin-top: 0.5vh;
+    padding: 1.5vh 1vw;
+  }
+
+  h5 {
+    font-size: 2em;
+    text-align: left;
+    padding: 1vh 1vw;
+  }
+
+  h6 {
+    color: #555b6e;
+    font-size: 1.5em;
+    text-align: left;
+    padding: 4vh 3vw 3vh 2vw;
+  }
+
+  /* styling for the top container containing profile and address */
+  .island1 {
+    grid-area: island1;
+    display: grid;
+    grid-template-areas:
+      "segment1"
+      "segment2";
+    margin: 0vh 0vw 2vh 0vw;
+  }
+
+  /* styling for profile section */
+  .segment1 {
+    grid-area: segment1;
+    background-color: #758087;
+    width: 90vw;
+    margin: 3vh 6.5vw;
+    padding: 4vh 0vw;
+    border-radius: 25px;
+  }
+
+  /* styling for page wrapper */
+  .profile {
+    background-color: #bee3db;
+    text-align: left;
+  }
+
+  /* styling for form container */
+  .forms {
+    color: #ffd6ba;
+    position: relative;
+    margin: 0vh 4vw 0vh 4vw;
+    display: grid;
+    grid-template-areas:
+      "segmentheader"
+      "island1"
+      "island2";
+    text-align: center;
+  }
+
+  .fields1 {
+    width: 55vw;
+    height: 6vh;
+    font-size: 1em;
+    border-radius: 50px;
+    margin: 2vh 6vw;
+    padding: 1vh 2vw;
+    color: black;
+    border: none;
+  }
+
+  /* styling for security question */
+  .securityQues {
+    margin-top: 3vh;
+    margin-left: 6vw;
+    color: #dfedd6;
+    text-align: left;
+  }
+
+  /* styling for security answer*/
+  .securityAns {
+    width: 55vw;
+    height: 6vh;
+    font-size: 1em;
+    border-radius: 50px;
+    border: none;
+    margin: 3vh 6vw;
+    padding: 1vh 2vw;
+    color: black;
+  }
+
+  .button1 {
+    background-color: #ffd6ba;
+    color: #555b6e;
+    width: 25vw;
+    height: 8vh;
+    margin: 0vh 5vw;
+    border-radius: 51px;
+    font-size: 1.2em;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  /* styling for segment header (title and image position) */
+  .segmentheader {
+    grid-area: segmentheader;
+    margin: 2vh 0vw 0vh 0vw;
+    text-align: center;
+  }
+
+  /* styling for address section */
+  .segment2 {
+    grid-area: segment2;
+    background-color: #89b0ae;
+    width: 90vw;
+    margin: 0vh 6.5vw;
+    padding: 4vh 0vw 6vh 0vw;
+    border-radius: 25px;
+  }
+
+  .segment2 h5 {
+    margin: 0vh 3vw;
+    margin-bottom: 1vh;
+  }
+
+  .fields2 {
+    width: 55vw;
+    height: 6vh;
+    font-size: 1em;
+    border-radius: 50px;
+    margin: 2vh 5vw;
+    padding: 1vh 2vw;
+    color: black;
+    border: none;
+  }
+
+  /* styling for save button */
+  .button3 {
+    background-color: #ffd6ba;
+    color: #555b6e;
+    width: 25vw;
+    height: 8vh;
+    margin: 0vh 5vw;
+    margin-top: 2vh;
+    border-radius: 51px;
+    font-size: 1.2em;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  /* styling for the bottom container containing add new card, e-wallet and reward points */
+  .island2 {
+    grid-area: island2;
+    display: grid;
+    grid-template-areas:
+      "segment3"
+      "segment4";
+    margin: 0vh 0vw 2vh 0vw;
+  }
+
+  .segment3 {
+    grid-area: segment3;
+    background-color: #758087;
+    width: 90vw;
+    margin: 3vh 6.5vw;
+    padding-top: 4vh;
+    padding-left: 2vh;
+    text-align: left;
+    border-radius: 25px;
+  }
+
+  .segment3 p {
+    margin: 0vh 3vw;
+  }
+
+  .inline {
+    display: inline-flex;
+  }
+
+  .inline1 {
+    grid-area: inline1;
+  }
+
+  .inline2 {
+    grid-area: inline2;
+    margin: 0vh 5vw;
+  }
+
+  /* styling for individual fields */
+  .fieldspecial {
+    width: 66vw;
+    height: 6vh;
+    font-size: 1em;
+    border-radius: 50px;
+    margin: 2vh 2vw;
+    padding: 1vh 2vw;
+    color: black;
+    border: none;
+  }
+
+  .fields31 {
+    width: 32vw;
+    height: 6vh;
+    font-size: 1em;
+    border-radius: 50px;
+    margin: 2vh 0vw 2vh 2vw;
+    padding: 1vh 2vw;
+    color: black;
+    border: none;
+  }
+
+  .fields32 {
+    width: 28vw;
+    height: 6vh;
+    font-size: 1em;
+    border-radius: 50px;
+    margin: 2vh 4vw 2vh 2vw;
+    padding: 1vh 2vw;
+    color: black;
+    border: none;
+  }
+
+  .align,
+  .shortline {
+    display: inline-flex;
+    margin: 1vh 0vw;
+  }
+
+  .align p {
+    padding: 2vh 1vw;
+  }
+
+  .shortline p {
+    padding: 1vh 1vw;
+  }
+
+  .button4 {
+    background-color: #ffd6ba;
+    color: #555b6e;
+    width: 25vw;
+    height: 8vh;
+    margin: 1vh 2vw;
+    border-radius: 51px;
+    font-size: 1.2em;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  /* styling for e-wallet, reward points and promocodes section */
+  .segment4 {
+    grid-area: segment4;
+    background-color: #89b0ae;
+    width: 90vw;
+    margin: 3vh 6.5vw;
+    padding: 2vh 2vw;
+    border-radius: 25px;
+  }
+
+  /* styling for wallet section */
+  .walletpic {
+    width: 14vw;
+    height: 7vh;
+    margin: 1.5vh 0vw;
+  }
+
+  .wallet {
+    background-color: #dfedd6;
+    color: black;
+    padding: 1vh 2vw;
+    border-radius: 25px;
+    text-align: left;
+  }
+
+  .dropdown {
+    background-color: #f7fade;
+    width: 28vw;
+    height: 6vh;
+    margin: 3vh 0vw;
+    border-radius: 10px;
+    font-size: 2vh;
+    padding-left: 0.5vw;
+  }
+
+  .fields4 {
+    width: 23vw;
+    height: 6vh;
+    font-size: 1em;
+    border-radius: 15px;
+    padding: 1vh 2vw;
+    color: black;
+    background-color: #f7fade;
+  }
+
+  .button5 {
+    background-color: #ffd6ba;
+    color: #555b6e;
+    width: 25vw;
+    height: 6vh;
+    margin: 0vh 3.5vw;
+    margin-right: 40vw;
+    border-radius: 51px;
+    font-size: 1.2em;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  .checkbox {
+    width: 5vw;
+    height: 5vh;
+    margin: 0vh 2vw;
+  }
+
+  /* styling for reward points section */
+  .rewardPoints {
+    background-color: #dfedd6;
+    color: black;
+    padding: 1vh 2vw;
+    border-radius: 25px;
+    margin: 2vh 0vw;
+    text-align: left;
+  }
+
+  .starIcon {
+    height: 5vh;
+    margin-top: 2vh;
+  }
+
+  .rpTitle {
+    color: #555b6e;
+    font-size: 1.5em;
+    text-align: left;
+    padding: 3vh 3vw 3vh 2vw;
+  }
+
+  /* styling for promo codes section */
+  .promoCodes {
+    background-color: #dfedd6;
+    color: black;
+    padding: 0vh 3vw;
+    border-radius: 25px;
+    margin: 2vh 0vw;
+    text-align: left;
+  }
+
+  .alignRp,
+  .alignPcodes {
+    display: flex;
+  }
+
+  .ticketIcon {
+    height: 6vh;
+    margin-top: 3vh;
+  }
 }
