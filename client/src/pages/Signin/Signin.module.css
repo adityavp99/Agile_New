@@ -218,7 +218,6 @@
   .signin {
     background-color: #bee3db;
     padding-top: 5vh;
-    padding-right: 40vh;
     min-height: 40vh;
     text-align: center;
   }
@@ -228,8 +227,8 @@
     background-color: #758087;
     color: #ffd6ba;
     position: relative;
+    left: 3%;
     width: 85vw;
-
     border-radius: 25px;
   }
 
@@ -248,7 +247,7 @@
   /* styling for profile icon */
   .image1 {
     width: 16vw;
-    height: 8vh;
+    height: 10vh;
     margin: 3vh 0vw 0vh 15vw;
   }
 

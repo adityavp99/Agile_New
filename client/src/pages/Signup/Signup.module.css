@@ -240,7 +240,6 @@
     background-color: #bee3db;
     padding-top: 5vh;
     padding-bottom: 5vh;
-    padding-right: 45vh;
     text-align: center;
   }
 
@@ -249,7 +248,7 @@
     background-color: #758087;
     color: #ffd6ba;
     position: relative;
-    left: 20%;
+    left: 0%;
     width: 90vw;
     min-height: 63vh;
     border-radius: 25px;
@@ -269,7 +268,7 @@
   /* styling for profile icon */
   .image1 {
     width: 17vw;
-    height: 8vh;
+    height: 10vh;
     margin: 3vh 0.5vw 1vh 15vw;
   }
 

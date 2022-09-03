@@ -302,30 +302,37 @@ h4 {
 
   /* Styling for the various segments of the holder */
   .portion {
-    margin: 0vh 0vw;
+    margin: 0vh 5vw;
+    display: grid;
+    grid-template-areas: 
+    'images labels'
+    'images quantities';
   }
 
   /* Styling for the food images */
   .pic2,
   .pic3 {
+    grid-area:images;
     width: 24vw;
     height: 18vh;
-    margin: 3vh 4vw;
+    margin: 3vh 3vw;
     border-radius: 21px;
   }
 
   /* Styling for the food name label */
   .label1 {
+    grid-area: labels;
     text-align: left;
-    margin: 9vh 3vw;
-    font-size: 2em;
+    margin: 4vh 1vw;
+    font-size: 1.5em;
   }
 
   /* Styling for the + and - buttons */
   .button1,
   .button2 {
-    margin-top: 15vh;
-    width: 8vw;
+    grid-area: quantities;
+    margin-top: 0vh;
+    width: 12vw;
     height: 5vh;
     border-radius: 30px;
     border-width: 3px;
@@ -335,32 +342,30 @@ h4 {
   /* Styling for the food name label */
   .quantity1 p,
   .quantity2 p {
-    margin-top: 15vh;
+    margin-top: 0.5vh;
     margin-left: 1.5vw;
     font-size: 1.5em;
   }
 
   /* Styling for the food quantity div */
   .quantity1 {
-    width: 3vw;
+    width: 5vw;
     height: 9vh;
-    margin: 4vh 3vw;
+    margin: 1vh 3vw;
     border-radius: 5px;
   }
 
   /* Styling for the food quantity div */
   .quantity2 {
-    display: flex;
-    text-align: center;
-    width: 11vw;
+    width: 5vw;
     height: 9vh;
-    margin-top: 4vh;
+    margin-top: 1vh;
     border-radius: 5px;
   }
 
   /* Styling for the delivery timing dropdown */
   .dropdown {
-    margin: 5vh 0vw;
+    margin: 3vh 0vw;
     width: 40vw;
     height: 10vh;
     font-size: 1.5em;
