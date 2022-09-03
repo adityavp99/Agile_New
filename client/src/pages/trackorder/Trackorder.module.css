@@ -120,7 +120,7 @@
 }
 
 /* styling for link */
-.link{
+.link {
   text-decoration: none;
 }
 
@@ -157,7 +157,7 @@
 
   /* styling for long line after header text */
   .LongLine {
-    width: 34vw;
+    width: 36vw;
     height: 2px;
     background-color: rgb(61, 81, 81);
     border-radius: 1rem;
@@ -166,7 +166,7 @@
 
   /* styling for long line before estimated time label */
   .LongLine2 {
-    width: 26vw;
+    width: 27vw;
     height: 2px;
     background-color: rgb(61, 81, 81);
     border-radius: 1rem;
@@ -259,5 +259,133 @@
   .images {
     width: 12vw;
     height: 20vh;
+  }
+}
+
+@media (max-width: 426px) {
+  /* styling for page wrapper */
+  .Green {
+    background-color: #bee3db;
+    padding: 30px;
+  }
+
+  /* styling for main container */
+  .Yellow {
+    background-color: #f6f9da;
+    width: 100%;
+    padding-top: 15px;
+    border-radius: 1vh;
+  }
+
+  /* styling for short line before header text */
+  .SmallLine {
+    width: 6vw;
+    height: 2px;
+    background-color: rgb(61, 81, 81);
+    border-radius: 1rem;
+    display: inline-flex;
+    align-self: center;
+  }
+
+  /* styling for long line after header text */
+  .LongLine {
+    width: 28vw;
+    height: 2px;
+    background-color: rgb(61, 81, 81);
+    border-radius: 1rem;
+    display: inline-flex;
+  }
+
+  /* styling for long line before estimated time label */
+  .LongLine2 {
+    width: 19vw;
+    height: 2px;
+    background-color: rgb(61, 81, 81);
+    border-radius: 1rem;
+    display: inline-flex;
+  }
+
+  /* styling for header text */
+  .text {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+  }
+
+  /* styling for completed progress circles */
+  .circle1,
+  .circle2,
+  .circle3 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(37, 205, 37);
+    vertical-align: auto;
+  }
+
+  /* styling for incomplete progress circles */
+  .circle4,
+  .circle5,
+  .circle6 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    vertical-align: auto;
+    margin: auto;
+    border-style: dashed;
+  }
+
+  /* styling for progress container */
+  .progress {
+    display: flex;
+    padding: 0vh;
+  }
+
+  /* styling for progress images */
+  .progress img {
+    vertical-align: auto;
+  }
+
+  /* styling for end notes section */
+  .footer {
+    width: 100%;
+  }
+
+  /* styling for thank you label */
+  .footer1 {
+    padding-top: 15px;
+    padding-left: 10px;
+    font-size: 15px;
+  }
+
+  /* styling for receipt label */
+  .footer2 {
+    display: inline-flex;
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 100%;
+    font-size: 15px;
+  }
+
+  /* styling for link */
+  .link {
+    text-decoration: none;
+  }
+
+  /* styling for order history label */
+  .orderHist {
+    font-size: 15px;
+    margin-top: 3vh;
+    margin-right: 4vh;
+    position: relative;
+    left: 0%;
+    width: 100%;
+  }
+
+  /* image styling  */
+  .images {
+    width: 13vw;
+    height: 12vh;
   }
 }

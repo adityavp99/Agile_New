@@ -145,9 +145,7 @@
 
   /* styling for input fields */
   .field1,
-  .field2,
-  .field3,
-  .field4 {
+  .field2 {
     width: 32vw;
     height: 6vh;
     margin: 0.5vh 5vw;
@@ -168,6 +166,119 @@
     width: 15vw;
     height: 6vh;
     margin: 1vh 5vw;
+    border-radius: 51px;
+    font-size: 1.2em;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  /* styling for div containing forgot password and signup labels  */
+  .endingdiv {
+    background-color: #89b0ae;
+    margin-top: 4.3vh;
+    padding: 1vh 5vw;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+
+  /* styling for forgot password label */
+  .label1 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.3em;
+    font-weight: bolder;
+    color: #555b63;
+    margin: 1vh 2vw;
+  }
+
+  /* styling for dont have an account label */
+  .label2 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.3em;
+    color: #555b63;
+    margin: 1vh 2vw;
+    padding-top: 5px;
+  }
+
+  /* styling for sign up label */
+  .label3 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.3em;
+    font-weight: bolder;
+    color: #555b63;
+    margin: 1vh 2vw;
+  }
+
+  /* styling for links */
+  .link {
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 426px) {
+  /* styling for page wrapper */
+  .signin {
+    background-color: #bee3db;
+    padding-top: 5vh;
+    padding-right: 40vh;
+    min-height: 40vh;
+    text-align: center;
+  }
+
+  /* styling for form container */
+  .form {
+    background-color: #758087;
+    color: #ffd6ba;
+    position: relative;
+    width: 85vw;
+
+    border-radius: 25px;
+  }
+
+  .openingdiv {
+    display: flex;
+  }
+
+  .title {
+    color: #ffd6ba;
+    text-align: center;
+    font-size: 2em;
+    padding: 5vh 4vw;
+    width: auto;
+  }
+
+  /* styling for profile icon */
+  .image1 {
+    width: 16vw;
+    height: 8vh;
+    margin: 3vh 0vw 0vh 15vw;
+  }
+
+  /* styling for input fields */
+  .field1 {
+    width: 55vw;
+    height: 6vh;
+    border-radius: 50px;
+    padding-left: 2vh;
+    color: black;
+    font-size: 1.2em;
+  }
+
+  .field2 {
+    width: 55vw;
+    height: 6vh;
+    margin-top: 2vh;
+    border-radius: 50px;
+    padding-left: 2vh;
+    color: black;
+    font-size: 1.2em;
+  }
+
+  /* stying for sign in button */
+  .button1 {
+    background-color: #ffd6ba;
+    color: #555b6e;
+    width: 25vw;
+    height: 6vh;
+    margin-top: 3vh;
     border-radius: 51px;
     font-size: 1.2em;
     font-family: Helvetica, Arial, sans-serif;

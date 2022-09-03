@@ -1,49 +1,69 @@
 /* CSS Stylesheet for the Comparison page */
 
 /* Setting initial Styling for all objects */
-*{
-    box-sizing: border-box;
-    margin: 0;
-    font-family: Helvetica, Arial, sans-serif;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 /* Styling for the comparison page div */
-.comparison{
-    background-color: #bee3db;
-    padding: 5vh 0vw;
+.comparison {
+  background-color: #bee3db;
+  padding: 5vh 0vw;
 }
 
 /* Styling for the payment button */
-.button{
+.button {
+  background-color: #ffd6ba;
+  color: #555b6e;
+  width: 12vw;
+  height: 5vh;
+  margin-top: 3vh;
+  margin-left: 45vw;
+  border-radius: 51px;
+  font-size: 1.2em;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+@media (max-width: 768px) {
+  /* Styling for the comparison page div */
+  .comparison {
+    background-color: #bee3db;
+    padding: 5vh 0vw;
+  }
+
+  /* Styling for the payment button */
+  .button {
     background-color: #ffd6ba;
     color: #555b6e;
-    width: 8vw;
+    width: 15vw;
     height: 5vh;
     margin-top: 3vh;
-    margin-left: 45vw;
+    margin-left: 43vw;
     border-radius: 51px;
     font-size: 1.2em;
     font-family: Helvetica, Arial, sans-serif;
+  }
 }
 
-@media(max-width:768px){
-    /* Styling for the comparison page div */
-    .comparison{
-        background-color: #bee3db;
-        padding: 5vh 0vw;
-    }
+@media (max-width: 426px) {
+  /* Styling for the comparison page div */
+  .comparison {
+    background-color: #bee3db;
+    padding: 5vh 0vw;
+  }
 
-    /* Styling for the payment button */
-    .button{
-        background-color: #ffd6ba;
-        color: #555b6e;
-        width: 15vw;
-        height: 5vh;
-        margin-top: 3vh;
-        margin-left: 45vw;
-        border-radius: 51px;
-        font-size: 1.2em;
-        font-family: Helvetica, Arial, sans-serif;
-    }
-
+  /* Styling for the payment button */
+  .button {
+    background-color: #ffd6ba;
+    color: #555b6e;
+    width: 25vw;
+    height: 7vh;
+    margin-top: 3vh;
+    margin-left: 40vw;
+    border-radius: 51px;
+    font-size: 1.2em;
+    font-family: Helvetica, Arial, sans-serif;
+  }
 }

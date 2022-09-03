@@ -54,7 +54,7 @@ function ResetpasswordPage() {
       }}
     >
       {(formik) => (
-        <div className={resetCSS.signup}>
+        <div className={resetCSS.resetPass}>
           {/* Form Creation */}
           <Form className={resetCSS.form}>
             <div className={resetCSS.openingdiv}>

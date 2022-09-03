@@ -1,599 +1,938 @@
 /* CSS Stylesheet for the Paymentmethod page */
 
 /* Setting initial Styling for all objects */
-*{
-    box-sizing: border-box;
-    margin: 0;
-    font-family: Helvetica, Arial, sans-serif;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 /* H3 styling */
-h3{
-    font-size: 3em;
-    padding: 4vh 0vw;
+h3 {
+  font-size: 3em;
+  padding: 4vh 0vw;
 }
 
 /* H4 styling */
-h4{
-    font-size: 2.5em;
-    text-align: left;
-    padding: 2vh 3vw;
+h4 {
+  font-size: 2.5em;
+  text-align: left;
+  padding: 2vh 3vw;
 }
 
 /* H5 styling */
-h5{
-    font-size: 2em;
-    text-align: left;
-    padding: 3vh 1vw;
+h5 {
+  font-size: 2em;
+  text-align: left;
+  padding: 3vh 1vw;
 }
 
 /* Styling for (Add new Card) title  */
-.addTitle{
-    font-size: 2em;
-    text-align: left;
-    padding: 4vh 1vw;
+.addTitle {
+  font-size: 2em;
+  text-align: left;
+  padding: 4vh 1vw;
 }
 
 /* Styling for titles of various payment methods (e-Wallet, Visa, Mastercard, Cash) */
-.paymentTitles{
-    color: #555b6e;
-    font-size: 2em;
-    text-align: left;
-    padding: 3vh 2vw 3vh 1vw;
+.paymentTitles {
+  color: #555b6e;
+  font-size: 2em;
+  text-align: left;
+  padding: 3vh 2vw 3vh 1vw;
 }
 
 /* Styling for paymentmethod page div */
-.paymentmethod{
-    background-color: #bee3db;
-    text-align: left;
+.paymentmethod {
+  background-color: #bee3db;
+  text-align: left;
 }
 
 /* Styling for div contianing form contents  */
-.formholder{
-    color: #ffd6ba;
-    position: relative;
-    margin: 0vh 4vw 0vh 4vw;
-    display: grid;
-    grid-template-areas:
-    'box';
+.formholder {
+  color: #ffd6ba;
+  position: relative;
+  margin: 0vh 4vw 0vh 4vw;
+  display: grid;
+  grid-template-areas: "box";
 }
 
 /* Styling for div holding the 2 parts */
-.box{
-    grid-area: box;
-    display: grid;
-    grid-template-areas: 
-    'part1 part2';
-    margin: 4vh 2vw 4vh 0vw;
+.box {
+  grid-area: box;
+  display: grid;
+  grid-template-areas: "part1 part2";
+  margin: 4vh 2vw 4vh 0vw;
 }
 
 /* Styling for add new card div */
-.part1{
-    grid-area: part1;
-    background-color: #758087;
-    padding: 5vh 1vw 5vh 2vw;
-    margin: 2vh 0vw;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
+.part1 {
+  grid-area: part1;
+  background-color: #758087;
+  padding: 5vh 1vw 5vh 2vw;
+  margin: 2vh 0vw;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
 }
 
 /* Styling for paragraphs in part1 div */
-.part1 p{
-    margin: 1vh 2vw;
-    font-size: x-large;
+.part1 p {
+  margin: 1vh 2vw;
+  font-size: x-large;
+  margin-top: 5vh;
 }
- 
+
 /* Styling to display contents in a single line */
-.lineholder{
-    display: inline-flex;
+.lineholder {
+  display: inline-flex;
 }
 
 /* Styling to align multiple lines */
-.lineholder1{
-    grid-area: lineholder1;
+.lineholder1 {
+  grid-area: lineholder1;
 }
 
 /* Styling to align multiple lines */
-.lineholder2{
-    grid-area: lineholder2;
-    margin: 0vh 5vw;
+.lineholder2 {
+  grid-area: lineholder2;
+  margin: 0vh 5vw;
 }
 
 /* Styling for Expiry Date input */
-.input2{ 
-    width: 16vw;
-    height: 8vh;
-    font-size: 1.5em;
-    border-radius: 50px;
-    margin: 2vh 0vw 8vh 2vw;
-    padding: 1vh 1vw;
-    color: black;
+.input2 {
+  width: 16vw;
+  height: 8vh;
+  font-size: 1.5em;
+  border-radius: 50px;
+  border: none;
+  margin: 2vh 0vw 8vh 2vw;
+  margin-top: 2vh;
+  padding: 1vh 1vw;
+  color: black;
 }
 
 /* Styling for CVV input */
-.input3{ 
-    width: 10vw;
-    height: 8vh;
-    font-size: 1.5em;
-    border-radius: 50px;
-    margin: 2vh 4vw 9vh 2vw;
-    padding: 1vh 1vw;
-    color: black;
+.input3 {
+  width: 10vw;
+  height: 8vh;
+  font-size: 1.5em;
+  border-radius: 50px;
+  border: none;
+  margin: 2vh 4vw 9vh 2vw;
+  margin-top: 2vh;
+  padding: 1vh 1vw;
+  color: black;
 }
 
 /* Styling for Card Number, Card Holder Name inputs */
-.input1, .input4{
-    font-size: 1.5em;
-    border-radius: 50px;
-    margin: 2vh 2vw 8vh 2vw;
-    padding: 1vh 1vw;
-    color: black;
-    width: 25vw;
-    height: 10vh;
+.input1,
+.input4 {
+  font-size: 1.5em;
+  border-radius: 50px;
+  border: none;
+  margin: 2vh 2vw 8vh 2vw;
+  margin-top: 2vh;
+  padding: 1vh 1vw;
+  color: black;
+  width: 25vw;
+  height: 10vh;
 }
 
 /* Styling to display contents in a single line */
-.singleline{
-    display: inline-flex;
-    margin: 1vh 0vw;
+.singleline {
+  display: inline-flex;
+  margin: 1vh 0vw;
 }
 
 /* Styling to set spacing between contents in a single line */
-.singleline p{
-    padding: 2vh 1vw;
+.singleline p {
+  padding: 2vh 1vw;
 }
 
 /* Styling to align multiple lines */
-.phrase1, .phrase2{
-    display: inline-flex;
-    padding: 1vh 1vw;
-    margin-top: 3vh;
+.phrase1,
+.phrase2 {
+  display: inline-flex;
+  padding: 1vh 1vw;
+  margin-top: 3vh;
 }
 
 /* Styling for Add Card Button */
-.button4{
-    background-color: #ffd6ba;
-    color: #555b6e;
-    width: 22vw;
-    height: 8vh;
-    margin: 0.5vh 2vw;
-    border-radius: 51px;
-    font-size: 1.2em;
+.button4 {
+  background-color: #ffd6ba;
+  color: #555b6e;
+  width: 22vw;
+  height: 8vh;
+  margin: 0.5vh 10vw;
+  margin-top: 4vh;
+  border-radius: 51px;
+  border: none;
+  font-size: 1.2em;
 }
 
 /* Styling for Pay Button */
-.button5{
-    background-color: #ffd6ba;
-    position: relative;
-    float: right;
-    right: 29%;
-    top: 20%;
-    color: #555b6e;
-    width: 15vw;
-    height: 10vh;
-    margin: 1vh 2vw;
-    border-radius: 51px;
-    font-size: 1.2em;
+.button5 {
+  background-color: #ffd6ba;
+  margin-bottom: 5vh;
+  margin-left: 39vw;
+  color: #555b6e;
+  width: 15vw;
+  height: 10vh;
+  border-radius: 51px;
+  font-size: 1.2em;
 }
 
 /* Styling for div containing various types of payments */
-.part2{
-    grid-area: part2;
-    background-color: #89b0ae;
-    padding: 5vh 2vw 5vh 2vw;
-    margin: 2vh 0vw;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
+.part2 {
+  grid-area: part2;
+  background-color: #89b0ae;
+  padding: 5vh 2vw 5vh 2vw;
+  margin: 2vh 0vw;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 /* Styling for Amount inputs */
-.input5{ 
-    width: 19vw;
-    height: 3vw;
-    font-size: 1.5em;
-    border-radius: 15px;
-    padding: 1vh 1vw;
-    color: black;
-    background-color: #f7fade;
+.input5 {
+  width: 19vw;
+  height: 3vw;
+  font-size: 1.5em;
+  border-radius: 15px;
+  padding: 1vh 1vw;
+  color: black;
+  background-color: #f7fade;
 }
 
 /* Styling for wallet section */
-.wallet{
+.wallet {
+  background-color: #dfedd6;
+  color: black;
+  padding: 3vh 2vw;
+  border-radius: 11px;
+  margin: 1vh 0vw;
+}
+
+/* Styling for wallet picture in wallet section */
+.walletpic {
+  width: 4vw;
+  height: 8vh;
+  margin: 1.5vh 1vw;
+}
+
+/* Styling for payment type Dropdown in wallet section */
+.dropdown {
+  background-color: #f7fade;
+  width: 10vw;
+  height: 5vh;
+  margin: 2.5vh 0vw;
+  border-radius: 10px;
+  font-size: 2.5vh;
+  padding-left: 0.5vw;
+}
+
+/* Styling for Top-Up Buton */
+.button6 {
+  background-color: #ffd6ba;
+  color: #555b6e;
+  width: 8vw;
+  height: 5vh;
+  margin: 0.5vh 2vw;
+  border-radius: 51px;
+  font-size: 1.2em;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Styling for Auto Top-Up checkbox */
+.checkbox {
+  width: 5vw;
+  height: 5vh;
+  margin: 0vh 2vw;
+}
+
+/* Styling for visa section */
+.visa {
+  background-color: white;
+  color: black;
+  padding: 2vh 2vw;
+  border-radius: 11px;
+  margin: 2vh 0vw;
+  display: grid;
+  grid-template-areas: "visainfo visapic";
+}
+
+/* Styling for content in visa section */
+.visainfo {
+  grid-area: visainfo;
+}
+
+/* Styling for image area in visa section */
+.visapic {
+  text-align: right;
+  grid-area: visapic;
+}
+
+/* Styling for image in visa section */
+.visapic img {
+  width: 12vw;
+  height: 20vh;
+}
+
+/* Styling for mastercard section */
+.mastercard {
+  background-color: white;
+  color: black;
+  padding: 3vh 2vw;
+  border-radius: 11px;
+  margin: 2vh 0vw;
+  display: grid;
+  grid-template-areas: "masterinfo masterpic";
+}
+
+/* Styling for content in mastercard section */
+.mastercardinfo {
+  grid-area: masterinfo;
+}
+
+/* Styling for image area in mastercard section */
+.mastercardpic {
+  padding: 2vh 0vw;
+  text-align: right;
+  grid-area: masterpic;
+}
+
+/* Styling for image in mastercard section */
+.mastercardpic img {
+  width: 12vw;
+  height: 20vh;
+}
+
+/* Styling for cash section */
+.cash {
+  background-color: #dfedd6;
+  color: black;
+  padding: 4vh 8vw;
+  border-radius: 11px;
+  margin: 1vh 0vw;
+}
+
+@media (max-width: 768px) {
+  /* H3 styling */
+  h3 {
+    font-size: 3em;
+    padding: 4vh 0vw;
+  }
+
+  /* H4 styling */
+  h4 {
+    font-size: 2.5em;
+    text-align: left;
+    padding: 2vh 3vw;
+  }
+
+  /* H5 styling */
+  h5 {
+    font-size: 2em;
+    text-align: left;
+    padding: 3vh 1vw;
+  }
+
+  /* Styling for (Add new Card) title  */
+  .addTitle {
+    font-size: 1.8em;
+    text-align: left;
+    padding: 4vh 1vw;
+  }
+
+  /* Styling for titles of various payment methods (e-Wallet, Visa, Mastercard, Cash) */
+  .paymentTitles {
+    color: #555b6e;
+    font-size: 1.5em;
+    text-align: left;
+    padding: 3vh 2vw 3vh 1vw;
+  }
+
+  /* Styling for paymentmethod page div */
+  .paymentmethod {
+    background-color: #bee3db;
+    text-align: left;
+  }
+
+  /* Styling for div contianing form contents  */
+  .formholder {
+    color: #ffd6ba;
+    position: relative;
+    margin: 0vh 2vw 0vh 2vw;
+    display: grid;
+    grid-template-areas: "box";
+  }
+
+  /* Styling for div holding the 2 parts */
+  .box {
+    grid-area: box;
+    display: grid;
+    grid-template-areas:
+      "part1"
+      "part2";
+    margin: 4vh 0vw 4vh 0vw;
+  }
+
+  /* Styling for add new card div */
+  .part1 {
+    grid-area: part1;
+    background-color: #758087;
+    padding: 5vh 4vw;
+    margin: 2vh 4vw;
+    border-radius: 25px;
+  }
+
+  /* Styling for paragraphs in part1 div */
+  .part1 p {
+    margin: 1vh 2vw;
+    font-size: large;
+  }
+
+  /* Styling to display contents in a single line */
+  .lineholder {
+    display: inline-flex;
+  }
+
+  /* Styling to align multiple lines */
+  .lineholder1 {
+    grid-area: lineholder1;
+  }
+
+  /* Styling to align multiple lines */
+  .lineholder2 {
+    grid-area: lineholder2;
+    margin: 0vh 5vw;
+  }
+
+  /* Styling for Expiry Date input */
+  .input2 {
+    width: 25vw;
+    height: 8vh;
+    font-size: 1.5em;
+    border-radius: 50px;
+    border: none;
+    margin: 2vh 0vw 8vh 2vw;
+    padding: 1vh 2vw;
+    color: black;
+  }
+
+  /* Styling for CVV input */
+  .input3 {
+    width: 20vw;
+    height: 8vh;
+    font-size: 1.5em;
+    border-radius: 50px;
+    border: none;
+    margin: 2vh 4vw 9vh 2vw;
+    padding: 1vh 2vw;
+    color: black;
+  }
+
+  /* Styling for Card Number, Card Holder Name inputs */
+  .input1,
+  .input4 {
+    font-size: 1.5em;
+    border-radius: 50px;
+    border: none;
+    margin: 2vh 2vw 8vh 2vw;
+    padding: 1vh 2vw;
+    color: black;
+    width: 45vw;
+    height: 10vh;
+  }
+
+  /* Styling to display contents in a single line */
+  .singleline {
+    display: inline-flex;
+    margin: 1vh 0vw;
+  }
+
+  /* Styling to set spacing between contents in a single line */
+  .singleline p {
+    padding: 2vh 1vw;
+  }
+
+  /* Styling to align multiple lines */
+  .phrase1,
+  .phrase2 {
+    display: inline-flex;
+    padding: 1vh 1vw;
+    margin-top: 3vh;
+  }
+
+  /* Styling for Add Card Button */
+  .button4 {
+    background-color: #ffd6ba;
+    color: #555b6e;
+    position: relative;
+    float: left;
+    left: 2%;
+    top: 0%;
+    width: 20vw;
+    height: 8vh;
+    margin: 2vh 0.5vw;
+    margin-left: 30vw;
+    border-radius: 51px;
+    font-size: 1.2em;
+  }
+
+  /* Styling for Pay Button */
+  .button5 {
+    background-color: #ffd6ba;
+    color: #555b6e;
+    width: 15vw;
+    height: 8vh;
+    margin-bottom: 5vh;
+    margin-left: 43vw;
+    border-radius: 51px;
+    font-size: 1.2em;
+  }
+
+  /* Styling for div containing various types of payments */
+  .part2 {
+    grid-area: part2;
+    background-color: #89b0ae;
+    padding: 5vh 4vw;
+    margin: 2vh 4vw;
+    border-radius: 25px;
+  }
+
+  /* Styling for Amount inputs */
+  .input5 {
+    width: 19vw;
+    height: 6vw;
+    font-size: 1.5em;
+    border-radius: 15px;
+    margin: 0vh 2vw;
+    padding: 1vh 1vw;
+    color: black;
+    background-color: #f7fade;
+  }
+
+  /* Styling for wallet section */
+  .wallet {
     background-color: #dfedd6;
     color: black;
     padding: 3vh 2vw;
     border-radius: 11px;
     margin: 1vh 0vw;
-}
+  }
 
-/* Styling for wallet picture in wallet section */
-.walletpic{
-    width: 4vw;
+  /* Styling for wallet picture in wallet section */
+  .walletpic {
+    width: 7vw;
     height: 8vh;
     margin: 1.5vh 1vw;
-}
+    margin-right: 3vw;
+  }
 
-/* Styling for payment type Dropdown in wallet section */
-.dropdown{
+  /* Styling for payment type Dropdown in wallet section */
+  .paymentmethod .dropdown {
     background-color: #f7fade;
-    width: 10vw;
+    width: 20vw;
     height: 5vh;
-    margin: 2.5vh 0vw;
+    margin: 2.5vh 5vw;
     border-radius: 10px;
     font-size: 2.5vh;
-    padding-left: .5vw;
-}
+    padding-left: 0.5vw;
+  }
 
-/* Styling for delete Icon in wallet section */
-.deleteIcon{
-    width: 1.5vw;
-    height: 7vh;
-    margin: 1.5vh 2vw 1.5vh 2vw;
-}
-
-/* Styling for Top-Up Buton */
-.button6{
+  /* Styling for Top-Up Buton */
+  .button6 {
     background-color: #ffd6ba;
     color: #555b6e;
-    width: 8vw;
-    height: 5vh;
+    width: 15vw;
+    height: 6vh;
     margin: 0.5vh 2vw;
     border-radius: 51px;
     font-size: 1.2em;
     font-family: Helvetica, Arial, sans-serif;
-}
+  }
 
-/* Styling for Auto Top-Up checkbox */
-.checkbox{
+  /* Styling for Auto Top-Up checkbox */
+  .checkbox {
     width: 5vw;
     height: 5vh;
-    margin: 0vh 2vw;
-}
+    margin: 1vh 2vw;
+  }
 
-/* Styling for visa section */
-.visa{
+  /* Styling for visa section */
+  .visa {
     background-color: white;
     color: black;
     padding: 2vh 2vw;
     border-radius: 11px;
     margin: 2vh 0vw;
-}
+    display: grid;
+    grid-template-areas: "visainfo visapic";
+  }
 
-/* Styling for mastercard section */
-.mastercard{
+  /* Styling for content in visa section */
+  .visa {
+    grid-area: visainfo;
+  }
+
+  /* Styling for image area in visa section */
+  .visapic {
+    padding: 2vh 0vw;
+    text-align: right;
+    grid-area: visapic;
+  }
+
+  /* Styling for image in visa section */
+  .visapic img {
+    width: 14vw;
+    height: 12vh;
+  }
+
+  /* Styling for mastercard section */
+  .mastercard {
     background-color: white;
     color: black;
     padding: 3vh 2vw;
     border-radius: 11px;
     margin: 2vh 0vw;
     display: grid;
-    grid-template-areas: 
-    'masterinfo masterpic';
-}
+    grid-template-areas: "masterinfo masterpic";
+  }
 
-/* Styling for content in mastercard section */
-.mastercardinfo{
+  /* Styling for content in mastercard section */
+  .mastercardinfo {
     grid-area: masterinfo;
-}
+  }
 
-/* Styling for image area in mastercard section */
-.mastercardpic{
+  /* Styling for image area in mastercard section */
+  .mastercardpic {
     padding: 2vh 0vw;
     text-align: right;
     grid-area: masterpic;
-}
+  }
 
-/* Styling for image in mastercard section */
-.mastercardpic img{
-    width: 12vw;
-    height: 20vh;
-}
+  /* Styling for image in mastercard section */
+  .mastercardpic img {
+    width: 16vw;
+    height: 11vh;
+  }
 
-/* Styling for cash section */
-.cash{
+  /* Styling for cash section */
+  .cash {
     background-color: #dfedd6;
     color: black;
     padding: 4vh 8vw;
     border-radius: 11px;
     margin: 1vh 0vw;
+  }
 }
 
-@media(max-width:768px){
-    /* H3 styling */
-    h3{
-        font-size: 3em;
-        padding: 4vh 0vw;
-    }
+@media (max-width: 426px) {
+  /* H3 styling */
+  h3 {
+    font-size: 3em;
+    padding: 4vh 0vw;
+  }
 
-    /* H4 styling */
-    h4{
-        font-size: 2.5em;
-        text-align: left;
-        padding: 2vh 3vw;
-    }
+  /* H4 styling */
+  h4 {
+    font-size: 2.5em;
+    text-align: left;
+    padding: 2vh 3vw;
+  }
 
-    /* H5 styling */
-    h5{
-        font-size: 2em;
-        text-align: left;
-        padding: 3vh 1vw;
-    }
+  /* H5 styling */
+  h5 {
+    font-size: 2em;
+    text-align: left;
+    padding: 3vh 1vw;
+  }
 
-    /* Styling for (Add new Card) title  */
-    .addTitle{
-        font-size: 1.8em;
-        text-align: left;
-        padding: 4vh 1vw;
-    }
+  /* Styling for (Add new Card) title  */
+  .addTitle {
+    font-size: 1.8em;
+    text-align: left;
+    padding: 4vh 1vw;
+  }
 
-    /* Styling for titles of various payment methods (e-Wallet, Visa, Mastercard, Cash) */
-    .paymentTitles{
-        color: #555b6e;
-        font-size: 1.5em;
-        text-align: left;
-        padding: 3vh 2vw 3vh 1vw;
-    }
+  /* Styling for titles of various payment methods (e-Wallet, Visa, Mastercard, Cash) */
+  .paymentTitles {
+    color: #555b6e;
+    font-size: 1.5em;
+    text-align: left;
+    padding: 0vh 2vw 3vh 1vw;
+  }
 
-    /* Styling for paymentmethod page div */
-    .paymentmethod{
-        background-color: #bee3db;
-        text-align: left;
-    }
+  /* Styling for paymentmethod page div */
+  .paymentmethod {
+    background-color: #bee3db;
+    text-align: left;
+  }
 
-    /* Styling for div contianing form contents  */
-    .formholder{
-        color: #ffd6ba;
-        position: relative;
-        margin: 0vh 2vw 0vh 2vw;
-        display: grid;
-        grid-template-areas:
-        'box';
-    }
+  /* Styling for div contianing form contents  */
+  .formholder {
+    color: #ffd6ba;
+    position: relative;
+    margin: 0vh 2vw 0vh 2vw;
+    display: grid;
+    grid-template-areas: "box";
+  }
 
-    /* Styling for div holding the 2 parts */
-    .box{
-        grid-area: box;
-        display: grid;
-        grid-template-areas: 
-        "part1"
-        "part2";
-        margin: 4vh 0vw 4vh 0vw;
-    }
+  /* Styling for add new card div */
+  .part1 {
+    grid-area: part1;
+    background-color: #758087;
+    width: 90%;
+    padding: 0vh 4vw;
+    margin: 2vh 4.7vw;
+    border-radius: 25px;
+  }
 
-    /* Styling for add new card div */
-    .part1{
-        grid-area: part1;
-        background-color: #758087;
-        padding: 5vh 4vw;
-        margin: 2vh 4vw;
-        border-radius: 25px;
-    }
+  /* Styling for paragraphs in part1 div */
+  .part1 p {
+    margin: 1vh 2vw;
+    font-size: large;
+  }
 
-    /* Styling for paragraphs in part1 div */
-    .part1 p{
-        margin: 1vh 2vw;
-        font-size: large;
-    }
-    
-    /* Styling to display contents in a single line */
-    .lineholder{
-        display: inline-flex;
-    }
+  /* Styling for Card Number, Card Holder Name inputs */
+  .input1,
+  .input4 {
+    font-size: 1em;
+    border-radius: 50px;
+    margin: 1vh 2vw 3vh 2vw;
+    padding: 1vh 2vw;
+    color: black;
+    width: 66vw;
+    height: 7vh;
+  }
 
-    /* Styling to align multiple lines */
-    .lineholder1{
-        grid-area: lineholder1;
-    }
+  /* Styling for Expiry Date input */
+  .input2 {
+    width: 30vw;
+    height: 7vh;
+    font-size: 1em;
+    border-radius: 50px;
+    border: none;
+    margin: 1vh 0vw 3vh 2vw;
+    padding: 1vh 2vw;
+    color: black;
+  }
 
-    /* Styling to align multiple lines */
-    .lineholder2{
-        grid-area: lineholder2;
-        margin: 0vh 5vw;
-    }
+  /* Styling for CVV input */
+  .input3 {
+    width: 25vw;
+    height: 7vh;
+    font-size: 1em;
+    border-radius: 50px;
+    margin: 1vh 2vw 1vh 1vw;
+    padding: 1vh 2vw;
+    color: black;
+  }
 
-    /* Styling for Expiry Date input */
-    .input2{ 
-        width: 25vw;
-        height: 8vh;
-        font-size: 1.5em;
-        border-radius: 50px;
-        margin: 2vh 0vw 8vh 2vw;
-        padding: 1vh 2vw;
-        color: black;
-    }
+  /* Styling for Add Card Button */
+  .button4 {
+    background-color: #ffd6ba;
+    color: #555b6e;
+    width: 25vw;
+    height: 7vh;
+    border: none;
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+    margin-left: 25vw;
+    border-radius: 51px;
+    font-size: 1.2em;
+  }
 
-    /* Styling for CVV input */
-    .input3{ 
-        width: 20vw;
-        height: 8vh;
-        font-size: 1.5em;
-        border-radius: 50px;
-        margin: 2vh 4vw 9vh 2vw;
-        padding: 1vh 2vw;
-        color: black;
-    }
+  /* Styling for Pay Button */
+  .button5 {
+    background-color: #ffd6ba;
+    color: #555b6e;
+    width: 25vw;
+    height: 7vh;
+    margin-bottom: 6vh;
+    margin-left: 38vw;
+    border-radius: 51px;
+    font-size: 1.2em;
+  }
 
-    /* Styling for Card Number, Card Holder Name inputs */
-    .input1, .input4{
-        font-size: 1.5em;
-        border-radius: 50px;
-        margin: 2vh 2vw 8vh 2vw;
-        padding: 1vh 2vw;
-        color: black;
-        width: 45vw;
-        height: 10vh;
-    }
+  /* Styling for div holding the 2 parts */
+  .box {
+    grid-area: box;
+    display: grid;
+    grid-template-areas:
+      "part1"
+      "part2";
+    margin: 4vh 0vw 4vh 0vw;
+  }
 
-    /* Styling to display contents in a single line */
-    .singleline{
-        display: inline-flex;
-        margin: 1vh 0vw;
-    }
+  /* Styling for div containing various types of payments */
+  .part2 {
+    grid-area: part2;
+    background-color: #89b0ae;
+    padding: 2vh 4vw;
+    margin: 2vh 4.7vw;
+    width: 90%;
+    border-radius: 25px;
+  }
 
-    /* Styling to set spacing between contents in a single line */
-    .singleline p{
-        padding: 2vh 1vw;
-    }
+  .paymentTitles {
+    margin-top: 1.5vh;
+  }
 
-    /* Styling to align multiple lines */
-    .phrase1, .phrase2{
-        display: inline-flex;
-        padding: 1vh 1vw;
-        margin-top: 3vh;
-    }
+  /* Styling for wallet section */
+  .wallet {
+    background-color: #dfedd6;
+    color: black;
+    padding: 3vh 2vw;
+    border-radius: 11px;
+    margin: 1vh 0vw;
+  }
 
-    /* Styling for Add Card Button */
-    .button4{
-        background-color: #ffd6ba;
-        color: #555b6e;
-        position: relative;
-        float: left;
-        left: 2%;
-        top: 0%;
-        width: 12vw;
-        height: 8vh;
-        margin: 2vh 0.5vw;
-        border-radius: 51px;
-        font-size: 1.2em;
-    }
+  /* Styling for wallet picture in wallet section */
+  .walletpic {
+    width: 15vw;
+    height: 7vh;
+    margin-top: 0vh;
+    margin-right: 3vw;
+  }
 
-    /* Styling for Pay Button */
-    .button5{
-        background-color: #ffd6ba;
-        position: relative;
-        float: left;
-        left: 59%;
-        top: 0%;
-        color: #555b6e;
-        width: 15vw;
-        height: 10vh;
-        margin: 1vh 2vw;
-        border-radius: 51px;
-        font-size: 1.2em;
-    }
+  /* Styling for payment type Dropdown in wallet section */
+  .paymentmethod .dropdown {
+    background-color: #f7fade;
+    width: 27vw;
+    height: 5vh;
+    margin: 1vh 1vw;
+    border-radius: 10px;
+    font-size: 2vh;
+    padding-left: 0.5vw;
+  }
 
-    /* Styling for div containing various types of payments */
-    .part2{
-        grid-area: part2;
-        background-color: #89b0ae;
-        padding: 5vh 4vw;
-        margin: 2vh 4vw;
-        border-radius: 25px;
-    }
+  /* Styling to display contents in a single line */
+  .lineholder {
+    display: inline-flex;
+  }
 
-    /* Styling for Amount inputs */
-    .input5{ 
-        width: 19vw;
-        height: 6vw;
-        font-size: 1.5em;
-        border-radius: 15px;
-        margin: 0vh 2vw;
-        padding: 1vh 1vw;
-        color: black;
-        background-color: #f7fade;
-    }
+  /* Styling to align multiple lines */
+  .lineholder1 {
+    grid-area: lineholder1;
+  }
 
-    /* Styling for wallet section */
-    .wallet{
-        background-color: #dfedd6;
-        color: black;
-        padding: 3vh 2vw;
-        border-radius: 11px;
-        margin: 1vh 0vw;
-    }
+  /* Styling to align multiple lines */
+  .lineholder2 {
+    grid-area: lineholder2;
+    margin: 0vh 10vw;
+  }
 
-    /* Styling for wallet picture in wallet section */
-    .walletpic{
-        width: 7vw;
-        height: 8vh;
-        margin: 1.5vh 1vw;
-        margin-right: 3vw;
-    }
+  /* Styling to set spacing between contents in a single line */
+  .singleline p {
+    padding: 1vh 3vw;
+  }
 
-    /* Styling for payment type Dropdown in wallet section */
-    .paymentmethod .dropdown{
-        background-color: #f7fade;
-        width: 20vw;
-        height: 5vh;
-        margin: 2.5vh 5vw;
-        border-radius: 10px;
-        font-size: 2.5vh;
-        padding-left: .5vw;
-    }
+  /* Styling to align multiple lines */
+  .phrase1 {
+    margin-top: 0vh;
+    margin-left: 1vh;
+  }
+  .phrase2 {
+    padding: 2vh 3vw;
+    margin-top: 0vh;
+  }
 
-    /* Styling for delete Icon in wallet section */
-    .deleteIcon{
-        width: 10vw;
-        height: 5vh;
-        margin: 2vh 2vw 1.5vh 2vw;
-    }
+  /* Styling for Amount inputs */
+  .input5 {
+    width: 23vw;
+    height: 8vw;
+    font-size: 1.5em;
+    border-radius: 15px;
+    margin-top: 0.3vh;
+    padding: 1vh 1vw;
+    color: black;
+    background-color: #f7fade;
+  }
 
-    /* Styling for Top-Up Buton */
-    .button6{
-        background-color: #ffd6ba;
-        color: #555b6e;
-        width: 15vw;
-        height: 6vh;
-        margin: 0.5vh 2vw;
-        border-radius: 51px;
-        font-size: 1.2em;
-        font-family: Helvetica, Arial, sans-serif;
-    }
+  /* Styling for Top-Up Buton */
+  .button6 {
+    background-color: #ffd6ba;
+    color: #555b6e;
+    width: 22vw;
+    height: 5vh;
+    margin-top: 0.1vh;
+    margin-left: 3.5vw;
+    border-radius: 51px;
+    font-size: 1.2em;
+    font-family: Helvetica, Arial, sans-serif;
+  }
 
-    /* Styling for Auto Top-Up checkbox */
-    .checkbox{
-        width: 5vw;
-        height: 5vh;
-        margin: 1vh 2vw;
-    }
+  /* Styling for Auto Top-Up checkbox */
+  .checkbox {
+    width: 5vw;
+    height: 5vh;
+    margin-top: -0.5vh;
+  }
 
-    /* Styling for visa section */
-    .visa{
-        background-color: white;
-        color: black;
-        padding: 2vh 2vw;
-        border-radius: 11px;
-        margin: 2vh 0vw;
-    }
+  /* Styling for visa section */
+  .visa {
+    background-color: white;
+    color: black;
+    padding: 3vh 2vw;
+    border-radius: 11px;
+    margin: 2vh 0vw;
+    display: grid;
+    grid-template-areas: "visainfo visapic";
+  }
 
-    /* Styling for mastercard section */
-    .mastercard{
-        background-color: white;
-        color: black;
-        padding: 3vh 2vw;
-        border-radius: 11px;
-        margin: 2vh 0vw;
-        display: grid;
-        grid-template-areas: 
-        'masterinfo masterpic';
-    }
+  /* Styling for content in visa section */
+  .visainfo {
+    grid-area: visainfo;
+  }
 
-    /* Styling for content in mastercard section */
-    .mastercardinfo{
-        grid-area: masterinfo;
-    }
+  /* Styling for image area in visa section */
+  .visapic {
+    text-align: right;
+    grid-area: visapic;
+  }
 
-    /* Styling for image area in mastercard section */
-    .mastercardpic{
-        padding: 2vh 0vw;
-        text-align: right;
-        grid-area: masterpic;
-    }
+  /* Styling for image in visa section */
+  .visapic img {
+    width: 25vw;
+    height: 11vh;
+  }
 
-    /* Styling for image in mastercard section */
-    .mastercardpic img{
-        width: 12vw;
-        height: 20vh;
-    }
+  /* Styling for mastercard section */
+  .mastercard {
+    background-color: white;
+    color: black;
+    padding: 3vh 2vw;
+    border-radius: 11px;
+    margin: 2vh 0vw;
+    display: grid;
+    grid-template-areas: "masterinfo masterpic";
+  }
 
-    /* Styling for cash section */
-    .cash{
-        background-color: #dfedd6;
-        color: black;
-        padding: 4vh 8vw;
-        border-radius: 11px;
-        margin: 1vh 0vw;
-    }
+  /* Styling for content in mastercard section */
+  .mastercardinfo {
+    grid-area: masterinfo;
+  }
 
+  /* Styling for image area in mastercard section */
+  .mastercardpic {
+    padding: 2vh 0vw;
+    text-align: right;
+    grid-area: masterpic;
+  }
 
+  /* Styling for image in mastercard section */
+  .mastercardpic img {
+    width: 25vw;
+    height: 11vh;
+  }
+
+  /* Styling for cash section */
+  .cash {
+    background-color: #dfedd6;
+    color: black;
+    padding: 4vh 8vw;
+    border-radius: 11px;
+    margin: 1vh 0vw;
+  }
 }
