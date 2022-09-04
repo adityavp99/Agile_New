@@ -3,6 +3,8 @@
 
 import { useState} from "react";
 
+// importing Fooditemholder styling for Comparisonholder from CSS Stylesheet file
+import Fooditemholder from "../fooditemholder/Fooditemholder.js"
 // importing CSS styling for Comparisonholder from CSS Stylesheet file
 import comparisonHolderCSS from "./Comparisonholder.module.css"
 
@@ -32,35 +34,12 @@ const ComparisonHolder = ({restaurant}) => {
                     <img src={pizzahutImg} className={comparisonHolderCSS.pic1} alt="Pizzahut Logo" />
                     <h4>restaurant.name_</h4>
                     
-                    {/* sub div to hold restuarant pic, food name, quantity */}
                     <div className={comparisonHolderCSS.portion}>
-                        <img src={hawaiianImg} className={comparisonHolderCSS.pic2} alt="Hawaiian Pizza" />
-                        <p className={comparisonHolderCSS.label1}>food.name</p>
-                        {/* sub div to hold the quantity and buttons */}
-                        <div className={comparisonHolderCSS.quantity1}>
-                            <button onClick={subtract} className={comparisonHolderCSS.button1}>-</button>
-                            <p className={quantity > 0 ? "positive" : quantity < 0 ? "negative" : null }>
-                            {quantity}
-                            </p>
-                            <button onClick={addition} className={comparisonHolderCSS.button2}>+</button>
-                        </div>
-                        {/* <input type="number" min="0" max="10" className={comparisonHolderCSS.quantity1} name="cards">
-                        
-                        </input>  */}
-                    </div>
-
-                    {/* sub div to hold restuarant pic, food name, quantity */}
-                    <div className={comparisonHolderCSS.portion}>
-                        <img src={pepperoniImg} className={comparisonHolderCSS.pic3} alt="Pepperoni Pizza" />
-                        <p className={comparisonHolderCSS.label1}>food.name</p>
-                        {/* sub div to hold the quantity and buttons */}
-                        <div className={comparisonHolderCSS.quantity2}>
-                            <button onClick={subtract} className={comparisonHolderCSS.button1}>-</button>
-                            <p className={quantity > 0 ? "positive" : quantity < 0 ? "negative" : null }>
-                            {quantity}
-                            </p>
-                            <button onClick={addition} className={comparisonHolderCSS.button2}>+</button>
-                        </div>
+                        <Fooditemholder />
+                        <Fooditemholder />
+                        <Fooditemholder />
+                        <Fooditemholder />
+                        <Fooditemholder />
                     </div>
 
                     <br />

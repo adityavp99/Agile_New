@@ -18,6 +18,7 @@ function ComparisonPage() {
 
         {/* Component that compares prices: Order from 2 restaurants will mean 2 Comparisonholders*/}
         <ComparisonHolder />
+        <ComparisonHolder />
       </div>
 
       {/* Link to cart-summary page to confirm order/ make final changes*/}
