@@ -10,18 +10,7 @@ delivery companies and opens doors for new economic growth in the business.
 Based on results from our User Testing research, our team has successfully run the
 fundamental integrity of the web application with the intention to progress the software
 further in the near future.  
-## Outcomes  
-The overall goal for our team at the current milestone is to enable users to create an account
-and log in to an account on our desktop site, where they will be automatically redirected to
-the web application's home page. From there, users should be able to navigate to a myriad
-of restaurant and categorical options, make their selection of food items and view the price
-comparison for it with the different delivery partners and then proceed to a checkout page.
-Ergo, users can access a payment methods page, track their orders, and view their existing
-order histories. We are also looking to include a profile page with options for users to access
-multiple basic account-altering services such as a change in name, password or email.
-In its entirety, we hope that our team can successfully deliver the functions mentioned above
-while ensuring that navigation between these pages runs smoothly with no issues or
-complications.  
+
 ## Introduction  
 At the current stage, our team has deployed various research and planning efforts to
 facilitate our web application's first fully functioning iteration, which we will discuss further in
@@ -35,4 +24,17 @@ the research, planning timelines and prototypes that were done prior.
 This report will consist of thorough research on the actual web application development,
 documentation of how our team adopted the scrum methodology, user testing and unit
 testing processes, and the tools that were considered and utilised in the process. We will
-conclude with an analysis and evaluation of our project and product.
+conclude with an analysis and evaluation of our project and product.  
+
+## Outcomes  
+The overall goal for our team at the current milestone is to enable users to create an account
+and log in to an account on our desktop site, where they will be automatically redirected to
+the web application's home page. From there, users should be able to navigate to a myriad
+of restaurant and categorical options, make their selection of food items and view the price
+comparison for it with the different delivery partners and then proceed to a checkout page.
+Ergo, users can access a payment methods page, track their orders, and view their existing
+order histories. We are also looking to include a profile page with options for users to access
+multiple basic account-altering services such as a change in name, password or email.
+In its entirety, we hope that our team can successfully deliver the functions mentioned above
+while ensuring that navigation between these pages runs smoothly with no issues or
+complications.  
