@@ -1,40 +1,30 @@
-# Background  
-## Abstract    
-The foundation of this project is to create a unique, consolidated food delivery platform
-applicable to all users of popular food delivery services (e.g. Grab Food, Foodpanda etc.). In
-contrast to using a specific food delivery service provider, users can now view food options,
-delivery services and fees from multiple companies collectively within our software. This will
-aid all users of essential food delivery services in making more cost-effective options while
-saving time. Also, this creates healthy competition in the industry for the different food
-delivery companies and opens doors for new economic growth in the business.
-Based on results from our User Testing research, our team has successfully run the
-fundamental integrity of the web application with the intention to progress the software
-further in the near future.  
+## Consolidated Food Delivery Platform  
+### Abstract
+Our project aims to develop a unique, consolidated food delivery platform that integrates multiple popular food delivery services such as Grab Food and Foodpanda. This platform allows users to view food options, delivery services, and fees from various companies collectively, helping them make cost-effective choices and save time. This initiative fosters healthy competition among delivery companies and potentially stimulates economic growth in the industry. User testing validated the core integrity of the web application, paving the way for future enhancements.
 
-## Introduction  
-At the current stage, our team has deployed various research and planning efforts to
-facilitate our web application's first fully functioning iteration, which we will discuss further in
-the next section. We have structured our team with three front-end developers and two back-
-end developers working on the project concurrently. Our front-end team are tasked with
-presenting our content in the most user-friendly manner, closely abiding by the research we
-had done in our initial report. Our back-end team will be creating the basic functionality and
-foundation for the web application we aim to accomplish at this stage. Our initial conceptual
-report will be the guiding principle in this project's developmental stage. We will refer to all
-the research, planning timelines and prototypes that were done prior.
-This report will consist of thorough research on the actual web application development,
-documentation of how our team adopted the scrum methodology, user testing and unit
-testing processes, and the tools that were considered and utilised in the process. We will
-conclude with an analysis and evaluation of our project and product.  
+### Outcomes
+The primary milestone achieved is enabling users to create and log in to their accounts on our desktop site, navigate through various restaurant and food categories, and compare prices across different delivery partners. Users can proceed to checkout, access payment options, track orders, and view order histories. We also implemented a profile page where users can alter their basic account settings. The goal is to ensure smooth navigation between these features without any complications.
 
-## Outcomes  
-The overall goal for our team at the current milestone is to enable users to create an account
-and log in to an account on our desktop site, where they will be automatically redirected to
-the web application's home page. From there, users should be able to navigate to a myriad
-of restaurant and categorical options, make their selection of food items and view the price
-comparison for it with the different delivery partners and then proceed to a checkout page.
-Ergo, users can access a payment methods page, track their orders, and view their existing
-order histories. We are also looking to include a profile page with options for users to access
-multiple basic account-altering services such as a change in name, password or email.
-In its entirety, we hope that our team can successfully deliver the functions mentioned above
-while ensuring that navigation between these pages runs smoothly with no issues or
-complications.  
+### Introduction
+Our team employed extensive research and planning to develop the first iteration of our web application. We organized our team into three front-end developers and two back-end developers. The front-end team focused on presenting content in a user-friendly manner, while the back-end team developed the foundational functionality. This report includes detailed documentation of the development process, the adoption of the Scrum methodology, user and unit testing, and the tools utilized. The report concludes with an analysis and evaluation of our project and product.
+
+### Planning and Research
+We allocated time and resources effectively, breaking down tasks between the front-end and back-end teams. We documented our meetings and considered various frameworks and project management tools such as ClickUp, Burndown Charts, and Gantt Charts.
+
+### Prototyping and Iteration
+Our process included developing low, medium, and high-fidelity wireframes, each evaluated against initial concepts. We identified essential features to implement and made iterative design changes based on user feedback.
+
+### System Development
+The code development phase involved version control processes, unit testing, and addressing implementation challenges. We documented our sprint retrospectives and provided evidence of module coupling to ensure the quality of our codebase.
+
+### Analysis
+Our project analysis highlighted the success metrics based on the Scrum methodology. Despite some challenges, the team demonstrated high levels of teamwork and collaboration.
+
+### Evaluation
+We evaluated both the project and the product comprehensively. While we succeeded in launching 95% of the intended features, we adopted a dynamic workflow mindset to facilitate future enhancements and iterations.
+
+### Conclusion
+The project successfully delivered a functional demo version of the application. Moving forward, we aim to refine and expand the platform, incorporating additional features based on user feedback and industry trends.
+
+### Personal Reflection
+As the Scrum Master, I facilitated effective communication and healthy discussions among team members. As a back-end developer, I worked extensively with MySQL queries and RESTful API calls, utilizing libraries like Axios and Express to manage data interactions effectively.
